@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://example.org/food#"
+    xml:base="http://example.org/food"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Ontology Declaration -->
+  <owl:Ontology rdf:about="http://example.org/food"/>
+
+  <!-- Classes -->
+  <owl:Class rdf:about="http://example.org/food#FoodItem"/>
+  <owl:Class rdf:about="http://example.org/food#Ingredient"/>
+  <owl:Class rdf:about="http://example.org/food#Nutrient"/>
+  <owl:Class rdf:about="http://example.org/food#Cuisine"/>
+  <owl:Class rdf:about="http://example.org/food#MealType"/>
+  <owl:Class rdf:about="http://example.org/food#Allergen"/>
+  
+  <!-- Fruit as a subclass of FoodItem -->
+  <owl:Class rdf:about="http://example.org/food#Fruit">
+    <rdfs:subClassOf rdf:resource="http://example.org/food#FoodItem"/>
+  </owl:Class>
+  
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="http://example.org/food#hasIngredient">
+    <rdfs:domain rdf:resource="http://example.org/food#FoodItem"/>
+    <rdfs:range rdf:resource="http://example.org/food#Ingredient"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="http://example.org/food#containsNutrient">
+    <rdfs:domain rdf:resource="http://example.org/food#FoodItem"/>
+    <rdfs:range rdf:resource="http://example.org/food#Nutrient"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="http://example.org/food#belongsToCuisine">
+    <rdfs:domain rdf:resource="http://example.org/food#FoodItem"/>
+    <rdfs:range rdf:resource="http://example.org/food#Cuisine"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="http://example.org/food#isServedFor">
+    <rdfs:domain rdf:resource="http://example.org/food#FoodItem"/>
+    <rdfs:range rdf:resource="http://example.org/food#MealType"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="http://example.org/food#mayContainAllergen">
+    <rdfs:domain rdf:resource="http://example.org/food#FoodItem"/>
+    <rdfs:range rdf:resource="http://example.org/food#Allergen"/>
+  </owl:ObjectProperty>
+  
+  <!-- Data Properties for Nutrient -->
+  <owl:DatatypeProperty rdf:about="http://example.org/food#hasCalories">
+    <rdfs:domain rdf:resource="http://example.org/food#Nutrient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://example.org/food#hasProtein">
+    <rdfs:domain rdf:resource="http://example.org/food#Nutrient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://example.org/food#hasCarbohydrate">
+    <rdfs:domain rdf:resource="http://example.org/food#Nutrient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://example.org/food#hasFat">
+    <rdfs:domain rdf:resource="http://example.org/food#Nutrient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  
+  <!-- Individuals -->
+
+  <!-- 'apple' as an instance of Fruit -->
+  <owl:NamedIndividual rdf:about="http://example.org/food#apple">
+    <rdf:type rdf:resource="http://example.org/food#Fruit"/>
+    <rdfs:label xml:lang="en">Apple</rdfs:label>
+  </owl:NamedIndividual>
+  
+  <!-- Nutrient information for apple -->
+  <owl:NamedIndividual rdf:about="http://example.org/food#Nutrient_Apple">
+    <rdf:type rdf:resource="http://example.org/food#Nutrient"/>
+    <rdfs:label xml:lang="en">Apple Nutritional Information</rdfs:label>
+    <hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52</hasCalories>
+    <hasProtein rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.26</hasProtein>
+    <hasCarbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.81</hasCarbohydrate>
+    <hasFat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.17</hasFat>
+  </owl:NamedIndividual>
+  
+  <!-- Linking 'apple' to its nutritional information -->
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/food#apple"/>
+    <owl:annotatedProperty rdf:resource="http://example.org/food#containsNutrient"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/food#Nutrient_Apple"/>
+  </owl:Axiom>
+  
+</rdf:RDF>

@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/GameOfThronesOntology#"
+         xml:base="http://example.com/GameOfThronesOntology"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  
+  <!-- Ontology Header -->
+  <owl:Ontology rdf:about="http://example.com/GameOfThronesOntology"/>
+  
+  <!-- ================================================= -->
+  <!-- Classes -->
+  <!-- ================================================= -->
+  
+  <!-- Character hierarchy -->
+  <owl:Class rdf:about="#Character"/>
+  
+  <!-- At least one level of subclassing for Characters -->
+  <owl:Class rdf:about="#MainCharacter">
+    <rdfs:subClassOf rdf:resource="#Character"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#SupportingCharacter">
+    <rdfs:subClassOf rdf:resource="#Character"/>
+  </owl:Class>
+  
+  <!-- House hierarchy (houses are modeled as classes) -->
+  <owl:Class rdf:about="#House"/>
+  
+  <!-- Add one level of subclasses for houses -->
+  <owl:Class rdf:about="#GreatHouse">
+    <rdfs:subClassOf rdf:resource="#House"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#LesserHouse">
+    <rdfs:subClassOf rdf:resource="#House"/>
+  </owl:Class>
+  
+  <!-- Specific Houses as subclasses of GreatHouse -->
+  <owl:Class rdf:about="#HouseStark">
+    <rdfs:subClassOf rdf:resource="#GreatHouse"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#HouseLannister">
+    <rdfs:subClassOf rdf:resource="#GreatHouse"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#HouseTargaryen">
+    <rdfs:subClassOf rdf:resource="#GreatHouse"/>
+  </owl:Class>
+  
+  <!-- Location hierarchy -->
+  <owl:Class rdf:about="#Location"/>
+  
+  <!-- At least one level of subclassing for Locations -->
+  <owl:Class rdf:about="#City">
+    <rdfs:subClassOf rdf:resource="#Location"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Castle">
+    <rdfs:subClassOf rdf:resource="#Location"/>
+  </owl:Class>
+  
+  <!-- ================================================= -->
+  <!-- Properties -->
+  <!-- ================================================= -->
+  
+  <!-- Datatype property for names -->
+  <owl:DatatypeProperty rdf:about="#hasName">
+    <rdfs:domain rdf:resource="owl:Thing"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+  
+  <!-- Object property to associate a character with a location -->
+  <owl:ObjectProperty rdf:about="#associatedWithLocation">
+    <rdfs:domain rdf:resource="#Character"/>
+    <rdfs:range rdf:resource="#Location"/>
+  </owl:ObjectProperty>
+  
+  <!-- ================================================= -->
+  <!-- Individuals -->
+  <!-- ================================================= -->
+  
+  <!-- Sample Characters -->
+  <!-- Using punning, we assert that a character is an instance of a house class -->
+  <owl:NamedIndividual rdf:about="#JonSnow">
+    <rdf:type rdf:resource="#MainCharacter"/>
+    <!-- Punning: JonSnow is a member of HouseStark (which is modeled as a class) -->
+    <rdf:type rdf:resource="#HouseStark"/>
+    <associatedWithLocation rdf:resource="#TheWall"/>
+    <hasName rdf:datatype="xsd:string">Jon Snow</hasName>
+  </owl:NamedIndividual>
+  
+  <owl:NamedIndividual rdf:about="#DaenerysTargaryen">
+    <rdf:type rdf:resource="#MainCharacter"/>
+    <rdf:type rdf:resource="#HouseTargaryen"/>
+    <associatedWithLocation rdf:resource="#Dragonstone"/>
+    <hasName rdf:datatype="xsd:string">Daenerys Targaryen</hasName>
+  </owl:NamedIndividual>
+  
+  <owl:NamedIndividual rdf:about="#TyrionLannister">
+    <rdf:type rdf:resource="#MainCharacter"/>
+    <rdf:type rdf:resource="#HouseLannister"/>
+    <associatedWithLocation rdf:resource="#KingsLanding"/>
+    <hasName rdf:datatype="xsd:string">Tyrion Lannister</hasName>
+  </owl:NamedIndividual>
+  
+  <owl:NamedIndividual rdf:about="#AryaStark">
+    <rdf:type rdf:resource="#MainCharacter"/>
+    <rdf:type rdf:resource="#HouseStark"/>
+    <associatedWithLocation rdf:resource="#Winterfell"/>
+    <hasName rdf:datatype="xsd:string">Arya Stark</hasName>
+  </owl:NamedIndividual>
+  
+  <!-- Sample Locations as individuals -->
+  <owl:NamedIndividual rdf:about="#KingsLanding">
+    <rdf:type rdf:resource="#City"/>
+    <hasName rdf:datatype="xsd:string">King's Landing</hasName>
+  </owl:NamedIndividual>
+  
+  <owl:NamedIndividual rdf:about="#Winterfell">
+    <rdf:type rdf:resource="#Castle"/>
+    <hasName rdf:datatype="xsd:string">Winterfell</hasName>
+  </owl:NamedIndividual>
+  
+  <owl:NamedIndividual rdf:about="#Dragonstone">
+    <rdf:type rdf:resource="#Castle"/>
+    <hasName rdf:datatype="xsd:string">Dragonstone</hasName>
+  </owl:NamedIndividual>
+  
+  <owl:NamedIndividual rdf:about="#TheWall">
+    <rdf:type rdf:resource="#Castle"/>
+    <hasName rdf:datatype="xsd:string">The Wall</hasName>
+  </owl:NamedIndividual>
+  
+</rdf:RDF>

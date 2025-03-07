@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns="http://example.org/book-ontology#"
+    xml:base="http://example.org/book-ontology"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Ontology Metadata -->
+  <owl:Ontology rdf:about="">
+    <rdfs:label>Comprehensive Book Ontology</rdfs:label>
+    <rdfs:comment>An ontology representing a wide range of information about books—including abstract works, their expressions and manifestations, authors (and various contributor roles), publishers, genres, languages, formats, series, chapters, reviews, awards, and more.</rdfs:comment>
+    <owl:versionInfo>1.0</owl:versionInfo>
+  </owl:Ontology>
+
+  <!-- FRBR-Style Classes -->
+  <owl:Class rdf:about="#Work"/>
+  <owl:Class rdf:about="#Expression"/>
+  <owl:Class rdf:about="#Manifestation"/>
+  <owl:Class rdf:about="#Item"/>
+
+  <!-- Main Book Class -->
+  <!-- We define a Book as a kind of Work -->
+  <owl:Class rdf:about="#Book">
+    <rdfs:subClassOf rdf:resource="#Work"/>
+  </owl:Class>
+
+  <!-- Additional Book-Related Classes -->
+  <owl:Class rdf:about="#Edition"/>
+  <owl:Class rdf:about="#Chapter"/>
+  <owl:Class rdf:about="#Series"/>
+
+  <!-- Person and Contributor Classes -->
+  <owl:Class rdf:about="#Person"/>
+  <owl:Class rdf:about="#Author">
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Editor">
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Translator">
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Illustrator">
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Contributor">
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+
+  <!-- Other Domain Classes -->
+  <owl:Class rdf:about="#Publisher"/>
+  <owl:Class rdf:about="#Genre"/>
+  <owl:Class rdf:about="#Language"/>
+  <owl:Class rdf:about="#BookFormat"/>
+  <owl:Class rdf:about="#Review"/>
+  <owl:Class rdf:about="#Award"/>
+  <owl:Class rdf:about="#Library"/>
+  <owl:Class rdf:about="#Bookstore"/>
+
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="#hasAuthor">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Author"/>
+    <rdfs:label>has author</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasEditor">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Editor"/>
+    <rdfs:label>has editor</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasTranslator">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Translator"/>
+    <rdfs:label>has translator</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasIllustrator">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Illustrator"/>
+    <rdfs:label>has illustrator</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#publishedBy">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Publisher"/>
+    <rdfs:label>published by</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasGenre">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Genre"/>
+    <rdfs:label>has genre</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#isPartOfSeries">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Series"/>
+    <rdfs:label>is part of series</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasChapter">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Chapter"/>
+    <rdfs:label>has chapter</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasReview">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Review"/>
+    <rdfs:label>has review</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasAward">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Award"/>
+    <rdfs:label>has award</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasFormat">
+    <rdfs:domain rdf:resource="#Manifestation"/>
+    <rdfs:range rdf:resource="#BookFormat"/>
+    <rdfs:label>has format</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasLanguage">
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Language"/>
+    <rdfs:label>has language</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasEdition">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Edition"/>
+    <rdfs:label>has edition</rdfs:label>
+  </owl:ObjectProperty>
+
+  <!-- FRBR Relationships -->
+  <owl:ObjectProperty rdf:about="#isExemplifiedBy">
+    <rdfs:domain rdf:resource="#Work"/>
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:label>is exemplified by</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#isRealizedIn">
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Manifestation"/>
+    <rdfs:label>is realized in</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasItem">
+    <rdfs:domain rdf:resource="#Manifestation"/>
+    <rdfs:range rdf:resource="#Item"/>
+    <rdfs:label>has item</rdfs:label>
+  </owl:ObjectProperty>
+
+  <!-- Additional Relationships -->
+  <owl:ObjectProperty rdf:about="#stockedIn">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Library"/>
+    <rdfs:label>stocked in</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#soldIn">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="#Bookstore"/>
+    <rdfs:label>sold in</rdfs:label>
+  </owl:ObjectProperty>
+
+  <!-- Datatype Properties -->
+  <owl:DatatypeProperty rdf:about="#title">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>title</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#subtitle">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>subtitle</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#publicationYear">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:label>publication year</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#ISBN">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>ISBN</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#numberOfPages">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:label>number of pages</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#price">
+    <rdfs:domain rdf:resource="#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label>price</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <!-- Sample Individuals -->
+
+  <!-- Authors -->
+  <owl:NamedIndividual rdf:about="#FScottFitzgerald">
+    <rdf:type rdf:resource="#Author"/>
+    <rdfs:label>F. Scott Fitzgerald</rdfs:label>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="#ArthurConanDoyle">
+    <rdf:type rdf:resource="#Author"/>
+    <rdfs:label>Arthur Conan Doyle</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Publishers -->
+  <owl:NamedIndividual rdf:about="#Scribner">
+    <rdf:type rdf:resource="#Publisher"/>
+    <rdfs:label>Scribner</rdfs:label>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="#WardLock">
+    <rdf:type rdf:resource="#Publisher"/>
+    <rdfs:label>Ward Lock &amp; Co.</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Genres -->
+  <owl:NamedIndividual rdf:about="#Fiction">
+    <rdf:type rdf:resource="#Genre"/>
+    <rdfs:label>Fiction</rdfs:label>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="#DetectiveFiction">
+    <rdf:type rdf:resource="#Genre"/>
+    <rdfs:label>Detective Fiction</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Languages -->
+  <owl:NamedIndividual rdf:about="#English">
+    <rdf:type rdf:resource="#Language"/>
+    <rdfs:label>English</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Book Formats -->
+  <owl:NamedIndividual rdf:about="#Hardcover">
+    <rdf:type rdf:resource="#BookFormat"/>
+    <rdfs:label>Hardcover</rdfs:label>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="#Paperback">
+    <rdf:type rdf:resource="#BookFormat"/>
+    <rdfs:label>Paperback</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Series -->
+  <owl:NamedIndividual rdf:about="#ClassicSeries">
+    <rdf:type rdf:resource="#Series"/>
+    <rdfs:label>Classic American Literature Series</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Awards -->
+  <owl:NamedIndividual rdf:about="#PulitzerPrize">
+    <rdf:type rdf:resource="#Award"/>
+    <rdfs:label>Pulitzer Prize</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Reviews -->
+  <owl:NamedIndividual rdf:about="#Review1">
+    <rdf:type rdf:resource="#Review"/>
+    <rdfs:label>"A masterpiece of 20th-century literature."</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Sample Books -->
+  <owl:NamedIndividual rdf:about="#TheGreatGatsby">
+    <rdf:type rdf:resource="#Book"/>
+    <title>The Great Gatsby</title>
+    <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1925</publicationYear>
+    <ISBN>9780743273565</ISBN>
+    <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">180</numberOfPages>
+    <price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.99</price>
+    <hasAuthor rdf:resource="#FScottFitzgerald"/>
+    <publishedBy rdf:resource="#Scribner"/>
+    <hasGenre rdf:resource="#Fiction"/>
+    <hasLanguage rdf:resource="#English"/>
+    <isPartOfSeries rdf:resource="#ClassicSeries"/>
+    <hasReview rdf:resource="#Review1"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#AStudyInScarlet">
+    <rdf:type rdf:resource="#Book"/>
+    <title>A Study in Scarlet</title>
+    <publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1887</publicationYear>
+    <ISBN>9780451524935</ISBN>
+    <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</numberOfPages>
+    <price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.99</price>
+    <hasAuthor rdf:resource="#ArthurConanDoyle"/>
+    <publishedBy rdf:resource="#WardLock"/>
+    <hasGenre rdf:resource="#DetectiveFiction"/>
+    <hasLanguage rdf:resource="#English"/>
+  </owl:NamedIndividual>
+
+</rdf:RDF>

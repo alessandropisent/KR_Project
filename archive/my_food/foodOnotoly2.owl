@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.org/italianCuisine"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.org/italianCuisine">
+  <Prefix name="" IRI="http://www.example.org/italianCuisine#"/>
+  <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+  <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+  <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+  <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+  <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+
+  <!-- Dichiarazioni originali delle classi, proprietà ed individui -->
+  <Declaration>
+    <Class IRI="#Agrumi"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Alcolici"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Allergene"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Analcolici"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Antipasto"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Aperitivo"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Bevande"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Bibite"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Birra"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Burro"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Carne"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#CarneAvicola"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#CarneBovina"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#CarneSuina"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Cereali"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Cocktail"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Condimenti"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Contorno"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Crostacei"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#DerivatiDelLatte"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Dieta"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Dolce"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#ErbeAromatiche"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Formaggi"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FormaggiAPastaDura"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FormaggiAPastaMolle"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FormaggiAPastaSemidura"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FormaggiFreschi"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FormaggiVegetali"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Fritti"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Frutta"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FruttaComune"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FruttaTropicale"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Frutta_a_Guscio"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#FruttiDiBosco"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Gelato"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Glutine"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Grano"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Ingrediente"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Latte"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#LatteFresco"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#LatteSpeciale"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#LatteUHT"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Latticini"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#LatticiniVegetali"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Mais"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Molluschi"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Oli"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Panini"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Panna"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Pesce"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#PesceAzzurro"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#PesceBianco"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Pizza"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Portata"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Portate_Classiche"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Primo"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Ricetta"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Riso"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Secondo"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#SenzaGlutine"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Spezie"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#StreetFood"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Succo"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Tramezzino"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Vegano"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Vegetariano"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Verdura"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#VerduraCrociata"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#VerduraFogliare"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#VerduraRadice"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Vino"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#Yogurt"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#YogurtVegetali"/>
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#contieneAllergene"/>
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#haIngrediente"/>
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#èAdattoPer"/>
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#èPortataDi"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Farina"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Focaccia_Romana"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Guanciale"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Ossobuco"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Pasta"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Polpa_di_percora"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Pomodoro"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Porchetta"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Prosciutto"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Riso"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Salame"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Tiramisu"/>
+  </Declaration>
+
+  <!-- Relazioni di subclassing e disgiunzioni (come nell'ontologia originale) -->
+  <!-- ... (qui rimangono invariate le asserzioni originali di SubClassOf e DisjointClasses) ... -->
+
+  <ClassAssertion>
+    <Class IRI="#Antipasto"/>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Glutine"/>
+    <NamedIndividual IRI="#Farina"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Grano"/>
+    <NamedIndividual IRI="#Farina"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Focaccia_Romana"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneSuina"/>
+    <NamedIndividual IRI="#Guanciale"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Ossobuco"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Grano"/>
+    <NamedIndividual IRI="#Pasta"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneAvicola"/>
+    <NamedIndividual IRI="#Polpa_di_percora"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Frutta"/>
+    <NamedIndividual IRI="#Pomodoro"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Verdura"/>
+    <NamedIndividual IRI="#Pomodoro"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneSuina"/>
+    <NamedIndividual IRI="#Porchetta"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneSuina"/>
+    <NamedIndividual IRI="#Prosciutto"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Riso"/>
+    <NamedIndividual IRI="#Riso"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneSuina"/>
+    <NamedIndividual IRI="#Salame"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ricetta"/>
+    <NamedIndividual IRI="#Tiramisu"/>
+  </ClassAssertion>
+
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+    <NamedIndividual IRI="#Pomodoro"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+    <NamedIndividual IRI="#Pasta"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+    <NamedIndividual IRI="#Pasta"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+    <NamedIndividual IRI="#Pomodoro"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+    <NamedIndividual IRI="#Farina"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+    <NamedIndividual IRI="#Pomodoro"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+    <NamedIndividual IRI="#Riso"/>
+  </ObjectPropertyAssertion>
+
+  <!-- ******************************************************* -->
+  <!-- Nuove dichiarazioni per gli ingredienti aggiunti -->
+  <Declaration>
+    <NamedIndividual IRI="#Mozzarella"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Basilico"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Olio"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Rosmarino"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Sale"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Carne_Bolognese"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Vitello"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Zafferano"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Uova"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Pecorino"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Pepe"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Savoiardi"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Mascarpone"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Zucchero"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Caffè"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Spaghetti"/>
+  </Declaration>
+  <Declaration>
+    <NamedIndividual IRI="#Parmigiano"/>
+  </Declaration>
+
+  <!-- Asserzioni di classe per i nuovi ingredienti -->
+  <ClassAssertion>
+    <Class IRI="#Formaggi"/>
+    <NamedIndividual IRI="#Mozzarella"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#ErbeAromatiche"/>
+    <NamedIndividual IRI="#Basilico"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Oli"/>
+    <NamedIndividual IRI="#Olio"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#ErbeAromatiche"/>
+    <NamedIndividual IRI="#Rosmarino"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Condimenti"/>
+    <NamedIndividual IRI="#Sale"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneBovina"/>
+    <NamedIndividual IRI="#Carne_Bolognese"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#CarneBovina"/>
+    <NamedIndividual IRI="#Vitello"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Spezie"/>
+    <NamedIndividual IRI="#Zafferano"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ingrediente"/>
+    <NamedIndividual IRI="#Uova"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#FormaggiAPastaDura"/>
+    <NamedIndividual IRI="#Pecorino"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Spezie"/>
+    <NamedIndividual IRI="#Pepe"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ingrediente"/>
+    <NamedIndividual IRI="#Savoiardi"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#DerivatiDelLatte"/>
+    <NamedIndividual IRI="#Mascarpone"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ingrediente"/>
+    <NamedIndividual IRI="#Zucchero"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ingrediente"/>
+    <NamedIndividual IRI="#Caffè"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#Ingrediente"/>
+    <NamedIndividual IRI="#Spaghetti"/>
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="#FormaggiAPastaDura"/>
+    <NamedIndividual IRI="#Parmigiano"/>
+  </ClassAssertion>
+
+  <!-- ******************************************************* -->
+  <!-- Nuove asserzioni per collegare gli ingredienti alle ricette -->
+
+  <!-- Caprese_Insalata: aggiunto Mozzarella, Basilico e Olio -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+    <NamedIndividual IRI="#Mozzarella"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+    <NamedIndividual IRI="#Basilico"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Caprese_Insalata"/>
+    <NamedIndividual IRI="#Olio"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Focaccia_Romana: aggiunti Farina, Olio, Rosmarino e Sale -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Focaccia_Romana"/>
+    <NamedIndividual IRI="#Farina"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Focaccia_Romana"/>
+    <NamedIndividual IRI="#Olio"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Focaccia_Romana"/>
+    <NamedIndividual IRI="#Rosmarino"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Focaccia_Romana"/>
+    <NamedIndividual IRI="#Sale"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Lasagna_alla_Bolognese: già contiene Pasta; aggiunti Carne_Bolognese e Parmigiano -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+    <NamedIndividual IRI="#Carne_Bolognese"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+    <NamedIndividual IRI="#Parmigiano"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Ossobuco: aggiunti Vitello e Olio -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Ossobuco"/>
+    <NamedIndividual IRI="#Vitello"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Ossobuco"/>
+    <NamedIndividual IRI="#Olio"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Pasta_al_Pomodoro: già contiene Pasta e Pomodoro; aggiunti Basilico e Olio -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+    <NamedIndividual IRI="#Basilico"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+    <NamedIndividual IRI="#Olio"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Pizza_Margherita: già contiene Farina e Pomodoro; aggiunti Mozzarella, Basilico e Olio -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+    <NamedIndividual IRI="#Mozzarella"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+    <NamedIndividual IRI="#Basilico"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Pizza_Margherita"/>
+    <NamedIndividual IRI="#Olio"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Risotto_alla_Milanese: già contiene Riso; aggiunti Zafferano, Burro e Parmigiano -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+    <NamedIndividual IRI="#Zafferano"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+    <NamedIndividual IRI="#Burro"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+    <NamedIndividual IRI="#Parmigiano"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Spaghetti_Carbonara: già contiene Guanciale; aggiunti Spaghetti, Uova, Pecorino e Pepe -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+    <NamedIndividual IRI="#Spaghetti"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+    <NamedIndividual IRI="#Uova"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+    <NamedIndividual IRI="#Pecorino"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+    <NamedIndividual IRI="#Pepe"/>
+  </ObjectPropertyAssertion>
+
+  <!-- Tiramisu: aggiunti Savoiardi, Mascarpone, Uova, Zucchero e Caffè -->
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Tiramisu"/>
+    <NamedIndividual IRI="#Savoiardi"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Tiramisu"/>
+    <NamedIndividual IRI="#Mascarpone"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Tiramisu"/>
+    <NamedIndividual IRI="#Uova"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Tiramisu"/>
+    <NamedIndividual IRI="#Zucchero"/>
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#haIngrediente"/>
+    <NamedIndividual IRI="#Tiramisu"/>
+    <NamedIndividual IRI="#Caffè"/>
+  </ObjectPropertyAssertion>
+
+</Ontology>

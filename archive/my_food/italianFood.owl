@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.org/italianCuisine"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.org/italianCuisine">
+    <Prefix name="" IRI="http://www.example.org/italianCuisine#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agrumi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alcolici"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Allergene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amaro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analcolici"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antipasto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aperitivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bevande"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BevandeIngrediente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bibite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Birra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirraBionda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirraIPA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirraRossa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarneAvicola"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarneBovina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarneSuina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Centrigughe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cereali"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cocktail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condimenti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contorno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crostacei"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DerivatiDelLatte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dolce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErbeAromatiche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formaggi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormaggiAPastaDura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormaggiAPastaMolle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormaggiAPastaSemidura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormaggiFreschi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormaggiVegetali"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frappè"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fritti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frullati"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frutta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruttaComune"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruttaTropicale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frutta_a_Guscio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruttiDiBosco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gelato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glutine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingrediente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Latte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatteFresco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatteSpeciale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatteUHT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Latticini"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatticiniVegetali"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molluschi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panini"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pesce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PesceAzzurro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PesceBianco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PiattoUnico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Portate_Classiche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ricette"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secondo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SenzaGlutine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spezie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spumante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Succo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperAlcolici"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tramezzino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetariano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verdura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerduraCrociata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerduraFogliare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerduraRadice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VinoBianco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VinoRosso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yogurt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YogurtVegetali"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contieneAllergene"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haIngrediente"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#siAbbinaCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èAdattoPer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#èPortataDi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haDescrizione"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haDifficoltà"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haTempoPreparazione"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haUnitaMisura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caprese_Insalata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guanciale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ossobuco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pasta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peroni_classica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pizza_Margherita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pizza_rossa_al_taglio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Polpa_di_percora"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pomodoro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Porchetta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prosciutto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Riso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiramisu"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Agrumi"/>
+        <Class IRI="#Frutta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alcolici"/>
+        <Class IRI="#BevandeIngrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amaro"/>
+        <Class IRI="#SuperAlcolici"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analcolici"/>
+        <Class IRI="#BevandeIngrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antipasto"/>
+        <Class IRI="#Portate_Classiche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aperitivo"/>
+        <Class IRI="#Cocktail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bevande"/>
+        <Class IRI="#Ricette"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BevandeIngrediente"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bibite"/>
+        <Class IRI="#Analcolici"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Birra"/>
+        <Class IRI="#Alcolici"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirraBionda"/>
+        <Class IRI="#Birra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirraIPA"/>
+        <Class IRI="#Birra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirraRossa"/>
+        <Class IRI="#Birra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burro"/>
+        <Class IRI="#DerivatiDelLatte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carne"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarneAvicola"/>
+        <Class IRI="#Carne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarneBovina"/>
+        <Class IRI="#Carne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarneSuina"/>
+        <Class IRI="#Carne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Centrigughe"/>
+        <Class IRI="#Bevande"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cereali"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cocktail"/>
+        <Class IRI="#Bevande"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condimenti"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contorno"/>
+        <Class IRI="#Portate_Classiche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crostacei"/>
+        <Class IRI="#Allergene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DerivatiDelLatte"/>
+        <Class IRI="#Latticini"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dolce"/>
+        <Class IRI="#Portate_Classiche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErbeAromatiche"/>
+        <Class IRI="#Condimenti"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formaggi"/>
+        <Class IRI="#Latticini"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormaggiAPastaDura"/>
+        <Class IRI="#Formaggi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormaggiAPastaMolle"/>
+        <Class IRI="#Formaggi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormaggiAPastaSemidura"/>
+        <Class IRI="#Formaggi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormaggiFreschi"/>
+        <Class IRI="#Formaggi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormaggiVegetali"/>
+        <Class IRI="#LatticiniVegetali"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frappè"/>
+        <Class IRI="#Bevande"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fritti"/>
+        <Class IRI="#PiattoUnico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fritti"/>
+        <Class IRI="#Secondo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frullati"/>
+        <Class IRI="#Bevande"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frutta"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruttaComune"/>
+        <Class IRI="#Frutta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruttaTropicale"/>
+        <Class IRI="#Frutta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frutta_a_Guscio"/>
+        <Class IRI="#Allergene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruttiDiBosco"/>
+        <Class IRI="#Frutta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gelato"/>
+        <Class IRI="#DerivatiDelLatte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glutine"/>
+        <Class IRI="#Allergene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grano"/>
+        <Class IRI="#Cereali"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Latte"/>
+        <Class IRI="#Latticini"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatteFresco"/>
+        <Class IRI="#Latte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatteSpeciale"/>
+        <Class IRI="#Latte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatteUHT"/>
+        <Class IRI="#Latte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Latticini"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatticiniVegetali"/>
+        <Class IRI="#Latticini"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mais"/>
+        <Class IRI="#Cereali"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Molluschi"/>
+        <Class IRI="#Pesce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oli"/>
+        <Class IRI="#Condimenti"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panini"/>
+        <Class IRI="#PiattoUnico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panna"/>
+        <Class IRI="#DerivatiDelLatte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pesce"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PesceAzzurro"/>
+        <Class IRI="#Pesce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PesceBianco"/>
+        <Class IRI="#Pesce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PiattoUnico"/>
+        <Class IRI="#Ricette"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <Class IRI="#PiattoUnico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Portate_Classiche"/>
+        <Class IRI="#Ricette"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primo"/>
+        <Class IRI="#Portate_Classiche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riso"/>
+        <Class IRI="#Cereali"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secondo"/>
+        <Class IRI="#Portate_Classiche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SenzaGlutine"/>
+        <Class IRI="#Dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spezie"/>
+        <Class IRI="#Condimenti"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spumante"/>
+        <Class IRI="#Vino"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Succo"/>
+        <Class IRI="#Analcolici"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperAlcolici"/>
+        <Class IRI="#Alcolici"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tramezzino"/>
+        <Class IRI="#Panini"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegano"/>
+        <Class IRI="#Dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetariano"/>
+        <Class IRI="#Dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verdura"/>
+        <Class IRI="#Ingrediente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerduraCrociata"/>
+        <Class IRI="#Verdura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerduraFogliare"/>
+        <Class IRI="#Verdura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerduraRadice"/>
+        <Class IRI="#Verdura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vino"/>
+        <Class IRI="#Alcolici"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VinoBianco"/>
+        <Class IRI="#Vino"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VinoRosso"/>
+        <Class IRI="#Vino"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yogurt"/>
+        <Class IRI="#Latticini"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YogurtVegetali"/>
+        <Class IRI="#LatticiniVegetali"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Carne"/>
+        <Class IRI="#Cereali"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Carne"/>
+        <Class IRI="#Frutta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Carne"/>
+        <Class IRI="#Pesce"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cereali"/>
+        <Class IRI="#Frutta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cereali"/>
+        <Class IRI="#Pesce"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Condimenti"/>
+        <Class IRI="#Pesce"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Frutta"/>
+        <Class IRI="#Latticini"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pesce"/>
+        <Class IRI="#Verdura"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Antipasto"/>
+        <NamedIndividual IRI="#Caprese_Insalata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Glutine"/>
+        <NamedIndividual IRI="#Farina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grano"/>
+        <NamedIndividual IRI="#Farina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarneSuina"/>
+        <NamedIndividual IRI="#Guanciale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Primo"/>
+        <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Secondo"/>
+        <NamedIndividual IRI="#Ossobuco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grano"/>
+        <NamedIndividual IRI="#Pasta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Primo"/>
+        <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pizza"/>
+        <NamedIndividual IRI="#Pizza_Margherita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pizza"/>
+        <NamedIndividual IRI="#Pizza_rossa_al_taglio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarneAvicola"/>
+        <NamedIndividual IRI="#Polpa_di_percora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Frutta"/>
+        <NamedIndividual IRI="#Pomodoro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Pomodoro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarneSuina"/>
+        <NamedIndividual IRI="#Porchetta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarneSuina"/>
+        <NamedIndividual IRI="#Prosciutto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Riso"/>
+        <NamedIndividual IRI="#Riso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Primo"/>
+        <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarneSuina"/>
+        <NamedIndividual IRI="#Salame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Primo"/>
+        <NamedIndividual IRI="#Spaghetti_Carbonara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dolce"/>
+        <NamedIndividual IRI="#Tiramisu"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Caprese_Insalata"/>
+        <NamedIndividual IRI="#Pomodoro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Lasagna_alla_Bolognese"/>
+        <NamedIndividual IRI="#Pasta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+        <NamedIndividual IRI="#Pasta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Pasta_al_Pomodoro"/>
+        <NamedIndividual IRI="#Pomodoro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Pizza_Margherita"/>
+        <NamedIndividual IRI="#Farina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Pizza_Margherita"/>
+        <NamedIndividual IRI="#Pomodoro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haIngrediente"/>
+        <NamedIndividual IRI="#Risotto_alla_Milanese"/>
+        <NamedIndividual IRI="#Riso"/>
+    </ObjectPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#siAbbinaCon"/>
+    </SymmetricObjectProperty>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haUnitaMisura"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

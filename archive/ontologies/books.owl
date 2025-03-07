@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://127.0.0.1:3001/ontology/books.owl#"
+     xml:base="http://127.0.0.1:3001/ontology/books.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:books.owl="http://127.0.0.1:3001/ontology/books.owl"
+     xmlns:simplified_sumo.owl="http://127.0.0.1:3001/ontology/simplified_sumo.owl">
+    <owl:Ontology rdf:about="http://127.0.0.1:3001/ontology/books.owl">
+        <owl:imports rdf:resource="http://127.0.0.1:3001/ontology/simplified_sumo.owl"/>
+        <rdfs:comment>An ontology containing information about books</rdfs:comment>
+        <rdfs:label>Book Ontology</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#contains"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#datePublished -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#datePublished"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#hasGenre"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#hasGrade -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#hasGrade"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#hasName"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#hasSize"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#hasType"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#isNotReserved -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#isNotReserved">
+        <rdfs:domain rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book"/>
+        <rdfs:comment>The given book is available in the library.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#isReserved -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#isReserved">
+        <rdfs:domain rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book"/>
+        <rdfs:comment>A reservation has been made by a person for a book.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#isTitled -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#isTitled"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#publishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#publishedBy"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#timePublished -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#timePublished"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1:3001/ontology/books.owl#writtenBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#A -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#A">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Article -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Article">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Author -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Author">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#B -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#B">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Book -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Book">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Monograph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasType"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book-Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#isTitled"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Title"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#writtenBy"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Book-Type -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Book-Type"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#C -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#C">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Comic -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Comic">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#D -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#D">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Daily -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Daily">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Date -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Date"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Encyclopedia -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Encyclopedia">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasSize"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Very-Large"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Every-Year -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Every-Year">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#ExpressionContent -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#ExpressionContent"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#F -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#F">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#FantansyNovel -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#FantansyNovel">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Novel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Fantasy -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Genre -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Genre"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Grade -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Hard-Cover -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Hard-Cover">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book-Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Journals -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Journals">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Serial-Publications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Large -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Large">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#LinguisticExpression -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#LinguisticExpression">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#ExpressionContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Magazine -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Magazine">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Serial-Publications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Medium -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Medium">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Small"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Monograph -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Monograph">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Publication"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#timePublished"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Once"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Monthly -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Monthly">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Newspaper -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Newspaper">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Serial-Publications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Novel -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Novel">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasSize"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Once -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Once">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Paper-Back -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Paper-Back">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book-Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Person -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Person"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#PrintedMaterial -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#PrintedMaterial">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/simplified_sumo.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Publication -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Publication">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#PrintedMaterial"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#datePublished"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#publishedBy"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Publisher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Publisher -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Publisher">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Reader -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Reader">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Recommanded-Science-Fiction-Short-Story -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Recommanded-Science-Fiction-Short-Story">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Recommended-Short-Story"/>
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Science-Fiction-Short-Story"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Recommended-Short-Story -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Recommended-Short-Story">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#ReviewedObject"/>
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Short-Story"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasGrade"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Review -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Review"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#ReviewedObject -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#ReviewedObject">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasGrade"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Grade"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#RomanticNovel -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#RomanticNovel">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Novel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Science-Fiction -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Science-Fiction">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Science-Fiction-Novel -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Science-Fiction-Novel">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Novel"/>
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#ScienceFictionBook"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasGenre"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Science-Fiction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Science-Fiction-Short-Story -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Science-Fiction-Short-Story">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Short-Story"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasGenre"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Science-Fiction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#ScienceFictionBook -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#ScienceFictionBook">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Serial-Publications -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Serial-Publications">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Publication"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#contains"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Article"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Short-Story -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Short-Story">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Book"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasSize"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Small"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#hasType"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Paper-Back"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Size -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Size"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Small -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Small">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Text -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Text">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#LinguisticExpression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://127.0.0.1:3001/ontology/books.owl#writtenBy"/>
+                <owl:allValuesFrom rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Thesis -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Thesis">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#PrintedMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Time -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Time"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Title -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Title">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#LinguisticExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#User -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#User">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#UserReview -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#UserReview">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Very-Large -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Very-Large">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Very-Small -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Very-Small">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/books.owl#Weekly -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/books.owl#Weekly">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1:3001/ontology/books.owl#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/simplified_sumo.owl#CorpuscularObject -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/simplified_sumo.owl#CorpuscularObject"/>
+    
+
+
+    <!-- http://127.0.0.1:3001/ontology/simplified_sumo.owl#Object -->
+
+    <owl:Class rdf:about="http://127.0.0.1:3001/ontology/simplified_sumo.owl#Object"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
