@@ -64,7 +64,7 @@ def join_all_characters():
 
     # Perform left join
     characters = df.merge(df_gender, on='characterName', how='left')
-    characters.to_excel("characters.xlsx")
+    #characters.to_excel("characters.xlsx")
     return characters
 
 def join_characters():
@@ -231,6 +231,28 @@ with onto:
             # Add the isParentOf relationship if not already present
             if char_obj not in char.isParentOf:
                 char.isParentOf.append(char_obj)
+        
+        ## ---- KilledBy
+        # Process KilledBy (assumed to be a list) and not str        
+        if not isinstance(row["killedBy"],str) and isinstance(row["killedBy"],(list,tuple)):
+            
+            for obj_i in row["killedBy"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the iskilledBy relationship if not already present
+                if char_obj not in char.killedBy:
+                    char.killedBy.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["killedBy"]) and isinstance(row["killedBy"],str):
+                
+           
+            char_obj = search_or_create_character(row["killedBy"],df)
+            # Add the killedBy relationship if not already present
+            if char_obj not in char.killedBy:
+                char.killedBy.append(char_obj)
+        
         
         #if i >= 10:
         #    break
