@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology/"
+     xml:base="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#belongsToHouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#belongsToHouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#guardedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#guardedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasAllegianceTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasAllegianceTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isAdvisorTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isAdvisorTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isChildOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isSiblingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isSpouseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#isSpouseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#killed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#killed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#killedBy"/>
+        <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+        <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#killedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#killedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+        <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#occursInPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#occursInPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#ownsObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#ownsObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#residesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#residesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#rules -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#rules">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/GameOfThronesOntology#Castle -->
+
+    <owl:Class rdf:about="http://example.com/GameOfThronesOntology#Castle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/GameOfThronesOntology#Character -->
+
+    <owl:Class rdf:about="http://example.com/GameOfThronesOntology#Character"/>
+    
+
+
+    <!-- http://example.com/GameOfThronesOntology#City -->
+
+    <owl:Class rdf:about="http://example.com/GameOfThronesOntology#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/GameOfThronesOntology#House -->
+
+    <owl:Class rdf:about="http://example.com/GameOfThronesOntology#House"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Desert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Desert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Female">
+        <rdfs:subClassOf rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Island -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Island">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Kingdom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Kingdom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Male">
+        <rdfs:subClassOf rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mountain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mountain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#River -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#River">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Sea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Sea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Arryn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Arryn">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Baratheon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Baratheon">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Bolton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Bolton">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Frey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Frey">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Greyjoy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Greyjoy">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Lannister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Lannister">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Martell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Martell">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mormont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mormont">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Stark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Stark">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Targaryen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Targaryen">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Tarly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Tarly">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Tully -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Tully">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Tyrell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Tyrell">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Umber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Umber">
+        <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#Castle"/>
+            <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Continent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Desert"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Forest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Island"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Kingdom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mountain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#River"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Sea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#Character"/>
+            <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#House"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Object"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
