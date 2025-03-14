@@ -253,6 +253,28 @@ with onto:
             if char_obj not in char.killedBy:
                 char.killedBy.append(char_obj)
         
+        ## ---- Killed
+        # Process Killed (assumed to be a list) and not str        
+        if not isinstance(row["killed"],str) and isinstance(row["killed"],(list,tuple)):
+            
+            for obj_i in row["killed"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the iskilled relationship if not already present
+                if char_obj not in char.killed:
+                    char.killed.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["killed"]) and isinstance(row["killed"],str):
+                
+           
+            char_obj = search_or_create_character(row["killed"],df)
+            # Add the killed relationship if not already present
+            if char_obj not in char.killed:
+                char.killed.append(char_obj)
+        
+        
         
         #if i >= 10:
         #    break

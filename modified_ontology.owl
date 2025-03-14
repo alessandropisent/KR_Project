@@ -188,7 +188,6 @@
 <owl:NamedIndividual rdf:about="#Rhaenys_Targaryen">
   <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
-  <killedBy rdf:resource="#Gregor_Clegane"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jon_Snow">
@@ -198,10 +197,18 @@
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isChildOf rdf:resource="#Rhaegar_Targaryen"/>
   <isChildOf rdf:resource="#Lyanna_Stark"/>
-  <killedBy rdf:resource="#Alliser_Thorne"/>
   <killedBy rdf:resource="#Othell_Yarwyck"/>
-  <killedBy rdf:resource="#Bowen_Marsh"/>
   <killedBy rdf:resource="#Olly"/>
+  <killed rdf:resource="#Othor"/>
+  <killed rdf:resource="#Qhorin_Halfhand"/>
+  <killed rdf:resource="#Orell"/>
+  <killed rdf:resource="#Karl_Tanner"/>
+  <killed rdf:resource="#Styr"/>
+  <killed rdf:resource="#Mance_Rayder"/>
+  <killed rdf:resource="#White_Walker"/>
+  <killed rdf:resource="#Othell_Yarwyck"/>
+  <killed rdf:resource="#Olly"/>
+  <killed rdf:resource="#Lyanna_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Elia_Martell">
@@ -225,6 +232,13 @@
 <owl:NamedIndividual rdf:about="#Gregor_Clegane">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Sandor_Clegane"/>
+  <killed rdf:resource="#Rhaenys_Targaryen"/>
+  <killed rdf:resource="#Hugh_of_the_Vale"/>
+  <killed rdf:resource="#Oberyn_Martell"/>
+  <killed rdf:resource="#King's_Landing_Boaster"/>
+  <killed rdf:resource="#Faith_Militant"/>
+  <killed rdf:resource="#Missandei"/>
+  <killed rdf:resource="#Qyburn"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Aeron_Greyjoy">
@@ -247,6 +261,9 @@
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Greyjoy"/>
   <killedBy rdf:resource="#Jaime_Lannister"/>
+  <killed rdf:resource="#Obara_Sand"/>
+  <killed rdf:resource="#Nymeria_Sand"/>
+  <killed rdf:resource="#Rhaegal"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Aerys_II_Targaryen">
@@ -257,6 +274,8 @@
   <isParentOf rdf:resource="#Rhaegar_Targaryen"/>
   <isParentOf rdf:resource="#Viserys_Targaryen"/>
   <killedBy rdf:resource="#Jaime_Lannister"/>
+  <killed rdf:resource="#Brandon_Stark"/>
+  <killed rdf:resource="#Rickard_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaella_Targaryen">
@@ -274,13 +293,28 @@
   <isChildOf rdf:resource="#Rhaella_Targaryen"/>
   <isParentOf rdf:resource="#Rhaego"/>
   <killedBy rdf:resource="#Jon_Snow"/>
+  <killed rdf:resource="#Khal_Drogo"/>
+  <killed rdf:resource="#Mirri_Maz_Duur"/>
+  <killed rdf:resource="#Doreah"/>
+  <killed rdf:resource="#Xaro_Xhoan_Daxos"/>
+  <killed rdf:resource="#Khal_Rhalko"/>
+  <killed rdf:resource="#Khal_Brozho"/>
+  <killed rdf:resource="#Khal_Qorro"/>
+  <killed rdf:resource="#Khal_Forzho"/>
+  <killed rdf:resource="#Khal_Moro"/>
+  <killed rdf:resource="#Dothraki_Bloodrider_#1"/>
+  <killed rdf:resource="#Dothraki_Bloodrider_#2"/>
+  <killed rdf:resource="#Randyll_Tarly"/>
+  <killed rdf:resource="#Dickon_Tarly"/>
+  <killed rdf:resource="#Eleanor"/>
+  <killed rdf:resource="#Eleanor's_Daughter"/>
+  <killed rdf:resource="#Lord_Varys"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Viserys_Targaryen">
   <rdf:type rdf:resource="#Male"/>
   <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
-  <killedBy rdf:resource="#Khal_Drogo"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jaime_Lannister">
@@ -293,6 +327,22 @@
   <isParentOf rdf:resource="#Myrcella_Baratheon"/>
   <isParentOf rdf:resource="#Tommen_Baratheon"/>
   <killedBy rdf:resource="#Roof_collapse"/>
+  <killed rdf:resource="#Jory_Cassel"/>
+  <killed rdf:resource="#Torrhen_Karstark"/>
+  <killed rdf:resource="#Olenna_Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brandon_Stark">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Lyanna_Stark"/>
+  <isSiblingOf rdf:resource="#Eddard_Stark"/>
+  <isChildOf rdf:resource="#Rickard_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rickard_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Akho">
@@ -302,11 +352,17 @@
 
 <owl:NamedIndividual rdf:about="#Daario_Naharis">
   <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Mero"/>
+  <killed rdf:resource="#Prendahl_na_Ghezn"/>
+  <killed rdf:resource="#Oznak_zo_Pahl"/>
+  <killed rdf:resource="#Mossador"/>
+  <killed rdf:resource="#Iggo"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Alliser_Thorne">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Jon_Snow"/>
+  <killed rdf:resource="#Jon_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Alton_Lannister">
@@ -328,9 +384,16 @@
 <owl:NamedIndividual rdf:about="#Amory_Lorch">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Jaqen_H'ghar"/>
+  <killed rdf:resource="#Yoren"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jaqen_H'ghar">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#The_Tickler"/>
+  <killed rdf:resource="#Despondent_Man"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yoren">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
@@ -350,7 +413,7 @@
 <owl:NamedIndividual rdf:about="#Tyene_Sand">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Martell"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
+  <killed rdf:resource="#Maester_Caleotte"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Armeca">
@@ -383,6 +446,9 @@
   <isParentOf rdf:resource="#Sansa_Stark"/>
   <isParentOf rdf:resource="#Rickon_Stark"/>
   <killedBy rdf:resource="#Ilyn_Payne"/>
+  <killed rdf:resource="#Will"/>
+  <killed rdf:resource="#Lady"/>
+  <killed rdf:resource="#Gerold_Hightower"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Arya_Stark">
@@ -394,6 +460,20 @@
   <isSiblingOf rdf:resource="#Rickon_Stark"/>
   <isChildOf rdf:resource="#Eddard_Stark"/>
   <isChildOf rdf:resource="#Catelyn_Stark"/>
+  <killed rdf:resource="#Red_Keep_Stableboy"/>
+  <killed rdf:resource="#Frey_Soldier_#1"/>
+  <killed rdf:resource="#Polliver"/>
+  <killed rdf:resource="#Rorge"/>
+  <killed rdf:resource="#Ghita"/>
+  <killed rdf:resource="#Meryn_Trant"/>
+  <killed rdf:resource="#The_Waif"/>
+  <killed rdf:resource="#Black_Walder_Rivers"/>
+  <killed rdf:resource="#Lothar_Frey"/>
+  <killed rdf:resource="#Walder_Frey"/>
+  <killed rdf:resource="#Petyr_Baelish"/>
+  <killed rdf:resource="#The_Night_King"/>
+  <killed rdf:resource="#White_Walker"/>
+  <killed rdf:resource="#Viserion"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Robb_Stark">
@@ -402,6 +482,7 @@
   <belongsToHouse rdf:resource="#Stark"/>
   <isSiblingOf rdf:resource="#Sansa_Stark"/>
   <killedBy rdf:resource="#Roose_Bolton"/>
+  <killed rdf:resource="#Wallen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Sansa_Stark">
@@ -426,7 +507,6 @@
   <belongsToHouse rdf:resource="#Stark"/>
   <isSiblingOf rdf:resource="#Robb_Stark"/>
   <isSiblingOf rdf:resource="#Sansa_Stark"/>
-  <killedBy rdf:resource="#Ramsay_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Catelyn_Stark">
@@ -439,7 +519,75 @@
   <isParentOf rdf:resource="#Robb_Stark"/>
   <isParentOf rdf:resource="#Sansa_Stark"/>
   <isParentOf rdf:resource="#Rickon_Stark"/>
-  <killedBy rdf:resource="#Black_Walder_Rivers"/>
+  <killed rdf:resource="#Joyeuse_Erenford"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Red_Keep_Stableboy">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frey_Soldier_#1">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Polliver">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rorge">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ghita">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Meryn_Trant">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Syrio_Forel"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Waif">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black_Walder_Rivers">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+  <isChildOf rdf:resource="#Walder_Frey"/>
+  <killed rdf:resource="#Catelyn_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lothar_Frey">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+  <isChildOf rdf:resource="#Walder_Frey"/>
+  <killed rdf:resource="#Talisa_Maegyr"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Walder_Frey">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Petyr_Baelish">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Night_King">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Three-Eyed_Raven"/>
+  <killed rdf:resource="#Viserion"/>
+  <killed rdf:resource="#Theon_Greyjoy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#White_Walker">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Viserion">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Baby_Sam">
@@ -451,6 +599,8 @@
 <owl:NamedIndividual rdf:about="#Samwell_Tarly">
   <rdf:type rdf:resource="#Male"/>
   <isSiblingOf rdf:resource="#Talla_Tarly"/>
+  <killed rdf:resource="#White_Walker"/>
+  <killed rdf:resource="#Thenn_Warg"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gilly">
@@ -467,7 +617,8 @@
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Greyjoy"/>
   <isSiblingOf rdf:resource="#Yara_Greyjoy"/>
-  <killedBy rdf:resource="#The_Night_King"/>
+  <killed rdf:resource="#Bolton_Soldier"/>
+  <killed rdf:resource="#Harrag"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Baratheon_Guard">
@@ -494,26 +645,10 @@
   <killedBy rdf:resource="#Wights"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Brandon_Stark">
-  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
-  <belongsToHouse rdf:resource="#Stark"/>
-  <isSiblingOf rdf:resource="#Lyanna_Stark"/>
-  <isSiblingOf rdf:resource="#Eddard_Stark"/>
-  <isChildOf rdf:resource="#Rickard_Stark"/>
-  <killedBy rdf:resource="#Aerys_II_Targaryen"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Lyanna_Stark">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Stark"/>
   <isChildOf rdf:resource="#Rickard_Stark"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Rickard_Stark">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Stark"/>
-  <killedBy rdf:resource="#Aerys_II_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wights">
@@ -530,6 +665,15 @@
   <rdf:type rdf:resource="#Male"/>
   <isSiblingOf rdf:resource="#Gregor_Clegane"/>
   <killedBy rdf:resource="#Sandor_Clegane"/>
+  <killed rdf:resource="#Kings_Landing_Rioter_#1"/>
+  <killed rdf:resource="#Kings_Landing_Rioter_#2"/>
+  <killed rdf:resource="#Kings_Landing_Rioter_#3"/>
+  <killed rdf:resource="#Frey_Soldier_#2"/>
+  <killed rdf:resource="#Lowell"/>
+  <killed rdf:resource="#Dying_Man"/>
+  <killed rdf:resource="#Steve"/>
+  <killed rdf:resource="#Riddell"/>
+  <killed rdf:resource="#Morgan"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Bianca">
@@ -545,19 +689,6 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Black_Walder_Rivers">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Frey"/>
-  <isChildOf rdf:resource="#Walder_Frey"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Walder_Frey">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Frey"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Bobono">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
@@ -565,6 +696,7 @@
 <owl:NamedIndividual rdf:about="#Bowen_Marsh">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Jon_Snow"/>
+  <killed rdf:resource="#Jon_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Brea">
@@ -574,9 +706,42 @@
 <owl:NamedIndividual rdf:about="#Brienne_of_Tarth">
   <rdf:type rdf:resource="#Female"/>
   <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+  <killed rdf:resource="#Soldier_Tom"/>
+  <killed rdf:resource="#Stannis_Baratheon"/>
+  <killed rdf:resource="#Bolton_Officer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Soldier_Tom">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stannis_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <killed rdf:resource="#Gordy"/>
+  <killed rdf:resource="#Simpson"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bolton_Officer">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Bronn">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Vardis_Egen"/>
+  <killed rdf:resource="#Matthos_Seaworth"/>
+  <killed rdf:resource="#Lead_Dornish_Guard"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vardis_Egen">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matthos_Seaworth">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lead_Dornish_Guard">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
@@ -620,6 +785,10 @@
   <isSiblingOf rdf:resource="#Lysa_Arryn"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Joyeuse_Erenford">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Catspaw_Assassin">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Summer"/>
@@ -643,18 +812,25 @@
   <isParentOf rdf:resource="#Myrcella_Baratheon"/>
   <isParentOf rdf:resource="#Tommen_Baratheon"/>
   <killedBy rdf:resource="#Roof_collapse"/>
+  <killed rdf:resource="#Lancel_Lannister"/>
+  <killed rdf:resource="#High_Sparrow"/>
+  <killed rdf:resource="#Loras_Tyrell"/>
+  <killed rdf:resource="#Mace_Tyrell"/>
+  <killed rdf:resource="#Margaery_Tyrell"/>
+  <killed rdf:resource="#Kevan_Lannister"/>
+  <killed rdf:resource="#Tyene_Sand"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tyrion_Lannister">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Lannister"/>
   <isChildOf rdf:resource="#Tywin_Lannister"/>
+  <killed rdf:resource="#Tywin_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tywin_Lannister">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Lannister"/>
-  <killedBy rdf:resource="#Tyrion_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Joffrey_Baratheon">
@@ -666,6 +842,7 @@
   <isChildOf rdf:resource="#Robert_Baratheon"/>
   <killedBy rdf:resource="#Petyr_Baelish"/>
   <killedBy rdf:resource="#Olenna_Tyrell"/>
+  <killed rdf:resource="#Ros"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Myrcella_Baratheon">
@@ -674,7 +851,6 @@
   <belongsToHouse rdf:resource="#Baratheon"/>
   <isSiblingOf rdf:resource="#Tommen_Baratheon"/>
   <isChildOf rdf:resource="#Robert_Baratheon"/>
-  <killedBy rdf:resource="#Ellaria_Sand"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tommen_Baratheon">
@@ -686,6 +862,44 @@
 
 <owl:NamedIndividual rdf:about="#Roof_collapse">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lancel_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isSiblingOf rdf:resource="#Martyn_Lannister"/>
+  <isSiblingOf rdf:resource="#Willem_Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#High_Sparrow">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Loras_Tyrell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+  <isSiblingOf rdf:resource="#Margaery_Tyrell"/>
+  <isChildOf rdf:resource="#Mace_Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mace_Tyrell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+  <isParentOf rdf:resource="#Margaery_Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Margaery_Tyrell">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kevan_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isSiblingOf rdf:resource="#Tywin_Lannister"/>
+  <isParentOf rdf:resource="#Lancel_Lannister"/>
+  <isParentOf rdf:resource="#Martyn_Lannister"/>
+  <isParentOf rdf:resource="#Willem_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Child_of_the_Forest">
@@ -707,12 +921,106 @@
 
 <owl:NamedIndividual rdf:about="#Karl_Tanner">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mero">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prendahl_na_Ghezn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oznak_zo_Pahl">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mossador">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Son_of_the_Harpy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Iggo">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaego">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Mirri_Maz_Duur"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Drogo">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Rhaego"/>
+  <killed rdf:resource="#Viserys_Targaryen"/>
+  <killed rdf:resource="#Mago"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mirri_Maz_Duur">
+  <rdf:type rdf:resource="#Female"/>
+  <killed rdf:resource="#Rhaego"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Doreah">
+  <rdf:type rdf:resource="#Female"/>
+  <killed rdf:resource="#Irri"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Xaro_Xhoan_Daxos">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Rhalko">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Brozho">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Qorro">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Forzho">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Moro">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#1">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#2">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Randyll_Tarly">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Samwell_Tarly"/>
+  <isParentOf rdf:resource="#Talla_Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dickon_Tarly">
+  <rdf:type rdf:resource="#Male"/>
+  <isSiblingOf rdf:resource="#Samwell_Tarly"/>
+  <isSiblingOf rdf:resource="#Talla_Tarly"/>
+  <isChildOf rdf:resource="#Randyll_Tarly"/>
+  <isChildOf rdf:resource="#Melessa_Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eleanor">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eleanor's_Daughter">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lord_Varys">
+  <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Dagmer_Cleftjaw">
@@ -728,30 +1036,9 @@
   <isParentOf rdf:resource="#Matthos_Seaworth"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Matthos_Seaworth">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Bronn"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Dickon_Tarly">
-  <rdf:type rdf:resource="#Male"/>
-  <isSiblingOf rdf:resource="#Samwell_Tarly"/>
-  <isSiblingOf rdf:resource="#Talla_Tarly"/>
-  <isChildOf rdf:resource="#Randyll_Tarly"/>
-  <isChildOf rdf:resource="#Melessa_Tarly"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Talla_Tarly">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Tarly"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Randyll_Tarly">
-  <rdf:type rdf:resource="#Male"/>
-  <isParentOf rdf:resource="#Samwell_Tarly"/>
-  <isParentOf rdf:resource="#Talla_Tarly"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Melessa_Tarly">
@@ -778,11 +1065,6 @@
   <killedBy rdf:resource="#Petyr_Baelish"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Petyr_Baelish">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Doran_Martell">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Martell"/>
@@ -796,34 +1078,22 @@
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Martell"/>
   <isParentOf rdf:resource="#Tyene_Sand"/>
-  <killedBy rdf:resource="#Gregor_Clegane"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Trystane_Martell">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Martell"/>
-  <killedBy rdf:resource="#Obara_Sand"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ellaria_Sand">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Martell"/>
   <isParentOf rdf:resource="#Tyene_Sand"/>
+  <killed rdf:resource="#Myrcella_Baratheon"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Doreah">
+<owl:NamedIndividual rdf:about="#Irri">
   <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#1">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#2">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Drennan">
@@ -841,20 +1111,31 @@
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isSiblingOf rdf:resource="#Rhaegal"/>
   <isSiblingOf rdf:resource="#Viserion"/>
+  <killed rdf:resource="#Pyat_Pree"/>
+  <killed rdf:resource="#Kraznys_mo_Nakloz"/>
+  <killed rdf:resource="#Zalla"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaegal">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isSiblingOf rdf:resource="#Viserion"/>
-  <killedBy rdf:resource="#Euron_Greyjoy"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Viserion">
+<owl:NamedIndividual rdf:about="#Pyat_Pree">
   <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Targaryen"/>
-  <killedBy rdf:resource="#The_Night_King"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
+  <killedBy rdf:resource="#Viserion"/>
+  <killedBy rdf:resource="#Rhaegal"/>
+  <killed rdf:resource="#Spice_King"/>
+  <killed rdf:resource="#Silk_King"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kraznys_mo_Nakloz">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zalla">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Drowned_Priest">
@@ -862,6 +1143,22 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ilyn_Payne">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Will">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lady">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Nymeria"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+  <isSiblingOf rdf:resource="#Shaggydog"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gerold_Hightower">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
@@ -878,6 +1175,19 @@
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Obara_Sand">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isChildOf rdf:resource="#Oberyn_Martell"/>
+  <killed rdf:resource="#Trystane_Martell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nymeria_Sand">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isChildOf rdf:resource="#Oberyn_Martell"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Faceless_Man">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
@@ -891,12 +1201,6 @@
   <killedBy rdf:resource="#White_Walker"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#White_Walker">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Samwell_Tarly"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Gatins">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Sandor_Clegane"/>
@@ -906,6 +1210,8 @@
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Baratheon"/>
   <isChildOf rdf:resource="#Robert_Baratheon"/>
+  <killed rdf:resource="#Kevin_Eldon"/>
+  <killed rdf:resource="#Laurence_Spellman"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Robert_Baratheon">
@@ -917,9 +1223,12 @@
   <killedBy rdf:resource="#Boar"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Gerold_Hightower">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Eddard_Stark"/>
+<owl:NamedIndividual rdf:about="#Kevin_Eldon">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Laurence_Spellman">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ghost">
@@ -930,6 +1239,7 @@
   <isSiblingOf rdf:resource="#Nymeria"/>
   <isSiblingOf rdf:resource="#Summer"/>
   <isSiblingOf rdf:resource="#Shaggydog"/>
+  <killed rdf:resource="#Rast"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Grey_Wind">
@@ -940,15 +1250,7 @@
   <isSiblingOf rdf:resource="#Summer"/>
   <isSiblingOf rdf:resource="#Shaggydog"/>
   <killedBy rdf:resource="#Frey_Crossbowmen"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Lady">
-  <rdf:type rdf:resource="#Female"/>
-  <belongsToHouse rdf:resource="#Stark"/>
-  <isSiblingOf rdf:resource="#Nymeria"/>
-  <isSiblingOf rdf:resource="#Summer"/>
-  <isSiblingOf rdf:resource="#Shaggydog"/>
-  <killedBy rdf:resource="#Eddard_Stark"/>
+  <killed rdf:resource="#Rennick"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Nymeria">
@@ -963,6 +1265,10 @@
   <belongsToHouse rdf:resource="#Stark"/>
   <isSiblingOf rdf:resource="#Summer"/>
   <killedBy rdf:resource="#Smalljon_Umber"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rast">
+  <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Goldcloak">
@@ -1031,6 +1337,26 @@
   <killedBy rdf:resource="#Tormund_Giantsbane"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Hugh_of_the_Vale">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King's_Landing_Boaster">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Faith_Militant">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Missandei">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Qyburn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Greizhen_mo_Ullhor">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Unsullied"/>
@@ -1043,20 +1369,41 @@
 <owl:NamedIndividual rdf:about="#Grenn">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Mag_the_Mighty"/>
+  <killed rdf:resource="#Mag_the_Mighty"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mag_the_Mighty">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Grenn"/>
   <killedBy rdf:resource="#Donnel_Hill"/>
   <killedBy rdf:resource="#Cooper"/>
+  <killed rdf:resource="#Donnel_Hill"/>
+  <killed rdf:resource="#Cooper"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Frey_Crossbowmen">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Rennick">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Grey_Worm">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Belicho_Paenymion"/>
+  <killed rdf:resource="#Razdal_mo_Eraz"/>
+  <killed rdf:resource="#Harry_Strickland"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Belicho_Paenymion">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Razdal_mo_Eraz">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Strickland">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
@@ -1071,11 +1418,7 @@
 <owl:NamedIndividual rdf:about="#Rickard_Karstark">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Robb_Stark"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Harry_Strickland">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Grey_Worm"/>
+  <killed rdf:resource="#Willem_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#High_Priestess">
@@ -1091,11 +1434,6 @@
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#High_Sparrow">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Hizdahr_zo_Loraq">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Sons_of_the_Harpy"/>
@@ -1104,6 +1442,11 @@
 <owl:NamedIndividual rdf:about="#Hodor">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Wights"/>
+  <killed rdf:resource="#Locke"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Locke">
+  <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Hot_Pie">
@@ -1118,20 +1461,11 @@
 
 <owl:NamedIndividual rdf:about="#Meera_Reed">
   <rdf:type rdf:resource="#Female"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Hugh_of_the_Vale">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Gregor_Clegane"/>
+  <killed rdf:resource="#White_Walker"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Illyrio_Mopatis">
   <rdf:type rdf:resource="#Male"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Irri">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Doreah"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Izembaro">
@@ -1147,9 +1481,37 @@
   <killedBy rdf:resource="#White_Walker"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Jory_Cassel">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Torrhen_Karstark">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Olenna_Tyrell">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+  <isParentOf rdf:resource="#Mace_Tyrell"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Janos_Slynt">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Jon_Snow"/>
+  <killed rdf:resource="#Barra"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Barra">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Tickler">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Tortured_Prisoner"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Despondent_Man">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jaqen's_Disguise">
@@ -1171,22 +1533,17 @@
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Mormont"/>
   <killedBy rdf:resource="#Wights"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Rast">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Ghost"/>
+  <killed rdf:resource="#Qotho"/>
+  <killed rdf:resource="#Norvoshi_Pit_Fighter"/>
+  <killed rdf:resource="#Meereenese_Champion"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jhiqui">
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Olenna_Tyrell">
+<owl:NamedIndividual rdf:about="#Ros">
   <rdf:type rdf:resource="#Female"/>
-  <belongsToHouse rdf:resource="#Tyrell"/>
-  <isParentOf rdf:resource="#Mace_Tyrell"/>
-  <killedBy rdf:resource="#Jaime_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jon_Arryn">
@@ -1196,26 +1553,50 @@
 
 <owl:NamedIndividual rdf:about="#Othell_Yarwyck">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Olly">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
+  <killed rdf:resource="#Ygritte"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Othor">
+  <rdf:type rdf:resource="#Male"/>
+  <killedBy rdf:resource="#White_Walker"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Qhorin_Halfhand">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Orell">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Styr">
+  <rdf:type rdf:resource="#Male"/>
+  <killed rdf:resource="#Olly's_Mother"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mance_Rayder">
+  <rdf:type rdf:resource="#Male"/>
+  <killedBy rdf:resource="#Melisandre"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jonos_Bracken">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Jory_Cassel">
+<owl:NamedIndividual rdf:about="#Qotho">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jaime_Lannister"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Joyeuse_Erenford">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Catelyn_Stark"/>
+<owl:NamedIndividual rdf:about="#Norvoshi_Pit_Fighter">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Meereenese_Champion">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Karsi">
@@ -1250,24 +1631,6 @@
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Kevan_Lannister">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Lannister"/>
-  <isSiblingOf rdf:resource="#Tywin_Lannister"/>
-  <isParentOf rdf:resource="#Lancel_Lannister"/>
-  <isParentOf rdf:resource="#Martyn_Lannister"/>
-  <isParentOf rdf:resource="#Willem_Lannister"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Lancel_Lannister">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Lannister"/>
-  <isSiblingOf rdf:resource="#Martyn_Lannister"/>
-  <isSiblingOf rdf:resource="#Willem_Lannister"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Martyn_Lannister">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Lannister"/>
@@ -1278,23 +1641,10 @@
 <owl:NamedIndividual rdf:about="#Willem_Lannister">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Lannister"/>
-  <killedBy rdf:resource="#Rickard_Karstark"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Khal_Drogo">
+<owl:NamedIndividual rdf:about="#Mago">
   <rdf:type rdf:resource="#Male"/>
-  <isParentOf rdf:resource="#Rhaego"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Khal_Moro">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Khal_Rhalko">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#King_Joffrey_Baratheon_Dwarf">
@@ -1349,11 +1699,6 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Kraznys_mo_Nakloz">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Drogon"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Kurleket">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
   <killedBy rdf:resource="#Mountain_Clansman"/>
@@ -1366,11 +1711,6 @@
 <owl:NamedIndividual rdf:about="#Lady_Crane">
   <rdf:type rdf:resource="#Female"/>
   <killedBy rdf:resource="#The_Waif"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#The_Waif">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lannister_Captain">
@@ -1387,11 +1727,6 @@
 
 <owl:NamedIndividual rdf:about="#Lannister_Scout">
   <rdf:type rdf:resource="#Male"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Lead_Dornish_Guard">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Bronn"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Leaf">
@@ -1436,11 +1771,6 @@
   <killedBy rdf:resource="#White_Walker"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Locke">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Hodor"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Lollys_Stokeworth">
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
@@ -1448,32 +1778,6 @@
 <owl:NamedIndividual rdf:about="#Lommy_Greenhands">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Polliver"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Polliver">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Loras_Tyrell">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Tyrell"/>
-  <isSiblingOf rdf:resource="#Margaery_Tyrell"/>
-  <isChildOf rdf:resource="#Mace_Tyrell"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Margaery_Tyrell">
-  <rdf:type rdf:resource="#Female"/>
-  <belongsToHouse rdf:resource="#Tyrell"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Mace_Tyrell">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Tyrell"/>
-  <isParentOf rdf:resource="#Margaery_Tyrell"/>
-  <killedBy rdf:resource="#Cersei_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lord_Galbart_Glover">
@@ -1484,20 +1788,12 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Lord_Varys">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Lordsport_Dockhand">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Lothar_Frey">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Frey"/>
-  <isChildOf rdf:resource="#Walder_Frey"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
+<owl:NamedIndividual rdf:about="#Talisa_Maegyr">
+  <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Loyal_Night's_Watchman_#1">
@@ -1512,12 +1808,11 @@
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Mormont"/>
   <killedBy rdf:resource="#Wun_Wun"/>
+  <killed rdf:resource="#Wun_Wun"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wun_Wun">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Ramsay_Snow"/>
-  <killedBy rdf:resource="#Lyanna_Mormont"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Catelyn_Tully">
@@ -1560,11 +1855,6 @@
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Mago">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Khal_Drogo"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Male_Prostitute">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
@@ -1573,15 +1863,12 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Mance_Rayder">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Melisandre"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Melisandre">
   <rdf:type rdf:resource="#Female"/>
   <killedBy rdf:resource="#Old_Age"/>
+  <killed rdf:resource="#Renly_Baratheon"/>
+  <killed rdf:resource="#Axell_Florent"/>
+  <killed rdf:resource="#Shireen_Baratheon"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mandon_Moore">
@@ -1593,6 +1880,7 @@
 <owl:NamedIndividual rdf:about="#Podrick_Payne">
   <rdf:type rdf:resource="#Male"/>
   <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+  <killed rdf:resource="#Bolton_Soldier"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Manservant">
@@ -1619,26 +1907,30 @@
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Renly_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isSiblingOf rdf:resource="#Robert_Baratheon"/>
+  <isSiblingOf rdf:resource="#Stannis_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Axell_Florent">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shireen_Baratheon">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isChildOf rdf:resource="#Stannis_Baratheon"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Merchant_Captain">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Obara_Sand"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Obara_Sand">
-  <rdf:type rdf:resource="#Female"/>
-  <belongsToHouse rdf:resource="#Martell"/>
-  <isChildOf rdf:resource="#Oberyn_Martell"/>
-  <killedBy rdf:resource="#Euron_Greyjoy"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Mero">
+<owl:NamedIndividual rdf:about="#Syrio_Forel">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daario_Naharis"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Meryn_Trant">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mhaegen">
@@ -1653,23 +1945,12 @@
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Mirri_Maz_Duur">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Missandei">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Gregor_Clegane"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Mord">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Mossador">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daario_Naharis"/>
+<owl:NamedIndividual rdf:about="#Son_of_the_Harpy">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Musician_#1">
@@ -1708,11 +1989,6 @@
   <killedBy rdf:resource="#The_Night_King"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#The_Night_King">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Night's_Watch_Deserter">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
@@ -1729,13 +2005,6 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Nymeria_Sand">
-  <rdf:type rdf:resource="#Female"/>
-  <belongsToHouse rdf:resource="#Martell"/>
-  <isChildOf rdf:resource="#Oberyn_Martell"/>
-  <killedBy rdf:resource="#Euron_Greyjoy"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Old_Nan">
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
@@ -1744,13 +2013,15 @@
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Olyvar">
-  <rdf:type rdf:resource="#Male"/>
+<owl:NamedIndividual rdf:about="#Ygritte">
+  <rdf:type rdf:resource="#Female"/>
+  <killed rdf:resource="#Old_Man"/>
+  <killed rdf:resource="#Guymon"/>
+  <killed rdf:resource="#Mole's_Town_Whore"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Orell">
+<owl:NamedIndividual rdf:about="#Olyvar">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ornela">
@@ -1762,28 +2033,30 @@
   <belongsToHouse rdf:resource="#Bolton"/>
   <isChildOf rdf:resource="#Roose_Bolton"/>
   <killedBy rdf:resource="#Ramsay_Snow's_Hounds"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Othor">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#White_Walker"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
+  <killed rdf:resource="#Master_Torturer"/>
+  <killed rdf:resource="#Medger_Cerwyn"/>
+  <killed rdf:resource="#Lady_Cerwyn"/>
+  <killed rdf:resource="#Unidentified_Cerwyn"/>
+  <killed rdf:resource="#Old_Woman"/>
+  <killed rdf:resource="#Roose_Bolton"/>
+  <killed rdf:resource="#Rickon_Stark"/>
+  <killed rdf:resource="#Wun_Wun"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Pentoshi_Servant">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Prendahl_na_Ghezn">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daario_Naharis"/>
+<owl:NamedIndividual rdf:about="#Bolton_Soldier">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Pyat_Pree">
+<owl:NamedIndividual rdf:about="#Spice_King">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Drogon"/>
-  <killedBy rdf:resource="#Viserion"/>
-  <killedBy rdf:resource="#Rhaegal"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Silk_King">
+  <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Pypar">
@@ -1791,32 +2064,12 @@
   <killedBy rdf:resource="#Ygritte"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Ygritte">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Olly"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Qhono">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Qhorin_Halfhand">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Qotho">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jorah_Mormont"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Quaithe">
   <rdf:type rdf:resource="#Female"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Qyburn">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Gregor_Clegane"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rakharo">
@@ -1831,10 +2084,29 @@
 <owl:NamedIndividual rdf:about="#Roose_Bolton">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Bolton"/>
-  <killedBy rdf:resource="#Ramsay_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ramsay_Snow's_Hounds">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Master_Torturer">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Medger_Cerwyn">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lady_Cerwyn">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Unidentified_Cerwyn">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Old_Woman">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
@@ -1847,32 +2119,12 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Razdal_mo_Eraz">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Grey_Worm"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Red_Keep_Stableboy">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Red_Priestess">
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Renly_Baratheon">
+<owl:NamedIndividual rdf:about="#Wallen">
   <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Baratheon"/>
-  <isSiblingOf rdf:resource="#Robert_Baratheon"/>
-  <isSiblingOf rdf:resource="#Stannis_Baratheon"/>
-  <killedBy rdf:resource="#Melisandre"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Stannis_Baratheon">
-  <rdf:type rdf:resource="#Male"/>
-  <belongsToHouse rdf:resource="#Baratheon"/>
-  <killedBy rdf:resource="#Brienne_of_Tarth"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Boar">
@@ -1894,16 +2146,6 @@
   <killedBy rdf:resource="#Theon_Greyjoy"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Rorge">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Arya_Stark"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Ros">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Joffrey_Baratheon"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Roslin_Frey">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Frey"/>
@@ -1923,18 +2165,51 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Thenn_Warg">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kings_Landing_Rioter_#1">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kings_Landing_Rioter_#2">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kings_Landing_Rioter_#3">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frey_Soldier_#2">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lowell">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dying_Man">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Steve">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Riddell">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Morgan">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Selyse_Baratheon">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Baratheon"/>
   <isParentOf rdf:resource="#Shireen_Baratheon"/>
   <killedBy rdf:resource="#Selyse_Baratheon"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Shireen_Baratheon">
-  <rdf:type rdf:resource="#Female"/>
-  <belongsToHouse rdf:resource="#Baratheon"/>
-  <isChildOf rdf:resource="#Stannis_Baratheon"/>
-  <killedBy rdf:resource="#Melisandre"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Septa_Moelle">
@@ -1967,14 +2242,12 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Silk_King">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Pyat_Pree"/>
+<owl:NamedIndividual rdf:about="#Gordy">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Spice_King">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Pyat_Pree"/>
+<owl:NamedIndividual rdf:about="#Simpson">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Stark_Bannerman">
@@ -1999,19 +2272,8 @@
   <killedBy rdf:resource="#Theon_Greyjoy"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Styr">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jon_Snow"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Syrio_Forel">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Meryn_Trant"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Talisa_Maegyr">
-  <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Lothar_Frey"/>
+<owl:NamedIndividual rdf:about="#Olly's_Mother">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ternesio_Terys">
@@ -2022,14 +2284,16 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#The_Tickler">
+<owl:NamedIndividual rdf:about="#Three-Eyed_Raven">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Jaqen_H'ghar"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Thenn_Warg">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Samwell_Tarly"/>
+<owl:NamedIndividual rdf:about="#Tortured_Prisoner">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harrag">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Thin_Man">
@@ -2038,11 +2302,6 @@
 
 <owl:NamedIndividual rdf:about="#Thoros_of_Myr">
   <rdf:type rdf:resource="#Male"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Three-Eyed_Raven">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#The_Night_King"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Timett">
@@ -2065,13 +2324,12 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Vala">
-  <rdf:type rdf:resource="#Female"/>
+<owl:NamedIndividual rdf:about="#Maester_Caleotte">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Vardis_Egen">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Bronn"/>
+<owl:NamedIndividual rdf:about="#Vala">
+  <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Varly">
@@ -2084,11 +2342,6 @@
   <belongsToHouse rdf:resource="#Bolton"/>
   <belongsToHouse rdf:resource="#Frey"/>
   <killedBy rdf:resource="#Ramsay_Snow's_Hounds"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Wallen">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Robb_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Warlock">
@@ -2121,11 +2374,6 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Will">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Eddard_Stark"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Willis_Wode">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
   <killedBy rdf:resource="#Mountain_Clansman"/>
@@ -2143,18 +2391,20 @@
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Xaro_Xhoan_Daxos">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Daenerys_Targaryen"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Yezzan_zo_Qaggaz">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Yoren">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Amory_Lorch"/>
+<owl:NamedIndividual rdf:about="#Old_Man">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Guymon">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mole's_Town_Whore">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Young_Benjen_Stark">
