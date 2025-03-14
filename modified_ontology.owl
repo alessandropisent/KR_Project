@@ -419,6 +419,9 @@
   <servedBy rdf:resource="#Missandei"/>
   <servedBy rdf:resource="#Tyrion_Lannister"/>
   <isSpouseOf rdf:resource="#Khal_Drogo"/>
+  <guardedBy rdf:resource="#Drogon"/>
+  <guardedBy rdf:resource="#Rhaegal"/>
+  <guardedBy rdf:resource="#Viserion"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Viserys_Targaryen">
@@ -440,6 +443,9 @@
   <killed rdf:resource="#Jory_Cassel"/>
   <killed rdf:resource="#Torrhen_Karstark"/>
   <killed rdf:resource="#Olenna_Tyrell"/>
+  <guardianOf rdf:resource="#Aerys_II_Targaryen"/>
+  <guardianOf rdf:resource="#Robert_Baratheon"/>
+  <guardianOf rdf:resource="#Joffrey_Baratheon"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Brandon_Stark">
@@ -570,6 +576,10 @@
   <killed rdf:resource="#Will"/>
   <killed rdf:resource="#Lady"/>
   <killed rdf:resource="#Gerold_Hightower"/>
+  <guardedBy rdf:resource="#Jon_Arryn"/>
+  <guardianOf rdf:resource="#Jon_Snow"/>
+  <allies rdf:resource="#Howland_Reed"/>
+  <allies rdf:resource="#Robert_Baratheon"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Arya_Stark">
@@ -595,6 +605,7 @@
   <killed rdf:resource="#The_Night_King"/>
   <killed rdf:resource="#White_Walker"/>
   <killed rdf:resource="#Viserion"/>
+  <guardedBy rdf:resource="#Nymeria"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Robb_Stark">
@@ -624,6 +635,7 @@
   <isSiblingOf rdf:resource="#Rickon_Stark"/>
   <isChildOf rdf:resource="#Eddard_Stark"/>
   <isChildOf rdf:resource="#Catelyn_Stark"/>
+  <guardedBy rdf:resource="#Summer"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rickon_Stark">
@@ -631,6 +643,7 @@
   <belongsToHouse rdf:resource="#Stark"/>
   <isSiblingOf rdf:resource="#Robb_Stark"/>
   <isSiblingOf rdf:resource="#Sansa_Stark"/>
+  <guardedBy rdf:resource="#Shaggydog"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Catelyn_Stark">
@@ -710,6 +723,13 @@
 <owl:NamedIndividual rdf:about="#Viserion">
   <rdf:type rdf:resource="#Dragon"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nymeria">
+  <rdf:type rdf:resource="#Direwolf"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+  <isSiblingOf rdf:resource="#Shaggydog"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Baby_Sam">
@@ -829,6 +849,12 @@
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Jon_Snow"/>
   <killed rdf:resource="#Jon_Snow"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Summer">
+  <rdf:type rdf:resource="#Direwolf"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <killedBy rdf:resource="#Wights"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Brea">
@@ -954,12 +980,6 @@
   <killedBy rdf:resource="#Summer"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Summer">
-  <rdf:type rdf:resource="#Direwolf"/>
-  <belongsToHouse rdf:resource="#Stark"/>
-  <killedBy rdf:resource="#Wights"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Cersei_Lannister">
   <rdf:type rdf:resource="#Female"/>
   <rdf:type rdf:resource="#Royal"/>
@@ -1075,6 +1095,7 @@
   <isSiblingOf rdf:resource="#Stannis_Baratheon"/>
   <isParentOf rdf:resource="#Tommen_Baratheon"/>
   <killedBy rdf:resource="#Boar"/>
+  <allies rdf:resource="#Tywin_Lannister"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Child_of_the_Forest">
@@ -1218,6 +1239,22 @@
   <rdf:type rdf:resource="#Female"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Drogon">
+  <rdf:type rdf:resource="#Dragon"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isSiblingOf rdf:resource="#Rhaegal"/>
+  <isSiblingOf rdf:resource="#Viserion"/>
+  <killed rdf:resource="#Pyat_Pree"/>
+  <killed rdf:resource="#Kraznys_mo_Nakloz"/>
+  <killed rdf:resource="#Zalla"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rhaegal">
+  <rdf:type rdf:resource="#Dragon"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isSiblingOf rdf:resource="#Viserion"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Dagmer_Cleftjaw">
   <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
@@ -1296,22 +1333,6 @@
   <killedBy rdf:resource="#Ramsay_Snow"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Drogon">
-  <rdf:type rdf:resource="#Dragon"/>
-  <belongsToHouse rdf:resource="#Targaryen"/>
-  <isSiblingOf rdf:resource="#Rhaegal"/>
-  <isSiblingOf rdf:resource="#Viserion"/>
-  <killed rdf:resource="#Pyat_Pree"/>
-  <killed rdf:resource="#Kraznys_mo_Nakloz"/>
-  <killed rdf:resource="#Zalla"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Rhaegal">
-  <rdf:type rdf:resource="#Dragon"/>
-  <belongsToHouse rdf:resource="#Targaryen"/>
-  <isSiblingOf rdf:resource="#Viserion"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Pyat_Pree">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Viserion"/>
@@ -1346,10 +1367,18 @@
   <isSiblingOf rdf:resource="#Nymeria"/>
   <isSiblingOf rdf:resource="#Summer"/>
   <isSiblingOf rdf:resource="#Shaggydog"/>
+  <guardianOf rdf:resource="#Sansa_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gerold_Hightower">
   <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jon_Arryn">
+  <rdf:type rdf:resource="#Male"/>
+  <killedBy rdf:resource="#Lysa_Arryn"/>
+  <guardianOf rdf:resource="#Robert_Baratheon"/>
+  <allies rdf:resource="#Robert_Baratheon"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Eddison_Tollett">
@@ -1427,6 +1456,7 @@
   <isSiblingOf rdf:resource="#Summer"/>
   <isSiblingOf rdf:resource="#Shaggydog"/>
   <killed rdf:resource="#Rast"/>
+  <guardianOf rdf:resource="#Jon_Snow"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Grey_Wind">
@@ -1438,13 +1468,7 @@
   <isSiblingOf rdf:resource="#Shaggydog"/>
   <killedBy rdf:resource="#Frey_Crossbowmen"/>
   <killed rdf:resource="#Rennick"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Nymeria">
-  <rdf:type rdf:resource="#Direwolf"/>
-  <belongsToHouse rdf:resource="#Stark"/>
-  <isSiblingOf rdf:resource="#Summer"/>
-  <isSiblingOf rdf:resource="#Shaggydog"/>
+  <guardianOf rdf:resource="#Robb_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Shaggydog">
@@ -1713,11 +1737,6 @@
 
 <owl:NamedIndividual rdf:about="#Ros">
   <rdf:type rdf:resource="#Female"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Jon_Arryn">
-  <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Lysa_Arryn"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Othell_Yarwyck">

@@ -420,13 +420,70 @@ with onto:
                 char.isSpouseOf.append(char_obj)
         
         #### ----- guardedBy
+        # Process guardedBy (assumed to be a list) and not str        
+        if not isinstance(row["guardedBy"],str) and isinstance(row["guardedBy"],(list,tuple)):
+            
+            for obj_i in row["guardedBy"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the Spouses relationship if not already present
+                if char_obj not in char.guardedBy:
+                    char.guardedBy.append(char_obj)
         
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["guardedBy"]) and isinstance(row["guardedBy"],str):
+                
+           
+            char_obj = search_or_create_character(row["guardedBy"],df)
+            # Add the guardedBy relationship if not already present
+            if char_obj not in char.guardedBy:
+                char.guardedBy.append(char_obj)
         
         #### ----- guardianOf
+        # Process guardianOf (assumed to be a list) and not str        
+        if not isinstance(row["guardianOf"],str) and isinstance(row["guardianOf"],(list,tuple)):
+            
+            for obj_i in row["guardianOf"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the Spouses relationship if not already present
+                if char_obj not in char.guardianOf:
+                    char.guardianOf.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["guardianOf"]) and isinstance(row["guardianOf"],str):
+                
+           
+            char_obj = search_or_create_character(row["guardianOf"],df)
+            # Add the guardianOf relationship if not already present
+            if char_obj not in char.guardianOf:
+                char.guardianOf.append(char_obj)
         
         #### ----- allies
+        # Process allies (assumed to be a list) and not str        
+        if not isinstance(row["allies"],str) and isinstance(row["allies"],(list,tuple)):
+            
+            for obj_i in row["allies"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the Spouses relationship if not already present
+                if char_obj not in char.allies:
+                    char.allies.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["allies"]) and isinstance(row["allies"],str):
+                
+           
+            char_obj = search_or_create_character(row["allies"],df)
+            # Add the allies relationship if not already present
+            if char_obj not in char.allies:
+                char.allies.append(char_obj)
         
         #### ----- abductedBy
+        
         
         
         #if i >= 10:
