@@ -1,0 +1,153 @@
+# servedBy
+
+
+- nan
+- Gregor Clegane
+- Arthur Dayne
+- Jorah Mormont
+- Barristan Selmy
+- Tyrion Lannister
+- Podrick Payne
+- Missandei
+- Grey Worm
+- Jaime Lannister
+- Daario Naharis
+
+
+# marriedEngaged
+
+
+- Samwell Tarly
+- Robb Stark
+- Walda Bolton
+- Selyse Baratheon
+- Roslin Frey
+- Eddard Stark
+- Randyll Tarly
+- Catelyn Stark
+- Stannis Baratheon
+- nan
+- Brandon Stark
+- Margaery Tyrell
+- Tommen Baratheon
+- Gilly
+- Tyrion Lannister
+- Ramsay Snow
+- Talisa Maegyr
+- Roose Bolton
+- Joyeuse Erenford
+- Joffrey Baratheon
+- Jon Snow
+- Kitty Frey
+- Daenerys Targaryen
+- Petyr Baelish
+- Lollys Stokeworth
+- Elia Martell
+- Oberyn Martell
+- Aerys II Targaryen
+- Khal Drogo
+- Myrcella Baratheon
+- Bronn
+- Edmure Tully
+- Sansa Stark
+- Rhaella Targaryen
+- Melessa Tarly
+- Walder Frey
+- Ellaria Sand
+- Trystane Martell
+- Renly Baratheon
+- Ygritte
+- Rhaegar Targaryen
+- Lysa Arryn
+- Robert Baratheon
+- Lyanna Stark
+- Cersei Lannister
+
+
+# serves
+
+
+- nan
+- Daenerys Targaryen
+- Eddard Stark
+- Aerys II Targaryen
+- Stannis Baratheon
+- Renly Baratheon
+- Tywin Lannister
+- Cersei Lannister
+- Tyrion Lannister
+- Brienne of Tarth
+- Doran Martell
+- Jon Snow
+- Sansa Stark
+- Catelyn Stark
+- Bran Stark
+
+
+# guardedBy
+
+
+- nan
+- Jon Arryn
+- Rhaegal
+- Ghost
+- Grey Wind
+- Lady
+- Drogon
+- Shaggydog
+- Viserion
+- Summer
+- Eddard Stark
+- Nymeria
+
+
+# guardianOf
+
+
+- Sansa Stark
+- nan
+- Daenerys Targaryen
+- Robb Stark
+- Eddard Stark
+- Aerys II Targaryen
+- Joffrey Baratheon
+- Jon Snow
+- Robert Baratheon
+- Arya Stark
+- Bran Stark
+- Rickon Stark
+
+
+# allies
+
+
+- nan
+- Jon Arryn
+- Eddard Stark
+- Howland Reed
+- Tywin Lannister
+- Robert Baratheon
+
+
+# abductedBy
+
+
+- nan
+- Rhaegar Targaryen
+
+
+# abducted
+
+
+- nan
+- Lyanna Stark
+
+
+# sibling
+
+
+- nan
+- Aegon Targaryen
+- Jon Snow
+
+

@@ -20,8 +20,37 @@ for i in  df["houseName"] :
     else:
         #print(i)
         house.add(i) 
-print("HOUSES")
-print(house)
+#print("HOUSES")
+#print(house)
+
+allies = set()
+for i in  df["houseName"] : 
+    if isinstance(i,list):
+        for j in i:
+            #print(j)
+            allies.add(j)
+    else:
+        #print(i)
+        allies.add(i) 
+print("Allies")
+print(allies)
+
+with open("ranges.txt","w") as f:
+    for col in ["servedBy", "marriedEngaged", "serves", "guardedBy", "guardianOf", "allies", "abductedBy", "abducted", "sibling"]:
+        set_values = set()
+        for i in df[col] : 
+            if isinstance(i,list):
+                for j in i:
+                    #print(j)
+                    set_values.add(j)
+            else:
+                #print(i)
+                set_values.add(i) 
+        
+        f.write(f"# {col}\n\n\n")
+        for v in set_values:
+            f.write(f"- {v}\n")
+        f.write("\n\n")
 
 for col in df.columns:
     values = [i for i in df[col]]
@@ -61,9 +90,10 @@ def join_all_characters():
     df_gender = pd.concat([df_female,df_male], ignore_index=True)
 
     #print(df_gender.columns)
-
+    #print(f"len before merge {len(df)}")
     # Perform left join
     characters = df.merge(df_gender, on='characterName', how='left')
+    #print(f"len after {len(characters)}")
     #characters.to_excel("characters.xlsx")
     return characters
 
@@ -74,7 +104,9 @@ def join_characters():
     df_gender = df_gender.rename(columns={"characters":"characterName"})
     df_gender = df_gender.explode(column="characterName")
     #print(df_gender)
+    #print(f"len before merge {len(df)}")
     characters = df.merge(df_gender, on='characterName', how='left')
+    #print(f"len after {len(characters)}")
     characters.to_excel("characters.xlsx")
     
 
