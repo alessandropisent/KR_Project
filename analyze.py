@@ -109,8 +109,25 @@ def join_characters():
     #print(f"len after {len(characters)}")
     characters.to_excel("characters.xlsx")
     
+df_direwolfs = pd.DataFrame({"characterName":["Grey Wind", "Lady", "Nymeria", "Shaggydog", "Summer", "Ghost"]})
+df_direwolfs["type"] = "Direwolf"
 
+df_monsters = pd.DataFrame({"characterName":["Mag the Mighty Wight", "The Night King", "White Walker", "Wight Wildling Girl", "Wun Wun Wight"]})
+df_monsters["type"] = "White_Walkers"
 df = join_all_characters()
+
+df_dragons = pd.DataFrame({"characterName":["Drogon","Rhaegal","Viserion"]})
+df_dragons["type"] = "Dragon"
+
+df_types = pd.concat([df_direwolfs,df_monsters,df_dragons])
+
+# Adding wolfs, white_walkers and Dragons
+df = df.merge(df_types, on="characterName", how="left")
+
+
+#df.to_csv("characters.csv")
+
+#print(df[df["sibling"].notna()])
 
 onto = get_ontology("GameOfThrones.owl").load()
 
@@ -135,28 +152,40 @@ def search_or_create_character(name, df):
     # if there is such character in the dataframe as primary
     elif mask.any():
         
-        ## First we add the character, if it has some gender, to the corresping class
-        if row["gender"] == "male":
-            char = onto.Male(character_name_underscore)
-        elif row["gender"] == "female":
-            char = onto.Female(character_name_underscore)
+        if pd.isna(row["type"]):
         
-        if row["royal"] == True:
-            if char:
-                char.is_a.append(onto.Royal)
-            else:
-                char = onto.Royal(character_name_underscore)
+            ## First we add the character, if it has some gender, to the corresping class
+            if row["gender"] == "male":
+                char = onto.Male(character_name_underscore)
+            elif row["gender"] == "female":
+                char = onto.Female(character_name_underscore)
+            
+            if row["royal"] == True:
+                if char:
+                    char.is_a.append(onto.Royal)
+                else:
+                    char = onto.Royal(character_name_underscore)
+            
+            if row["kingsguard"] == True:
+                if char:
+                    char.is_a.append(onto.MemberOfKingsGuard)
+                else:
+                    char = onto.MemberOfKingsGuard(character_name_underscore)
         
-        if row["kingsguard"] == True:
-            if char:
-                char.is_a.append(onto.MemberOfKingsGuard)
-            else:
-                char = onto.MemberOfKingsGuard(character_name_underscore)
+        elif row["type"] == "Direwolf":
+            char = onto.Direwolf(character_name_underscore)
+        elif row["type"] == "Dragon":
+            char = onto.Dragon(character_name_underscore)
+        elif row["type"] == "White_Walkers":
+            char = onto.White_Walker(character_name_underscore)
+            
+        
             
     # if i need i add it to characters generic    
     if not char:
-        Character = onto.search_one(iri="*Character")
-        char = Character(character_name_underscore)
+        #Character = onto.search_one(iri="*Character")
+        #char = Character(character_name_underscore)
+        char = onto.Person(character_name_underscore)
     
     return char
 
@@ -218,6 +247,27 @@ with onto:
                 
            
             sibling_obj = search_or_create_character(row["siblings"],df)
+            # Add the isSiblingOf relationship if not already present
+            if sibling_obj not in char.isSiblingOf:
+                char.isSiblingOf.append(sibling_obj)
+        
+        ### ---- Siblings 
+        # Process sibling (assumed to be a list) and not str        
+        if not isinstance(row["sibling"],str) and isinstance(row["sibling"],(list,tuple)):
+            
+            for sibling in row["sibling"]:
+                
+                sibling_obj = search_or_create_character(sibling,df)
+                
+                # Add the isSiblingOf relationship if not already present
+                if sibling_obj not in char.isSiblingOf:
+                    char.isSiblingOf.append(sibling_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["sibling"]) and isinstance(row["sibling"],str):
+                
+           
+            sibling_obj = search_or_create_character(row["sibling"],df)
             # Add the isSiblingOf relationship if not already present
             if sibling_obj not in char.isSiblingOf:
                 char.isSiblingOf.append(sibling_obj)
@@ -306,6 +356,77 @@ with onto:
             if char_obj not in char.killed:
                 char.killed.append(char_obj)
         
+        #### ----- ServedBy
+        # Process ServedBy (assumed to be a list) and not str        
+        if not isinstance(row["servedBy"],str) and isinstance(row["servedBy"],(list,tuple)):
+            
+            for obj_i in row["servedBy"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the servedBy relationship if not already present
+                if char_obj not in char.servedBy:
+                    char.servedBy.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["servedBy"]) and isinstance(row["servedBy"],str):
+                
+           
+            char_obj = search_or_create_character(row["servedBy"],df)
+            # Add the servedBy relationship if not already present
+            if char_obj not in char.servedBy:
+                char.servedBy.append(char_obj)
+        
+        #### ----- serves
+        # Process Serves (assumed to be a list) and not str        
+        if not isinstance(row["serves"],str) and isinstance(row["serves"],(list,tuple)):
+            
+            for obj_i in row["serves"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the serves relationship if not already present
+                if char_obj not in char.serves:
+                    char.serves.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["serves"]) and isinstance(row["serves"],str):
+                
+           
+            char_obj = search_or_create_character(row["serves"],df)
+            # Add the serves relationship if not already present
+            if char_obj not in char.serves:
+                char.serves.append(char_obj)
+        
+        #### ----- marriedEngaged
+        # Process Spouses (assumed to be a list) and not str        
+        if not isinstance(row["marriedEngaged"],str) and isinstance(row["marriedEngaged"],(list,tuple)):
+            
+            for obj_i in row["marriedEngaged"]:
+                
+                char_obj = search_or_create_character(obj_i,df)
+                
+                # Add the Spouses relationship if not already present
+                if char_obj not in char.isSpouseOf:
+                    char.isSpouseOf.append(char_obj)
+        
+        # then it is a string [since is not none]         
+        elif not pd.isna(row["marriedEngaged"]) and isinstance(row["marriedEngaged"],str):
+                
+           
+            char_obj = search_or_create_character(row["marriedEngaged"],df)
+            # Add the isSpouseOf relationship if not already present
+            if char_obj not in char.isSpouseOf:
+                char.isSpouseOf.append(char_obj)
+        
+        #### ----- guardedBy
+        
+        
+        #### ----- guardianOf
+        
+        #### ----- allies
+        
+        #### ----- abductedBy
         
         
         #if i >= 10:
