@@ -5,7 +5,7 @@
 - [x] add guardedBy - Dog / Person
 - [x] add guardianOf - Person
 - [x] add allies - Person
-- [ ] add abductedBy - Person
-- [ ] add abducted - Person
+- [x] add abductedBy - Person
+- [x] add abducted - Person
 - [x] add sibling - Person
 
