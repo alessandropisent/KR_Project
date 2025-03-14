@@ -83,7 +83,13 @@ df = join_all_characters()
 onto = get_ontology("GameOfThrones.owl").load()
 
 def search_or_create_character(name, df):
-    row = df[df["characterName"] == name].iloc[0]
+    # Create a mask to get the row for witch we have the right character
+    mask = df["characterName"] == name
+    
+    # if we have found the character in the dataframe
+    if mask.any():
+        row = df[mask].iloc[0]
+    
     #print(row)
     character_name_underscore = name.replace(" ", "_")
      # Check if character already exists in the ontology
@@ -94,22 +100,31 @@ def search_or_create_character(name, df):
         return char      
     
     # Create new character instance according to gender
-    else:
-
+    # if there is such character in the dataframe as primary
+    elif mask.any():
+        
         ## First we add the character, if it has some gender, to the corresping class
         if row["gender"] == "male":
             char = onto.Male(character_name_underscore)
         elif row["gender"] == "female":
             char = onto.Female(character_name_underscore)
         
-        if row["royal"]:
+        if row["royal"] == True:
             if char:
-                onto.
-            
+                char.is_a.append(onto.Royal)
+            else:
+                char = onto.Royal(character_name_underscore)
         
-        if not char:
-            Character = onto.search_one(iri="*Character")
-            char = Character(character_name_underscore)
+        if row["kingsguard"] == True:
+            if char:
+                char.is_a.append(onto.MemberOfKingsGuard)
+            else:
+                char = onto.MemberOfKingsGuard(character_name_underscore)
+            
+    # if i need i add it to characters generic    
+    if not char:
+        Character = onto.search_one(iri="*Character")
+        char = Character(character_name_underscore)
     
     return char
 
@@ -146,14 +161,13 @@ with onto:
         if not pd.isna(row["nickname"]):
             char.label = [row["characterName"]].append(row["nickname"])
 
-        if not pd.isna(row["houseName"]):
-            print(row["houseName"])
-            # if is not a str, it is a list of houses so we put each house to it
-            if not isinstance(row["houseName"],str):
-                for h in row["houseName"]:
+        if isinstance(row["houseName"],(list,tuple)) and not isinstance(row["houseName"],str):
+            for h in row["houseName"]:
                     char.belongsToHouse.append(onto[h])
-            else:
-                char.belongsToHouse.append(onto[row["houseName"]])
+        elif not pd.isna(row["houseName"]) and isinstance(row["houseName"],str):
+            #print(row["houseName"])
+            # if is not a str, it is a list of houses so we put each house to it
+            char.belongsToHouse.append(onto[row["houseName"]])
         
         ### ---- Siblings 
         # Process siblings (assumed to be a list) and not str        
@@ -218,8 +232,8 @@ with onto:
             if char_obj not in char.isParentOf:
                 char.isParentOf.append(char_obj)
         
-        if i >= 10:
-            break
+        #if i >= 10:
+        #    break
 
 # Changes are now part of the ontology
 onto.save("modified_ontology.owl")

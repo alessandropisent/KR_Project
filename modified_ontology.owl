@@ -12,32 +12,12 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#guardedBy">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#hasAllegianceTo">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#hasTitle">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#isAdvisorTo">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
 <owl:ObjectProperty rdf:about="#isChildOf">
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   <owl:inverseOf rdf:resource="#isParentOf"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#isParentOf">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#isLocatedIn">
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
 </owl:ObjectProperty>
 
@@ -62,22 +42,6 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
   <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#occursInPlace">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#ownsObject">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#residesIn">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#rules">
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
 </owl:ObjectProperty>
 
 <owl:Class rdf:about="http://example.com/GameOfThronesOntology#Character"/>
@@ -125,6 +89,10 @@
   <rdfs:subClassOf rdf:resource="#Place"/>
 </owl:Class>
 
+<owl:Class rdf:about="#MemberOfKingsGuard">
+  <rdfs:subClassOf rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Mountain">
   <rdfs:subClassOf rdf:resource="#Place"/>
 </owl:Class>
@@ -137,6 +105,10 @@
 
 <owl:Class rdf:about="#River">
   <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Royal">
+  <rdfs:subClassOf rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Sea">
@@ -204,7 +176,7 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Aegon_Targaryen">
-  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isSiblingOf rdf:resource="#Rhaenys_Targaryen"/>
   <isSiblingOf rdf:resource="#Jon_Snow"/>
@@ -213,19 +185,33 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaenys_Targaryen">
-  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jon_Snow">
   <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isChildOf rdf:resource="#Rhaegar_Targaryen"/>
+  <isChildOf rdf:resource="#Lyanna_Stark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Elia_Martell">
-  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isSiblingOf rdf:resource="#Oberyn_Martell"/>
+  <isParentOf rdf:resource="#Rhaenys_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaegar_Targaryen">
   <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isSiblingOf rdf:resource="#Viserys_Targaryen"/>
+  <isChildOf rdf:resource="#Rhaella_Targaryen"/>
+  <isParentOf rdf:resource="#Rhaenys_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Aeron_Greyjoy">
@@ -237,14 +223,19 @@
 
 <owl:NamedIndividual rdf:about="#Balon_Greyjoy">
   <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Greyjoy"/>
+  <isSiblingOf rdf:resource="#Euron_Greyjoy"/>
+  <isParentOf rdf:resource="#Yara_Greyjoy"/>
+  <isParentOf rdf:resource="#Theon_Greyjoy"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Euron_Greyjoy">
   <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Greyjoy"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Aerys_II_Targaryen">
-  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isSiblingOf rdf:resource="#Rhaella_Targaryen"/>
   <isParentOf rdf:resource="#Daenerys_Targaryen"/>
@@ -253,15 +244,25 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaella_Targaryen">
-  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isParentOf rdf:resource="#Viserys_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Daenerys_Targaryen">
   <rdf:type rdf:resource="#Female"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isSiblingOf rdf:resource="#Rhaegar_Targaryen"/>
+  <isSiblingOf rdf:resource="#Viserys_Targaryen"/>
+  <isChildOf rdf:resource="#Rhaella_Targaryen"/>
+  <isParentOf rdf:resource="#Rhaego"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Viserys_Targaryen">
   <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Akho">
@@ -284,6 +285,7 @@
 
 <owl:NamedIndividual rdf:about="#Harald_Karstark">
   <rdf:type rdf:resource="#Male"/>
+  <isChildOf rdf:resource="#Rickard_Karstark"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Amory_Lorch">
@@ -296,6 +298,1622 @@
 
 <owl:NamedIndividual rdf:about="#Archmaester_Marwyn">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Areo_Hotah">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Armeca">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Arthur">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Arthur_Dayne">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Arya_Stark">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Robb_Stark"/>
+  <isSiblingOf rdf:resource="#Sansa_Stark"/>
+  <isSiblingOf rdf:resource="#Bran_Stark"/>
+  <isSiblingOf rdf:resource="#Rickon_Stark"/>
+  <isChildOf rdf:resource="#Eddard_Stark"/>
+  <isChildOf rdf:resource="#Catelyn_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robb_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Sansa_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sansa_Stark">
+  <rdf:type rdf:resource="#Female"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bran_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Robb_Stark"/>
+  <isSiblingOf rdf:resource="#Sansa_Stark"/>
+  <isSiblingOf rdf:resource="#Rickon_Stark"/>
+  <isChildOf rdf:resource="#Eddard_Stark"/>
+  <isChildOf rdf:resource="#Catelyn_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rickon_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Robb_Stark"/>
+  <isSiblingOf rdf:resource="#Sansa_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eddard_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Lyanna_Stark"/>
+  <isChildOf rdf:resource="#Rickard_Stark"/>
+  <isParentOf rdf:resource="#Robb_Stark"/>
+  <isParentOf rdf:resource="#Sansa_Stark"/>
+  <isParentOf rdf:resource="#Rickon_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Catelyn_Stark">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <belongsToHouse rdf:resource="#Tully"/>
+  <isSiblingOf rdf:resource="#Lysa_Arryn"/>
+  <isSiblingOf rdf:resource="#Edmure_Tully"/>
+  <isChildOf rdf:resource="#Hoster_Tully"/>
+  <isParentOf rdf:resource="#Robb_Stark"/>
+  <isParentOf rdf:resource="#Sansa_Stark"/>
+  <isParentOf rdf:resource="#Rickon_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Baby_Sam">
+  <rdf:type rdf:resource="#Male"/>
+  <isChildOf rdf:resource="#Samwell_Tarly"/>
+  <isChildOf rdf:resource="#Gilly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samwell_Tarly">
+  <rdf:type rdf:resource="#Male"/>
+  <isSiblingOf rdf:resource="#Talla_Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gilly">
+  <rdf:type rdf:resource="#Female"/>
+  <isChildOf rdf:resource="#Craster"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yara_Greyjoy">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Greyjoy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Theon_Greyjoy">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Greyjoy"/>
+  <isSiblingOf rdf:resource="#Yara_Greyjoy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Baratheon_Guard">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Barristan_Selmy">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Benjen_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Brandon_Stark"/>
+  <isSiblingOf rdf:resource="#Lyanna_Stark"/>
+  <isSiblingOf rdf:resource="#Eddard_Stark"/>
+  <isChildOf rdf:resource="#Rickard_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brandon_Stark">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Lyanna_Stark"/>
+  <isSiblingOf rdf:resource="#Eddard_Stark"/>
+  <isChildOf rdf:resource="#Rickard_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lyanna_Stark">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isChildOf rdf:resource="#Rickard_Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rickard_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Beric_Dondarrion">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bianca">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Biter">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black_Lorren">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black_Walder_Rivers">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+  <isChildOf rdf:resource="#Walder_Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Walder_Frey">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bobono">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bowen_Marsh">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brea">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brienne_of_Tarth">
+  <rdf:type rdf:resource="#Female"/>
+  <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bronn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brother_Ray">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brynden_Tully">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tully"/>
+  <isSiblingOf rdf:resource="#Hoster_Tully"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hoster_Tully">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tully"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Captain_of_the_Archers">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lysa_Arryn">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Arryn"/>
+  <belongsToHouse rdf:resource="#Tully"/>
+  <isSiblingOf rdf:resource="#Catelyn_Tully"/>
+  <isChildOf rdf:resource="#Hoster_Tully"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Edmure_Tully">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tully"/>
+  <isSiblingOf rdf:resource="#Lysa_Arryn"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Catspaw_Assassin">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cersei_Lannister">
+  <rdf:type rdf:resource="#Female"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isSiblingOf rdf:resource="#Jaime_Lannister"/>
+  <isSiblingOf rdf:resource="#Tyrion_Lannister"/>
+  <isChildOf rdf:resource="#Tywin_Lannister"/>
+  <isParentOf rdf:resource="#Joffrey_Baratheon"/>
+  <isParentOf rdf:resource="#Myrcella_Baratheon"/>
+  <isParentOf rdf:resource="#Tommen_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jaime_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isSiblingOf rdf:resource="#Tyrion_Lannister"/>
+  <isChildOf rdf:resource="#Tywin_Lannister"/>
+  <isParentOf rdf:resource="#Joffrey_Baratheon"/>
+  <isParentOf rdf:resource="#Myrcella_Baratheon"/>
+  <isParentOf rdf:resource="#Tommen_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tyrion_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isChildOf rdf:resource="#Tywin_Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tywin_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joffrey_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isSiblingOf rdf:resource="#Myrcella_Baratheon"/>
+  <isSiblingOf rdf:resource="#Tommen_Baratheon"/>
+  <isChildOf rdf:resource="#Robert_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Myrcella_Baratheon">
+  <rdf:type rdf:resource="#Female"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isSiblingOf rdf:resource="#Tommen_Baratheon"/>
+  <isChildOf rdf:resource="#Robert_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tommen_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Child_of_the_Forest">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Citadel_Maester">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Colen_of_Greenpools">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Craster">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Daario_Naharis">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rhaego">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dagmer_Cleftjaw">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Daisy">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Davos_Seaworth">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Matthos_Seaworth"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matthos_Seaworth">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dickon_Tarly">
+  <rdf:type rdf:resource="#Male"/>
+  <isSiblingOf rdf:resource="#Samwell_Tarly"/>
+  <isSiblingOf rdf:resource="#Talla_Tarly"/>
+  <isChildOf rdf:resource="#Randyll_Tarly"/>
+  <isChildOf rdf:resource="#Melessa_Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Talla_Tarly">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Randyll_Tarly">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Samwell_Tarly"/>
+  <isParentOf rdf:resource="#Talla_Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Melessa_Tarly">
+  <rdf:type rdf:resource="#Female"/>
+  <isParentOf rdf:resource="#Samwell_Tarly"/>
+  <isParentOf rdf:resource="#Talla_Tarly"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dongo_the_Giant">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Donnel_Waynwood">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dontos_Hollard">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Doran_Martell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isSiblingOf rdf:resource="#Elia_Martell"/>
+  <isSiblingOf rdf:resource="#Oberyn_Martell"/>
+  <isParentOf rdf:resource="#Trystane_Martell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oberyn_Martell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isParentOf rdf:resource="#Tyene_Sand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Trystane_Martell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Doreah">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#1">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#2">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Drennan">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Drogon">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isSiblingOf rdf:resource="#Rhaegal"/>
+  <isSiblingOf rdf:resource="#Viserion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rhaegal">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+  <isSiblingOf rdf:resource="#Viserion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Viserion">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Drowned_Priest">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eddison_Tollett">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ellaria_Sand">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isParentOf rdf:resource="#Tyene_Sand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tyene_Sand">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eon_Hunter">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Faceless_Man">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Farlen">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gared">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gatins">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gendry">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isChildOf rdf:resource="#Robert_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robert_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#Royal"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isSiblingOf rdf:resource="#Stannis_Baratheon"/>
+  <isParentOf rdf:resource="#Tommen_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gerold_Hightower">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ghost">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Grey_Wind"/>
+  <isSiblingOf rdf:resource="#Lady"/>
+  <isSiblingOf rdf:resource="#Nymeria"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+  <isSiblingOf rdf:resource="#Shaggydog"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Grey_Wind">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Lady"/>
+  <isSiblingOf rdf:resource="#Nymeria"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+  <isSiblingOf rdf:resource="#Shaggydog"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lady">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Nymeria"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+  <isSiblingOf rdf:resource="#Shaggydog"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nymeria">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+  <isSiblingOf rdf:resource="#Shaggydog"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Summer">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shaggydog">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+  <isSiblingOf rdf:resource="#Summer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Goldcloak">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Goldcloak_#1">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Goldcloak_#2">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Grand_Maester_Pycelle">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#1">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#2">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#3">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#4">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#5">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#6">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Great_Master_#7">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Greatjon_Umber">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Smalljon_Umber"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Smalljon_Umber">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gregor_Clegane">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Greizhen_mo_Ullhor">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Grenn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Grey_Worm">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hallyne">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Handmaid">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rickard_Karstark">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Strickland">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#High_Priestess">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#High_Septon">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#High_Sparrow">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hizdahr_zo_Loraq">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hodor">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hot_Pie">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Howland_Reed">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Jojen_Reed"/>
+  <isParentOf rdf:resource="#Meera_Reed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jojen_Reed">
+  <rdf:type rdf:resource="#Male"/>
+  <isSiblingOf rdf:resource="#Meera_Reed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Meera_Reed">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hugh_of_the_Vale">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Illyrio_Mopatis">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ilyn_Payne">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Irri">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Izembaro">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jacks">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jafer_Flowers">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Janos_Slynt">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jaqen_H'ghar">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jaqen's_Disguise">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jaremy_Rykker">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jeor_Mormont">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Mormont"/>
+  <isParentOf rdf:resource="#Jorah_Mormont"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jorah_Mormont">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Mormont"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jhiqui">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jon_Arryn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jonos_Bracken">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jory_Cassel">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joyeuse_Erenford">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Karl_Tanner">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Karsi">
+  <rdf:type rdf:resource="#Female"/>
+  <isParentOf rdf:resource="#Johnna"/>
+  <isParentOf rdf:resource="#Willa"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Johnna">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Willa">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kayla">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kegs">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kevan_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isSiblingOf rdf:resource="#Tywin_Lannister"/>
+  <isParentOf rdf:resource="#Lancel_Lannister"/>
+  <isParentOf rdf:resource="#Martyn_Lannister"/>
+  <isParentOf rdf:resource="#Willem_Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lancel_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isSiblingOf rdf:resource="#Martyn_Lannister"/>
+  <isSiblingOf rdf:resource="#Willem_Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Martyn_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+  <isSiblingOf rdf:resource="#Willem_Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Willem_Lannister">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Drogo">
+  <rdf:type rdf:resource="#Male"/>
+  <isParentOf rdf:resource="#Rhaego"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Moro">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Khal_Rhalko">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King_Joffrey_Baratheon_Dwarf">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King_Renly_Baratheon_Dwarf">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King_Robb_Stark_Dwarf">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King_Stannis_Baratheon_Dwarf">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King's_Landing_Rioter_#1">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King's_Landing_Rioter_#2">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King's_Landing_Rioter_#3">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kinvara">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kitty_Frey">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Knight_of_House_Frey">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Knight_of_House_Lynderly">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kovarro">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kraznys_mo_Nakloz">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kurleket">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lady_Crane">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lannister_Captain">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lannister_Guardsman">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lannister_Messenger">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lannister_Scout">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lead_Dornish_Guard">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Leaf">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lem_Lemoncloak">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Leo_Lefford">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lhara">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Little_Bird">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Little_Bird_#3">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Little_Bird_#4">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Little_Bird_#5">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Little_Bird_#6">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Little_Bird_#7">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Loboda">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Locke">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lollys_Stokeworth">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lommy_Greenhands">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Loras_Tyrell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+  <isSiblingOf rdf:resource="#Margaery_Tyrell"/>
+  <isChildOf rdf:resource="#Mace_Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Margaery_Tyrell">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mace_Tyrell">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+  <isParentOf rdf:resource="#Margaery_Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lord_Galbart_Glover">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lord_Portan">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lord_Varys">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lordsport_Dockhand">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lothar_Frey">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+  <isChildOf rdf:resource="#Walder_Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Loyal_Night's_Watchman_#1">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Loyal_Night's_Watchman_#2">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lyanna_Mormont">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Mormont"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Catelyn_Tully">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maester_Aemon">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Targaryen"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maester_Cressen">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maester_Luwin">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maester_Wolkan">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mag_the_Mighty">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maggy">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mago">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Male_Prostitute">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Malko">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mance_Rayder">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mandon_Moore">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Manservant">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Marei">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Margaery's_Handmaiden">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Marillion">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Masha_Heddle">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Meereen_Slave_Master">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Melisandre">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Merchant_Captain">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mero">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Meryn_Trant">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mhaegen">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mikken">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mirelle">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mirri_Maz_Duur">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Missandei">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mord">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mossador">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Musician_#1">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Musician_#2">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Musician_#3">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Musician_#4">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Musician_#5">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mycah">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Myranda">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ned_Umber">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Umber"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Night's_Watch_Deserter">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Night's_Watch_Messenger">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Night's_Watch_Officer">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Night's_Watchman">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Northman_Rioter">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nymeria_Sand">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isChildOf rdf:resource="#Oberyn_Martell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Obara_Sand">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Martell"/>
+  <isChildOf rdf:resource="#Oberyn_Martell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Old_Nan">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Old_Woman_Prisoner">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Olenna_Tyrell">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Tyrell"/>
+  <isParentOf rdf:resource="#Mace_Tyrell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Olly">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Olyvar">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Orell">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ornela">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Osha">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Othell_Yarwyck">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Othor">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pentoshi_Servant">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Petyr_Baelish">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Podrick_Payne">
+  <rdf:type rdf:resource="#Male"/>
+  <rdf:type rdf:resource="#MemberOfKingsGuard"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Polliver">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prendahl_na_Ghezn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pyat_Pree">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pypar">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Qhono">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Qhorin_Halfhand">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Qotho">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Quaithe">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Qyburn">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rakharo">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ramsay_Snow">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Bolton"/>
+  <isChildOf rdf:resource="#Roose_Bolton"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roose_Bolton">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Bolton"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rast">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rattleshirt">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Razdal_mo_Eraz">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Red_Keep_Stableboy">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Red_Priestess">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Renly_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isSiblingOf rdf:resource="#Robert_Baratheon"/>
+  <isSiblingOf rdf:resource="#Stannis_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stannis_Baratheon">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robett_Glover">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robin_Arryn">
+  <rdf:type rdf:resource="#Male"/>
+  <isChildOf rdf:resource="#Jon_Arryn"/>
+  <isChildOf rdf:resource="#Lysa_Arryn"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rodrik_Cassel">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rorge">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ros">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roslin_Frey">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+  <isChildOf rdf:resource="#Walder_Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Royal_Steward">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ryger_Rivers">
+  <rdf:type rdf:resource="#Male"/>
+  <isChildOf rdf:resource="#Walder_Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Salladhor_Saan">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sandor_Clegane">
+  <rdf:type rdf:resource="#Male"/>
+  <isSiblingOf rdf:resource="#Gregor_Clegane"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Selyse_Baratheon">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isParentOf rdf:resource="#Shireen_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shireen_Baratheon">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Baratheon"/>
+  <isChildOf rdf:resource="#Stannis_Baratheon"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Septa_Moelle">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Septa_Mordane">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Septa_Scolera">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Septa_Unella">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ser_Endrew_Tarth">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shae">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shagga">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Silk_King">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Spice_King">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stark_Bannerman">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stark_Guard">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Steelshanks_Walton">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stevron_Frey">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stiv">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Styr">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Syrio_Forel">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Talisa_Maegyr">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ternesio_Terys">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Bear">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Night_King">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Tickler">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Waif">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Thenn_Warg">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Thin_Man">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Thoros_of_Myr">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Three-Eyed_Raven">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Timett">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tobho_Mott">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Todder">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tomard">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tormund_Giantsbane">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tycho_Nestoris">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vala">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vardis_Egen">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Varly">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Walda_Bolton">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Bolton"/>
+  <belongsToHouse rdf:resource="#Frey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wallen">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Warlock">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Waymar_Royce">
+  <rdf:type rdf:resource="#Male"/>
+  <isChildOf rdf:resource="#Yohn_Royce"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yohn_Royce">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wedding_Band">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#White_Walker">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#White_Walker_#2">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wight_Wildling_Girl">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wildling_Rioter">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Will">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Willis_Wode">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wine_Merchant">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Winterfell_Shepherd">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wun_Wun">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wyllis">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Xaro_Xhoan_Daxos">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yezzan_zo_Qaggaz">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ygritte">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yoren">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Benjen_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Cersei_Lannister">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Lannister"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Lyanna_Stark">
+  <rdf:type rdf:resource="#Female"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Nan">
+  <rdf:type rdf:resource="#Female"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Ned">
+  <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Ned_Stark">
+  <rdf:type rdf:resource="#Male"/>
+  <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Young_Rodrik_Cassel">
+  <rdf:type rdf:resource="#Male"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zanrush">
+  <rdf:type rdf:resource="#Male"/>
 </owl:NamedIndividual>
 
 <owl:AllDisjointClasses>
