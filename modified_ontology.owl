@@ -801,6 +801,7 @@
   <isChildOf rdf:resource="#Rickard_Stark"/>
   <isSpouseOf rdf:resource="#Robert_Baratheon"/>
   <isSpouseOf rdf:resource="#Rhaegar_Targaryen"/>
+  <abductedBy rdf:resource="#Rhaegar_Targaryen"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wights">
