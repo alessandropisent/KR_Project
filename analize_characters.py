@@ -8,8 +8,8 @@ def return_df_characters():
 
     df = pd.DataFrame(data["characters"])
 
-    print(df.columns)
-    print(len(df))
+    #print(df.columns)
+    #print(len(df))
 
     house = set()
     for i in  df["houseName"] : 
@@ -32,8 +32,8 @@ def return_df_characters():
         else:
             #print(i)
             allies.add(i) 
-    print("Allies")
-    print(allies)
+    #print("Allies")
+    #print(allies)
 
     with open("ranges.txt","w") as f:
         for col in ["servedBy", "marriedEngaged", "serves", "guardedBy", "guardianOf", "allies", "abductedBy", "abducted", "sibling"]:
@@ -55,7 +55,8 @@ def return_df_characters():
     for col in df.columns:
         values = [i for i in df[col]]
         if True in values:
-            print(f"bool : {col}")
+            #print(f"bool : {col}")
+            pass
         
     count = 0
     for index, character in df.iterrows():
@@ -64,7 +65,7 @@ def return_df_characters():
             #print(character["characterName"])
             count +=1
 
-    print(f"TOTAL OF {count} kingsguards")
+    #print(f"TOTAL OF {count} kingsguards")
 
     count = 0
     for index, character in df.iterrows():
@@ -73,7 +74,7 @@ def return_df_characters():
             #print(character["characterName"])
             count +=1
 
-    print(f"TOTAL OF {count} Royal")
+    #print(f"TOTAL OF {count} Royal")
 
     #print(df[df["characterName"]=="Jon Snow"])
         
@@ -218,14 +219,14 @@ def return_df_characters():
     
     return df
 
-df = return_df_characters()
+#df = return_df_characters()
 
-print(df)
+#print(df)
 
 
-with open("names.txt","w") as f:
-    for i,row in df.iterrows():
-        f.write(f"{i+1}. {row["characterName"]}\n")
-
-df.to_csv("characters.csv")
-
+#with open("names.txt","w") as f:
+#    for i,row in df.iterrows():
+#        f.write(f"{i+1}. {row["characterName"]}\n")
+#
+#df.to_csv("characters.csv")
+#

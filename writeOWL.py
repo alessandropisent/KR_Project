@@ -2,7 +2,7 @@ import pandas as pd
 from owlready2 import get_ontology
 from analize_characters import return_df_characters
 from analize_locations import return_df_locations
-from analize_episodes import return_location_been_df, retrun_df_weapons
+from analize_episodes import return_location_been_df, return_df_weapons
 
 df = return_df_characters()
 
@@ -18,7 +18,7 @@ def search_or_create_character(name, df):
     
     #print(row)
     character_name_underscore = name.replace(" ", "_")
-     # Check if character already exists in the ontology
+    # Check if character already exists in the ontology
     char = onto.search_one(iri="*" + character_name_underscore)
     
     # if already exit return it
@@ -67,6 +67,7 @@ def search_or_create_character(name, df):
     return char
 
 with onto:
+    print("Writing Characters")
     ##### CHARACTERS
     for i ,row in df.iterrows():
         #print(row)
@@ -404,6 +405,7 @@ with onto:
         #if i >= 10:
         #    break
 
+    print("Writing Locations")
     ##### Location
     df = return_df_locations(explode=False)
     
@@ -417,9 +419,28 @@ with onto:
             sub_loc_name_underscore = loc.replace(" ", "_")
             location_class(sub_loc_name_underscore)
     
+    print("Writing Weapons")
     #### Weapons
-    df = retrun_df_weapons()
-    for i,row
+    df = return_df_weapons()
+    for i,row in df.iterrows():
+        weapon_name = row["weapon.name"].replace(" ", "_")
+        weapon = onto.Weapon(weapon_name)
+        weapon.numberOfWielders = int(row["numberOfWielders"])
+        
+        for char_name in row["name"]:
+            character_name_underscore = char_name.replace(" ", "_")
+            char = onto.search_one(iri="*" + character_name_underscore)
+            
+            # if i find the character
+            if char:
+                char.wielded.append(weapon)
+    
+    print("Writing Locations")
+    
+    
+                
+              
+
 
     
 # Changes are now part of the ontology

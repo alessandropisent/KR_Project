@@ -37,7 +37,7 @@ def return_max_exploded_df():
     return df_final
 
 
-def retrun_df_weapons():
+def return_df_weapons():
 
     df_final = return_max_exploded_df()
     df_weapons = df_final.groupby("weapon.name")["name"].apply(set).reset_index()
@@ -45,9 +45,13 @@ def retrun_df_weapons():
 
     values_to_drop = ["Dawn", "Ice", 
                     "Valyrian Steel Dagger", 
-                    "Vigilance", "Wildfire"]
+                    "Vigilance", "Wildfire",
+                    'Dragonglass', 'Dragonglass Axe', 
+                    'Dragonglass Dagger', 'Dragonglass Staff', 
+                    'Dragonglass Sword']
 
     df_weapons = df_weapons[~df_weapons['weapon.name'].isin(values_to_drop)].reset_index(drop=True)
+    df_weapons["numberOfWielders"] = df_weapons["name"].apply(len)
     return df_weapons
 
 
@@ -63,3 +67,7 @@ def return_location_been_df():
     return df_locations
 
 
+#df = return_df_weapons()
+
+
+#print(df)

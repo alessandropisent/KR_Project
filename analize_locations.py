@@ -53,10 +53,10 @@ def return_df_locations(explode=True):
     return df
 
 
-df = return_df_locations(explode=True)
-duplicates = df[df.duplicated(subset='subLocation', keep=False)]
-
-print(df)
-print(len(df))
-print(duplicates)
-print(len(duplicates))
+#df = return_df_locations(explode=True)
+#duplicates = df[df.duplicated(subset='subLocation', keep=False)]
+#
+#print(df)
+#print(len(df))
+#print(duplicates)
+#print(len(duplicates))

@@ -50,6 +50,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#beenWieldedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#beenWieldedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#wielded"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Weapon"/>
+        <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#belongsToHouse -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#belongsToHouse">
@@ -172,6 +182,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#wielded -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#wielded">
+        <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Weapon"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -223,6 +242,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#numberOfWielders -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#numberOfWielders">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Weapon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -267,12 +296,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Dragon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mythical_Creatures"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Event -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Event"/>
     
 
 
@@ -333,6 +356,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Royal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Weapon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Weapon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Object"/>
     </owl:Class>
     
 
@@ -476,16 +507,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#Character"/>
-            <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#House"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Event"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Object"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

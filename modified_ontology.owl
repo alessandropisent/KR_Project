@@ -25,6 +25,17 @@
   <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="#beenWieldedBy">
+  <owl:inverseOf rdf:resource="#wielded"/>
+  <rdfs:domain rdf:resource="#Weapon"/>
+  <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#wielded">
+  <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+  <rdfs:range rdf:resource="#Weapon"/>
+</owl:ObjectProperty>
+
 <owl:ObjectProperty rdf:about="#belongsToHouse">
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   <owl:inverseOf rdf:resource="#hasMember"/>
@@ -123,7 +134,17 @@
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
 </owl:DatatypeProperty>
 
+<owl:DatatypeProperty rdf:about="#numberOfWielders">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Weapon"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
 <owl:Class rdf:about="http://example.com/GameOfThronesOntology#Character"/>
+
+<owl:Class rdf:about="#Weapon">
+  <rdfs:subClassOf rdf:resource="#Object"/>
+</owl:Class>
 
 <owl:Class rdf:about="http://example.com/GameOfThronesOntology#House"/>
 
@@ -142,8 +163,6 @@
 <owl:Class rdf:about="#Mythical_Creatures">
   <rdfs:subClassOf rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
 </owl:Class>
-
-<owl:Class rdf:about="#Event"/>
 
 <owl:Class rdf:about="#Female">
   <rdfs:subClassOf rdf:resource="#Person"/>
@@ -342,6 +361,8 @@
   <killed rdf:resource="#Olly"/>
   <killed rdf:resource="#Lyanna_Stark"/>
   <isSpouseOf rdf:resource="#Ygritte"/>
+  <wielded rdf:resource="#Longclaw"/>
+  <wielded rdf:resource="#Needle"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasKilled>
 </owl:NamedIndividual>
 
@@ -497,6 +518,8 @@
   <guardianOf rdf:resource="#Aerys_II_Targaryen"/>
   <guardianOf rdf:resource="#Robert_Baratheon"/>
   <guardianOf rdf:resource="#Joffrey_Baratheon"/>
+  <wielded rdf:resource="#Oathkeeper"/>
+  <wielded rdf:resource="#Widow's_Wail"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasKilled>
@@ -663,6 +686,7 @@
   <killed rdf:resource="#White_Walker"/>
   <killed rdf:resource="#Viserion"/>
   <guardedBy rdf:resource="#Nymeria"/>
+  <wielded rdf:resource="#Needle"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasKilled>
 </owl:NamedIndividual>
 
@@ -733,6 +757,7 @@
 
 <owl:NamedIndividual rdf:about="#Polliver">
   <rdf:type rdf:resource="#Male"/>
+  <wielded rdf:resource="#Needle"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -816,6 +841,8 @@
   <isSiblingOf rdf:resource="#Talla_Tarly"/>
   <killed rdf:resource="#White_Walker"/>
   <killed rdf:resource="#Thenn_Warg"/>
+  <wielded rdf:resource="#Heartsbane"/>
+  <wielded rdf:resource="#Longclaw"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -935,6 +962,7 @@
   <serves rdf:resource="#Catelyn_Stark"/>
   <serves rdf:resource="#Sansa_Stark"/>
   <serves rdf:resource="#Bran_Stark"/>
+  <wielded rdf:resource="#Oathkeeper"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -947,6 +975,7 @@
   <belongsToHouse rdf:resource="#Baratheon"/>
   <killed rdf:resource="#Gordy"/>
   <killed rdf:resource="#Simpson"/>
+  <wielded rdf:resource="#Lightbringer"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -1083,6 +1112,7 @@
 <owl:NamedIndividual rdf:about="#Tywin_Lannister">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Lannister"/>
+  <wielded rdf:resource="#Widow's_Wail"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasAllies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAllies>
@@ -1100,6 +1130,9 @@
   <killed rdf:resource="#Ros"/>
   <isSpouseOf rdf:resource="#Sansa_Stark"/>
   <isSpouseOf rdf:resource="#Margaery_Tyrell"/>
+  <wielded rdf:resource="#Hearteater"/>
+  <wielded rdf:resource="#Lion's_Tooth"/>
+  <wielded rdf:resource="#Widow's_Wail"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -1185,6 +1218,7 @@
 <owl:NamedIndividual rdf:about="#Craster">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Karl_Tanner"/>
+  <wielded rdf:resource="#Longclaw"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Karl_Tanner">
@@ -1305,6 +1339,7 @@
   <killed rdf:resource="#Belicho_Paenymion"/>
   <killed rdf:resource="#Razdal_mo_Eraz"/>
   <killed rdf:resource="#Harry_Strickland"/>
+  <wielded rdf:resource="#Widow's_Wail"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -1315,6 +1350,8 @@
   <killed rdf:resource="#Qotho"/>
   <killed rdf:resource="#Norvoshi_Pit_Fighter"/>
   <killed rdf:resource="#Meereenese_Champion"/>
+  <wielded rdf:resource="#Heartsbane"/>
+  <wielded rdf:resource="#Longclaw"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -1346,6 +1383,7 @@
   <isParentOf rdf:resource="#Matthos_Seaworth"/>
   <serves rdf:resource="#Stannis_Baratheon"/>
   <serves rdf:resource="#Jon_Snow"/>
+  <wielded rdf:resource="#Longclaw"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -1467,6 +1505,7 @@
 <owl:NamedIndividual rdf:about="#Eddison_Tollett">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Wight"/>
+  <wielded rdf:resource="#Longclaw"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wight">
@@ -1737,6 +1776,7 @@
   <belongsToHouse rdf:resource="#Mormont"/>
   <isParentOf rdf:resource="#Jorah_Mormont"/>
   <killedBy rdf:resource="#Rast"/>
+  <wielded rdf:resource="#Longclaw"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -1785,6 +1825,7 @@
   <killed rdf:resource="#Old_Man"/>
   <killed rdf:resource="#Guymon"/>
   <killed rdf:resource="#Mole's_Town_Whore"/>
+  <wielded rdf:resource="#Longclaw"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
 </owl:NamedIndividual>
 
@@ -2064,6 +2105,7 @@
 <owl:NamedIndividual rdf:about="#Rattleshirt">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Tormund_Giantsbane"/>
+  <wielded rdf:resource="#Longclaw"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tormund_Giantsbane">
@@ -2657,21 +2699,51 @@
   <rdf:type rdf:resource="#Yunkai"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Hearteater">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Heartsbane">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lightbringer">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lion's_Tooth">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Longclaw">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Needle">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oathkeeper">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</numberOfWielders>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Widow's_Wail">
+  <rdf:type rdf:resource="#Weapon"/>
+  <numberOfWielders rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</numberOfWielders>
+</owl:NamedIndividual>
+
 <owl:AllDisjointClasses>
   <owl:members rdf:parseType="Collection">
     <rdf:Description rdf:about="#Animal"/>
     <rdf:Description rdf:about="#Mythical_Creatures"/>
     <rdf:Description rdf:about="#Person"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#Character"/>
-    <rdf:Description rdf:about="http://example.com/GameOfThronesOntology#House"/>
-    <rdf:Description rdf:about="#Event"/>
-    <rdf:Description rdf:about="#Object"/>
-    <rdf:Description rdf:about="#Place"/>
   </owl:members>
 </owl:AllDisjointClasses>
 
