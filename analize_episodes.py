@@ -1,6 +1,11 @@
 import pandas as pd
 import json
 
+def is_valid_string(s):
+    if isinstance(s, str) and not any(char.isdigit() for char in s) and '#' not in s:
+        return True
+    return False
+
 
 def return_max_exploded_df():
     with open("GOT/episodes.json","r")as file:
@@ -59,15 +64,14 @@ def return_location_been_df():
     
 
     df_final = return_max_exploded_df()
-
+    df_final = df_final[df_final["name"].apply(is_valid_string)]
 
     df_locations = df_final.groupby("subLocation")["name"].apply(set).reset_index()
     df_locations["name"] = df_locations["name"].apply(list)
     
+    
     return df_locations
 
 
-#df = return_df_weapons()
-
-
-#print(df)
+#df = return_max_exploded_df()
+#print(df["name"].unique())

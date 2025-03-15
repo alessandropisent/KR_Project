@@ -50,6 +50,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#beenVisted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#beenVisted">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasBeenTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
+        <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#beenWieldedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#beenWieldedBy">
@@ -86,6 +96,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#guardianOf">
         <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
         <rdfs:range rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasBeenTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#hasBeenTo">
+        <rdfs:domain rdf:resource="http://example.com/GameOfThronesOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Place"/>
     </owl:ObjectProperty>
     
 

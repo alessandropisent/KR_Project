@@ -2,131 +2,131 @@
 
 
 - nan
-- Grey Worm
 - Podrick Payne
-- Jaime Lannister
-- Tyrion Lannister
-- Arthur Dayne
-- Gregor Clegane
-- Missandei
 - Daario Naharis
+- Jaime Lannister
+- Gregor Clegane
+- Arthur Dayne
+- Grey Worm
 - Barristan Selmy
 - Jorah Mormont
+- Missandei
+- Tyrion Lannister
 
 
 # marriedEngaged
 
 
-- Robb Stark
-- Khal Drogo
-- Lysa Arryn
-- Cersei Lannister
-- Petyr Baelish
-- Rhaegar Targaryen
-- Aerys II Targaryen
-- Eddard Stark
-- Bronn
-- nan
-- Talisa Maegyr
-- Ellaria Sand
-- Myrcella Baratheon
-- Catelyn Stark
-- Sansa Stark
-- Renly Baratheon
-- Joffrey Baratheon
-- Elia Martell
-- Tyrion Lannister
+- Daenerys Targaryen
 - Walda Bolton
-- Melessa Tarly
-- Robert Baratheon
-- Roose Bolton
-- Stannis Baratheon
-- Samwell Tarly
-- Lollys Stokeworth
-- Trystane Martell
-- Selyse Baratheon
-- Kitty Frey
-- Ramsay Snow
-- Tommen Baratheon
-- Brandon Stark
-- Walder Frey
-- Oberyn Martell
-- Rhaella Targaryen
-- Gilly
-- Lyanna Stark
 - Joyeuse Erenford
+- Sansa Stark
+- Brandon Stark
+- Rhaegar Targaryen
+- Melessa Tarly
+- Walder Frey
+- Lollys Stokeworth
+- Catelyn Stark
+- Tommen Baratheon
+- Talisa Maegyr
+- Margaery Tyrell
+- Samwell Tarly
+- nan
+- Rhaella Targaryen
+- Eddard Stark
+- Ellaria Sand
 - Randyll Tarly
-- Edmure Tully
 - Jon Snow
 - Roslin Frey
-- Daenerys Targaryen
-- Margaery Tyrell
+- Khal Drogo
+- Ramsay Snow
+- Bronn
 - Ygritte
+- Cersei Lannister
+- Joffrey Baratheon
+- Petyr Baelish
+- Myrcella Baratheon
+- Selyse Baratheon
+- Trystane Martell
+- Gilly
+- Oberyn Martell
+- Renly Baratheon
+- Robert Baratheon
+- Robb Stark
+- Tyrion Lannister
+- Roose Bolton
+- Elia Martell
+- Aerys II Targaryen
+- Lyanna Stark
+- Stannis Baratheon
+- Edmure Tully
+- Kitty Frey
+- Lysa Arryn
 
 
 # serves
 
 
+- Daenerys Targaryen
 - nan
+- Aerys II Targaryen
+- Jon Snow
+- Sansa Stark
+- Eddard Stark
+- Cersei Lannister
+- Tywin Lannister
+- Stannis Baratheon
 - Bran Stark
 - Catelyn Stark
-- Sansa Stark
-- Tywin Lannister
-- Brienne of Tarth
 - Renly Baratheon
-- Jon Snow
-- Cersei Lannister
 - Tyrion Lannister
 - Doran Martell
-- Daenerys Targaryen
-- Aerys II Targaryen
-- Stannis Baratheon
-- Eddard Stark
+- Brienne of Tarth
 
 
 # guardedBy
 
 
-- nan
-- Nymeria
-- Rhaegal
 - Grey Wind
-- Shaggydog
+- nan
+- Eddard Stark
 - Summer
 - Jon Arryn
-- Ghost
-- Drogon
+- Nymeria
+- Rhaegal
 - Lady
+- Shaggydog
+- Ghost
 - Viserion
-- Eddard Stark
+- Drogon
 
 
 # guardianOf
 
 
-- Rickon Stark
+- Daenerys Targaryen
 - nan
-- Robb Stark
-- Bran Stark
-- Sansa Stark
-- Joffrey Baratheon
 - Jon Snow
+- Aerys II Targaryen
+- Sansa Stark
+- Eddard Stark
+- Rickon Stark
+- Joffrey Baratheon
+- Bran Stark
+- Robb Stark
 - Robert Baratheon
 - Arya Stark
-- Daenerys Targaryen
-- Aerys II Targaryen
-- Eddard Stark
 
 
 # allies
 
 
 - nan
+- Eddard Stark
 - Tywin Lannister
 - Jon Arryn
-- Robert Baratheon
-- Eddard Stark
 - Howland Reed
+- Robert Baratheon
 
 
 # abductedBy
@@ -139,15 +139,15 @@
 # abducted
 
 
-- Lyanna Stark
 - nan
+- Lyanna Stark
 
 
 # sibling
 
 
+- Jon Snow
 - nan
 - Aegon Targaryen
-- Jon Snow
 
 

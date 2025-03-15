@@ -435,12 +435,25 @@ with onto:
             if char:
                 char.wielded.append(weapon)
     
+    #### LOCATION CHARACTERS HAVE BEEN
     print("Writing Locations")
+    df = return_location_been_df()
     
-    
+    for i,row in df.iterrows():
+        location_name_underscore = row["subLocation"].replace(" ", "_")
+        loc = onto.search_one(iri="*" + location_name_underscore)
+        
+        if loc:
+            for character in row["name"]:
                 
-              
-
+                character_name_underscore = character.replace(" ", "_")
+                
+                char = onto.search_one(iri="*" + character_name_underscore)
+                
+                if char:
+                    char.hasBeenTo.append(loc)
+    
+    
 
     
 # Changes are now part of the ontology
