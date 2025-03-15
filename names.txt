@@ -1,0 +1,230 @@
+1. Aegon Targaryen
+2. Aeron Greyjoy
+3. Aerys II Targaryen
+4. Akho
+5. Alliser Thorne
+6. Alton Lannister
+7. Alys Karstark
+8. Amory Lorch
+9. Areo Hotah
+10. Arthur Dayne
+11. Arya Stark
+12. Baby Sam
+13. Balon Greyjoy
+14. Baratheon Guard
+15. Barristan Selmy
+16. Benjen Stark
+17. Beric Dondarrion
+18. Biter
+19. Black Walder Rivers
+20. Bowen Marsh
+21. Brandon Stark
+22. Bran Stark
+23. Brienne of Tarth
+24. Bronn
+25. Brother Ray
+26. Brynden Tully
+27. Catelyn Stark
+28. Catspaw Assassin
+29. Cersei Lannister
+30. Craster
+31. Daario Naharis
+32. Daenerys Targaryen
+33. Davos Seaworth
+34. Dickon Tarly
+35. Dongo the Giant
+36. Dontos Hollard
+37. Doran Martell
+38. Doreah
+39. Drennan
+40. Drogon
+41. Eddard Stark
+42. Eddison Tollett
+43. Edmure Tully
+44. Ellaria Sand
+45. Elia Martell
+46. Euron Greyjoy
+47. Gared
+48. Gatins
+49. Gendry
+50. Gerold Hightower
+51. Ghost
+52. Gilly
+53. Grand Maester Pycelle
+54. Greatjon Umber
+55. Gregor Clegane
+56. Greizhen mo Ullhor
+57. Grenn
+58. Grey Wind
+59. Grey Worm
+60. Harald Karstark
+61. Harry Strickland
+62. High Septon
+63. High Sparrow
+64. Hizdahr zo Loraq
+65. Hodor
+66. Hoster Tully
+67. Howland Reed
+68. Hugh of the Vale
+69. Ilyn Payne
+70. Irri
+71. Jafer Flowers
+72. Jaime Lannister
+73. Janos Slynt
+74. Jaqen H'ghar
+75. Jeor Mormont
+76. Joffrey Baratheon
+77. Jojen Reed
+78. Jon Arryn
+79. Jon Snow
+80. Jorah Mormont
+81. Jory Cassel
+82. Joyeuse Erenford
+83. Karl Tanner
+84. Karsi
+85. Kegs
+86. Kevan Lannister
+87. Khal Drogo
+88. Khal Moro
+89. Khal Rhalko
+90. Kitty Frey
+91. Kraznys mo Nakloz
+92. Kurleket
+93. Lady
+94. Lady Crane
+95. Lancel Lannister
+96. Lead Dornish Guard
+97. Leaf
+98. Lem Lemoncloak
+99. Loboda
+100. Locke
+101. Lollys Stokeworth
+102. Lommy Greenhands
+103. Loras Tyrell
+104. Lord Varys
+105. Lothar Frey
+106. Lyanna Mormont
+107. Lyanna Stark
+108. Lysa Arryn
+109. Mace Tyrell
+110. Maester Aemon
+111. Maester Cressen
+112. Maester Luwin
+113. Mag the Mighty
+114. Mago
+115. Mance Rayder
+116. Mandon Moore
+117. Margaery Tyrell
+118. Martyn Lannister
+119. Matthos Seaworth
+120. Meera Reed
+121. Melessa Tarly
+122. Melisandre
+123. Merchant Captain
+124. Mero
+125. Meryn Trant
+126. Mirri Maz Duur
+127. Missandei
+128. Mossador
+129. Mycah
+130. Myranda
+131. Myrcella Baratheon
+132. Ned Umber
+133. Nymeria
+134. Nymeria Sand
+135. Obara Sand
+136. Oberyn Martell
+137. Olenna Tyrell
+138. Olly
+139. Orell
+140. Osha
+141. Othell Yarwyck
+142. Othor
+143. Petyr Baelish
+144. Podrick Payne
+145. Polliver
+146. Prendahl na Ghezn
+147. Pyat Pree
+148. Pypar
+149. Qhorin Halfhand
+150. Qotho
+151. Qyburn
+152. Rakharo
+153. Ramsay Snow
+154. Randyll Tarly
+155. Rast
+156. Rattleshirt
+157. Razdal mo Eraz
+158. Red Keep Stableboy
+159. Renly Baratheon
+160. Rhaegal
+161. Rhaegar Targaryen
+162. Rhaego
+163. Rhaella Targaryen
+164. Rhaenys Targaryen
+165. Rickard Karstark
+166. Rickard Stark
+167. Rickon Stark
+168. Robb Stark
+169. Robert Baratheon
+170. Robin Arryn
+171. Rodrik Cassel
+172. Roose Bolton
+173. Rorge
+174. Ros
+175. Roslin Frey
+176. Ryger Rivers
+177. Samwell Tarly
+178. Sandor Clegane
+179. Sansa Stark
+180. Selyse Baratheon
+181. Septa Mordane
+182. Shae
+183. Shaggydog
+184. Shireen Baratheon
+185. Silk King
+186. Smalljon Umber
+187. Spice King
+188. Stannis Baratheon
+189. Stevron Frey
+190. Stiv
+191. Styr
+192. Summer
+193. Syrio Forel
+194. Talisa Maegyr
+195. Talla Tarly
+196. The Night King
+197. The Tickler
+198. The Waif
+199. Thenn Warg
+200. Theon Greyjoy
+201. Three-Eyed Raven
+202. Tommen Baratheon
+203. Tormund Giantsbane
+204. Trystane Martell
+205. Tyene Sand
+206. Tyrion Lannister
+207. Tywin Lannister
+208. Vardis Egen
+209. Varly
+210. Viserion
+211. Viserys Targaryen
+212. Walda Bolton
+213. Walder Frey
+214. Wallen
+215. Waymar Royce
+216. Wight Wildling Girl
+217. Will
+218. Willem Lannister
+219. Willis Wode
+220. Wun Wun
+221. Xaro Xhoan Daxos
+222. Yara Greyjoy
+223. Ygritte
+224. Yohn Royce
+225. Yoren
+226. Young Benjen Stark
+227. Young Cersei Lannister
+228. Young Lyanna Stark
+229. Young Ned
+230. Young Ned Stark

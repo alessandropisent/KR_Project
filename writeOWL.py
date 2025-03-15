@@ -1,133 +1,8 @@
 import pandas as pd
-import json
 from owlready2 import get_ontology
+from analize_characters import return_df_characters
 
-
-with open("GOT/characters.json", "r", encoding="utf-8") as file:
-    data = json.load(file)
-
-df = pd.DataFrame(data["characters"])
-
-print(df.columns)
-print(len(df))
-
-house = set()
-for i in  df["houseName"] : 
-    if isinstance(i,list):
-        for j in i:
-            #print(j)
-            house.add(j)
-    else:
-        #print(i)
-        house.add(i) 
-#print("HOUSES")
-#print(house)
-
-allies = set()
-for i in  df["houseName"] : 
-    if isinstance(i,list):
-        for j in i:
-            #print(j)
-            allies.add(j)
-    else:
-        #print(i)
-        allies.add(i) 
-print("Allies")
-print(allies)
-
-with open("ranges.txt","w") as f:
-    for col in ["servedBy", "marriedEngaged", "serves", "guardedBy", "guardianOf", "allies", "abductedBy", "abducted", "sibling"]:
-        set_values = set()
-        for i in df[col] : 
-            if isinstance(i,list):
-                for j in i:
-                    #print(j)
-                    set_values.add(j)
-            else:
-                #print(i)
-                set_values.add(i) 
-        
-        f.write(f"# {col}\n\n\n")
-        for v in set_values:
-            f.write(f"- {v}\n")
-        f.write("\n\n")
-
-for col in df.columns:
-    values = [i for i in df[col]]
-    if True in values:
-        print(f"bool : {col}")
-    
-count = 0
-for index, character in df.iterrows():
-    
-    if character["kingsguard"] == True:
-        #print(character["characterName"])
-        count +=1
-
-print(f"TOTAL OF {count} kingsguards")
-
-count = 0
-for index, character in df.iterrows():
-    
-    if character["royal"] == True:
-        #print(character["characterName"])
-        count +=1
-
-print(f"TOTAL OF {count} Royal")
-
-#print(df[df["characterName"]=="Jon Snow"])
-    
-#df.to_excel("characters.xlsx")
-
-def join_all_characters():
-    with open("GOT/characters-gender-all.json", "r", encoding="utf-8") as file:
-        data_gender = json.load(file)
-
-    df_male = pd.DataFrame(data_gender["male"], columns=["characterName"])
-    df_male["gender"] = "male"
-    df_female = pd.DataFrame(data_gender["female"], columns=["characterName"])
-    df_female["gender"] = "female"
-    df_gender = pd.concat([df_female,df_male], ignore_index=True)
-
-    #print(df_gender.columns)
-    #print(f"len before merge {len(df)}")
-    # Perform left join
-    characters = df.merge(df_gender, on='characterName', how='left')
-    #print(f"len after {len(characters)}")
-    #characters.to_excel("characters.xlsx")
-    return characters
-
-def join_characters():
-    with open("GOT/characters-gender.json", "r", encoding="utf-8") as file:
-        data_gender = json.load(file)
-    df_gender = pd.DataFrame(data_gender["gender"])
-    df_gender = df_gender.rename(columns={"characters":"characterName"})
-    df_gender = df_gender.explode(column="characterName")
-    #print(df_gender)
-    #print(f"len before merge {len(df)}")
-    characters = df.merge(df_gender, on='characterName', how='left')
-    #print(f"len after {len(characters)}")
-    characters.to_excel("characters.xlsx")
-    
-df_direwolfs = pd.DataFrame({"characterName":["Grey Wind", "Lady", "Nymeria", "Shaggydog", "Summer", "Ghost"]})
-df_direwolfs["type"] = "Direwolf"
-
-df_monsters = pd.DataFrame({"characterName":["Mag the Mighty Wight", "The Night King", "White Walker", "Wight Wildling Girl", "Wun Wun Wight"]})
-df_monsters["type"] = "White_Walkers"
-df = join_all_characters()
-
-df_dragons = pd.DataFrame({"characterName":["Drogon","Rhaegal","Viserion"]})
-df_dragons["type"] = "Dragon"
-
-df_types = pd.concat([df_direwolfs,df_monsters,df_dragons])
-
-# Adding wolfs, white_walkers and Dragons
-df = df.merge(df_types, on="characterName", how="left")
-
-
-#df.to_csv("characters.csv")
-
-#print(df[df["sibling"].notna()])
+df = return_df_characters()
 
 onto = get_ontology("GameOfThrones.owl").load()
 
@@ -189,29 +64,8 @@ def search_or_create_character(name, df):
     
     return char
 
-"""def create_relation_funtional( subject,
-                               predicate,
-                               object_in_table,
-                               df):
-    # first check that is not NaN
-    if not pd.isna(object_in_table):
-        # If it a list of string, do a for
-        if not isinstance(object_in_table,str) and isinstance(object_in_table,(list,tuple)):
-            for obj_i in object_in_table:
-                o = search_or_create_character(obj_i,df)
-                # Add the isSiblingOf relationship if not already present
-                if o not in subject.predicate:
-                    subject.predicate.append(o)
-        #else if it is a string do onece
-        elif isinstance(object_in_table,str):
-            o = search_or_create_character(object_in_table,df)
-            # Add the isSiblingOf relationship if not already present
-            if o not in subject.predicate:
-                subject.predicate.append(o)"""
-
-
 with onto:
-    
+    ##### CHARACTERS
     for i ,row in df.iterrows():
         #print(row)
         character_name_underscore = row["characterName"].replace(" ", "_")
@@ -524,6 +378,25 @@ with onto:
             if char_obj not in char.abducted:
                 char.abducted.append(char_obj)
         
+        ###########################################
+        #### DATAPROPERITY
+        
+        #########################
+        
+        # hasChildren
+        if not pd.isna(row["hasChildren"]):
+            char.hasChildren = int(row["hasChildren"])
+        # hasSiblings
+        if not pd.isna(row["hasSiblings"]):
+            char.hasSiblings = int(row["hasSiblings"])
+        
+        # hasAllies
+        if not pd.isna(row["hasAllies"]):
+            char.hasAllies = int(row["hasAllies"])
+        
+        # hasKilled
+        if not pd.isna(row["hasKilled"]):
+            char.hasKilled = int(row["hasKilled"])
         
         
         #if i >= 10:

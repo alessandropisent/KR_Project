@@ -9,3 +9,6 @@
 - [x] add abducted - Person
 - [x] add sibling - Person
 
+# TODO
+- [ ] Add location as classes
+- [ ] Add Sublocations as 
