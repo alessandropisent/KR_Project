@@ -174,6 +174,82 @@
   <rdfs:subClassOf rdf:resource="#Mythical_Creatures"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Dorne">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Meereen">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#North_of_the_Wall">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pentos">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Qarth">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Crownlands">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Dothraki_Sea">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Iron_Islands">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_North">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Reach">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Red_Waste">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Riverlands">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Stormlands">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Vale">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Wall">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#The_Westerlands">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Valyria">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Volantis">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Yunkai">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+</owl:Class>
+
 <owl:NamedIndividual rdf:about="#Arryn">
   <rdf:type rdf:resource="http://example.com/GameOfThronesOntology#House"/>
 </owl:NamedIndividual>
@@ -2199,6 +2275,386 @@
 <owl:NamedIndividual rdf:about="#Young_Ned_Stark">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Stark"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tower_of_Joy">
+  <rdf:type rdf:resource="#Dorne"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Water_Gardens">
+  <rdf:type rdf:resource="#Dorne"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_Meereen">
+  <rdf:type rdf:resource="#Meereen"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Lands_of_Always_Winter">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cave_Outside_Wildling_Camp">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wildling_Camp">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frostfang_Mountains">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Three-Eyed_Raven">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_the_Three-Eyed_Raven">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fist_of_the_First_Men">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wildlings_March_South">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nightswatch_March_South">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hardhome">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Craster's_Keep">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Haunted_Forest">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#South_to_the_Wall">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Destroyed_Cabin">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Near_Nightfort">
+  <rdf:type rdf:resource="#North_of_the_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pentos_to_Volantis">
+  <rdf:type rdf:resource="#Pentos"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vaes_Dothrak">
+  <rdf:type rdf:resource="#Qarth"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dragonstone">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Castle_Stokeworth">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Blackwater_Bay">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#King's_Landing">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_King's_Landing">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Kingswood">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Blackwater_Rush">
+  <rdf:type rdf:resource="#The_Crownlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dothraki_Camp">
+  <rdf:type rdf:resource="#The_Dothraki_Sea"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lhazareen_Village">
+  <rdf:type rdf:resource="#The_Dothraki_Sea"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pyke">
+  <rdf:type rdf:resource="#The_Iron_Islands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lordsport">
+  <rdf:type rdf:resource="#The_Iron_Islands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Last_Hearth">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bear_Island">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#North_to_the_Wall">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Deepwood_Motte">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stannis_Baratheon's_Camp">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Wolfswood">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_Winterfell">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Winterfell">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Winter_Town">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Dreadfort">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Kingsroad_South_to_King's_Landing">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Moat_Cailin">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Neck">
+  <rdf:type rdf:resource="#The_North"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Highgarden">
+  <rdf:type rdf:resource="#The_Reach"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_Horn_Hill">
+  <rdf:type rdf:resource="#The_Reach"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Horn_Hill">
+  <rdf:type rdf:resource="#The_Reach"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oldtown">
+  <rdf:type rdf:resource="#The_Reach"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Desert">
+  <rdf:type rdf:resource="#The_Red_Waste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Twins">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Away_from_the_Twins">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_The_Twins">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Battlefield">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Village">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Kingsroad">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Forest">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Crossroads_Inn">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hollow_Hill">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#East_to_King's_Landing">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Riverrun">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Red_Fork">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_Riverrun">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#North_to_the_Red_Fork">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_Harrenhal">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harrenhal">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_Harrenhal">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#South_to_King's_Landing">
+  <rdf:type rdf:resource="#The_Riverlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tarth">
+  <rdf:type rdf:resource="#The_Stormlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Woods">
+  <rdf:type rdf:resource="#The_Stormlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Storm's_End">
+  <rdf:type rdf:resource="#The_Stormlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Runestone">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Eyrie">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_The_Eyrie">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eastern_Road">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_the_Westerlands">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_the_Inn">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Inn">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_The_Vale">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Coast_of_the_Vale">
+  <rdf:type rdf:resource="#The_Vale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nightfort">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eastwatch">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Top_of_the_Wall">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Castle_Black">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_Castle_Black">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mole's_Town">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Gift">
+  <rdf:type rdf:resource="#The_Wall"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Casterly_Rock">
+  <rdf:type rdf:resource="#The_Westerlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_Casterly_Rock">
+  <rdf:type rdf:resource="#The_Westerlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oxcross">
+  <rdf:type rdf:resource="#The_Westerlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lannister_Camp">
+  <rdf:type rdf:resource="#The_Westerlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Camp_of_the_North">
+  <rdf:type rdf:resource="#The_Westerlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#To_King's_Landing">
+  <rdf:type rdf:resource="#The_Westerlands"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Slaver's_Bay">
+  <rdf:type rdf:resource="#Valyria"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Volantis_to_Valyria">
+  <rdf:type rdf:resource="#Volantis"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outside_Yunkai">
+  <rdf:type rdf:resource="#Yunkai"/>
 </owl:NamedIndividual>
 
 <owl:AllDisjointClasses>

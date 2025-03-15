@@ -1,6 +1,8 @@
 import pandas as pd
 from owlready2 import get_ontology
 from analize_characters import return_df_characters
+from analize_locations import return_df_locations
+from analize_episodes import return_location_been_df, retrun_df_weapons
 
 df = return_df_characters()
 
@@ -402,5 +404,23 @@ with onto:
         #if i >= 10:
         #    break
 
+    ##### Location
+    df = return_df_locations(explode=False)
+    
+    for i,row in df.iterrows():
+        location_name_underscore = row["location"].replace(" ", "_")
+        # Dynamically create a subclass of Place
+        location_class = type(location_name_underscore, (onto.Place,), {})
+        location_class.is_a.append(onto.Place)
+        
+        for loc in row["subLocation"]:
+            sub_loc_name_underscore = loc.replace(" ", "_")
+            location_class(sub_loc_name_underscore)
+    
+    #### Weapons
+    df = retrun_df_weapons()
+    for i,row
+
+    
 # Changes are now part of the ontology
 onto.save("modified_ontology.owl")
