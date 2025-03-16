@@ -392,7 +392,6 @@
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
@@ -549,7 +548,6 @@
   <hasBeenTo rdf:resource="#Slaver's_Bay"/>
   <hasBeenTo rdf:resource="#The_Desert"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Vaes_Dothrak"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
@@ -593,7 +591,7 @@
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#The_Kingsroad_South_to_King's_Landing"/>
-  <hasBeenTo rdf:resource="#Brienne_of_Tarth"/>
+  <hasBeenTo rdf:resource="#Tarth"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
   <hasBeenTo rdf:resource="#To_King's_Landing"/>
@@ -883,7 +881,6 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
 </owl:NamedIndividual>
@@ -1030,7 +1027,6 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
 </owl:NamedIndividual>
@@ -1047,7 +1043,6 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Viserion">
@@ -1060,7 +1055,6 @@
   <hasBeenTo rdf:resource="#Outside_Meereen"/>
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
@@ -1232,7 +1226,6 @@
   <hasBeenTo rdf:resource="#Hollow_Hill"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Last_Hearth"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
 </owl:NamedIndividual>
@@ -1262,7 +1255,6 @@
   <hasBeenTo rdf:resource="#Red_Fork"/>
   <hasBeenTo rdf:resource="#The_Eyrie"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#To_The_Twins"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
@@ -1353,7 +1345,6 @@
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
@@ -1412,7 +1403,7 @@
   <hasBeenTo rdf:resource="#Lannister_Camp"/>
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
-  <hasBeenTo rdf:resource="#Brienne_of_Tarth"/>
+  <hasBeenTo rdf:resource="#Tarth"/>
   <hasBeenTo rdf:resource="#The_Eyrie"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
@@ -1540,7 +1531,7 @@
   <belongsToHouse rdf:resource="#Lannister"/>
   <isChildOf rdf:resource="#Tywin_Lannister"/>
   <killed rdf:resource="#Tywin_Lannister"/>
-  <hasBeenTo rdf:resource="http://anonymous"/>
+  <hasBeenTo rdf:resource="#Tower_of_Joy"/>
   <hasBeenTo rdf:resource="#Battlefield"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#Blackwater_Rush"/>
@@ -1853,7 +1844,7 @@
   <killed rdf:resource="#Razdal_mo_Eraz"/>
   <killed rdf:resource="#Harry_Strickland"/>
   <wielded rdf:resource="#Widow's_Wail"/>
-  <hasBeenTo rdf:resource="http://anonymous"/>
+  <hasBeenTo rdf:resource="#Tower_of_Joy"/>
   <hasBeenTo rdf:resource="#Casterly_Rock"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
@@ -1885,7 +1876,6 @@
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#Slaver's_Bay"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Volantis_to_Valyria"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
@@ -1893,7 +1883,7 @@
 
 <owl:NamedIndividual rdf:about="#Missandei">
   <rdf:type rdf:resource="#Female"/>
-  <hasBeenTo rdf:resource="http://anonymous"/>
+  <hasBeenTo rdf:resource="#Tower_of_Joy"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
@@ -1923,7 +1913,6 @@
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
@@ -1962,7 +1951,6 @@
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -1988,7 +1976,6 @@
   <killedBy rdf:resource="#Night's_Watchman"/>
   <hasBeenTo rdf:resource="#Frostfang_Mountains"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Night's_Watchman">
@@ -2122,7 +2109,6 @@
   <hasBeenTo rdf:resource="#Hardhome"/>
   <hasBeenTo rdf:resource="#Last_Hearth"/>
   <hasBeenTo rdf:resource="#Nightswatch_March_South"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
 </owl:NamedIndividual>
 
@@ -2186,7 +2172,6 @@
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -2220,7 +2205,6 @@
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2342,7 +2326,6 @@
   <killed rdf:resource="#Donnel_Hill"/>
   <killed rdf:resource="#Cooper"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -2448,7 +2431,6 @@
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
@@ -2562,7 +2544,6 @@
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Cave_Outside_Wildling_Camp"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
@@ -2585,7 +2566,6 @@
   <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
   <hasBeenTo rdf:resource="#Frostfang_Mountains"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
 </owl:NamedIndividual>
 
@@ -2603,7 +2583,6 @@
   <hasBeenTo rdf:resource="#Outside_Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
@@ -2636,13 +2615,11 @@
 <owl:NamedIndividual rdf:about="#Johnna">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Willa">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
 </owl:NamedIndividual>
 
@@ -2748,7 +2725,6 @@
   <hasBeenTo rdf:resource="#Hardhome"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2831,7 +2807,7 @@
 <owl:NamedIndividual rdf:about="#Merchant_Captain">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Obara_Sand"/>
-  <hasBeenTo rdf:resource="#Brienne_of_Tarth"/>
+  <hasBeenTo rdf:resource="#Tarth"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Syrio_Forel">
@@ -2981,7 +2957,6 @@
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-  <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Cave_Outside_Wildling_Camp"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>

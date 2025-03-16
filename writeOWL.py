@@ -19,6 +19,8 @@ def search_or_create_character(name, df):
     #print(row)
     character_name_underscore = name.replace(" ", "_")
     # Check if character already exists in the ontology
+    #Character_type = onto.search_one(iri="*Character")
+    #char = onto.search_one(iri="*" + character_name_underscore, type=Character_type)
     char = onto.search_one(iri="*" + character_name_underscore)
     
     # if already exit return it
@@ -441,9 +443,10 @@ with onto:
     
     for i,row in df.iterrows():
         location_name_underscore = row["subLocation"].replace(" ", "_")
-        loc = onto.search_one(iri="*" + location_name_underscore)
+        loc = onto.search_one(iri="*" + location_name_underscore, type=onto.Place)
         
         if loc:
+            #print(f"name: {location_name_underscore}")
             for character in row["name"]:
                 
                 character_name_underscore = character.replace(" ", "_")

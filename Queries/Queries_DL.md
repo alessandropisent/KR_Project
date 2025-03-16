@@ -32,13 +32,17 @@ Character and (isParentOf some (killedBy some White_Walkers))
 ## 10. Weapon wieldedBy somene that killed a dragon
 beenWieldedBy some (killed some Dragon)
 
+## 11. Weapon with a range of wielders
+numberOfWielders some xsd:integer[> 3, <= 5]
+(beenWieldedBy min 2) 
+
 ## 11. Find the house of someone that has been abducted
 House and (hasMember some (abductedBy some))
 
 ## 12. Houses Killedby and Killed someone that belong to house Stark
 House and (hasMember some (killed some (belongsToHouse value Stark))) and (hasMember some (killedBy some (belongsToHouse value Stark)))
 
-## 13. VERY COMPLICATED
+## 13. Find Weapons (needle)
 find the weapon that has been wieldad by :
 1. Has been to The North.
 2. Belongs to a house that has a member allied with the Baratheon house.
