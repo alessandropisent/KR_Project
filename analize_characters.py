@@ -221,7 +221,7 @@ def return_df_characters():
 
 #df = return_df_characters()
 
-#print(df)
+#print(df.columns)
 
 
 #with open("names.txt","w") as f:
