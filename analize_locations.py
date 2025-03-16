@@ -3,6 +3,15 @@ import json
 import numpy as np
 
 def remove_nan(el):
+    """
+    Removes empty string values from a list.
+
+    Args:
+        el (list): A list of elements.
+
+    Returns:
+        list: A new list without empty string values.
+    """
     ret = []
     for e in el:
         if e != "":
@@ -23,11 +32,37 @@ locations = ['North of the Wall', 'The Wall',
 duplicate = [{"location"}]
 
 def delete_duplicates_main(row):
+    """
+    Removes known major locations from a list of sub-locations.
+
+    Args:
+        row (list): A list of sub-locations.
+
+    Returns:
+        list: A filtered list without known major locations.
+    """
     return [sub for sub in row if sub not in locations]
 
 
 
 def return_df_locations(explode=True):
+    """
+    Reads location data from a JSON file and processes it into a Pandas DataFrame.
+
+    This function:
+    - Loads location data from "GOT/locations.json".
+    - Removes empty sub-locations.
+    - Filters out duplicates and known major locations.
+    - Groups sub-locations by their main region.
+    - Optionally explodes the grouped data into separate rows.
+
+    Args:
+        explode (bool, optional): If True, returns an exploded DataFrame with each sub-location as a row. 
+                                  If False, keeps sub-locations grouped as lists. Defaults to True.
+
+    Returns:
+        pd.DataFrame: A processed DataFrame mapping major locations to their sub-locations.
+    """
     with open("GOT/locations.json", "r", encoding="utf-8") as file:
         data = json.load(file)
 

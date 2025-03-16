@@ -3,6 +3,22 @@ import json
 
 
 def return_df_characters():
+    """
+    Reads character data from a JSON file and processes it into a Pandas DataFrame.
+
+    This function:
+    - Loads character data from "GOT/characters.json".
+    - Extracts unique house names and allies.
+    - Merges gender information from an additional JSON file.
+    - Categorizes special character types (Direwolves, White Walkers, Dragons).
+    - Adds boolean columns indicating relationships (children, siblings, allies, kills).
+    - Removes minor or unnamed characters.
+    - Filters characters based on non-null key attributes.
+    - Returns a cleaned and structured DataFrame.
+
+    Returns:
+        pd.DataFrame: Processed character dataset.
+    """
     with open("GOT/characters.json", "r", encoding="utf-8") as file:
         data = json.load(file)
 
