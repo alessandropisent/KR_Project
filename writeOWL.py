@@ -438,7 +438,7 @@ with onto:
                 char.wielded.append(weapon)
     
     #### LOCATION CHARACTERS HAVE BEEN
-    print("Writing Locations")
+    print("Writing Locations characters")
     df = return_location_been_df()
     
     for i,row in df.iterrows():
