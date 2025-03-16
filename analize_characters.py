@@ -35,22 +35,22 @@ def return_df_characters():
     #print("Allies")
     #print(allies)
 
-    with open("ranges.txt","w") as f:
-        for col in ["servedBy", "marriedEngaged", "serves", "guardedBy", "guardianOf", "allies", "abductedBy", "abducted", "sibling"]:
-            set_values = set()
-            for i in df[col] : 
-                if isinstance(i,list):
-                    for j in i:
-                        #print(j)
-                        set_values.add(j)
-                else:
-                    #print(i)
-                    set_values.add(i) 
-            
-            f.write(f"# {col}\n\n\n")
-            for v in set_values:
-                f.write(f"- {v}\n")
-            f.write("\n\n")
+    #with open("ranges.txt","w") as f:
+    #    for col in ["servedBy", "marriedEngaged", "serves", "guardedBy", "guardianOf", "allies", "abductedBy", "abducted", "sibling"]:
+    #        set_values = set()
+    #        for i in df[col] : 
+    #            if isinstance(i,list):
+    #                for j in i:
+    #                    #print(j)
+    #                    set_values.add(j)
+    #            else:
+    #                #print(i)
+    #                set_values.add(i) 
+    #        
+    #        f.write(f"# {col}\n\n\n")
+    #        for v in set_values:
+    #            f.write(f"- {v}\n")
+    #        f.write("\n\n")
 
     for col in df.columns:
         values = [i for i in df[col]]
