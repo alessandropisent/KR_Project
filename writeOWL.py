@@ -54,7 +54,7 @@ def search_or_create_character(name, df):
         elif row["type"] == "Dragon":
             char = onto.Dragon(character_name_underscore)
         elif row["type"] == "White_Walkers":
-            char = onto.White_Walker(character_name_underscore)
+            char = onto.White_Walkers(character_name_underscore)
             
         
             

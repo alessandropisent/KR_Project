@@ -200,74 +200,8 @@
   <rdfs:subClassOf rdf:resource="#Person"/>
 </owl:Class>
 
-<owl:Class rdf:about="#White_Walker">
+<owl:Class rdf:about="#White_Walkers">
   <rdfs:subClassOf rdf:resource="#Mythical_Creatures"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#Craster's_Keep"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#Destroyed_Cabin"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#Eastwatch"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#Fist_of_the_First_Men"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#Hardhome"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#Outside_Winterfell"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#South_to_the_Wall"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#The_Haunted_Forest"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#The_Lands_of_Always_Winter"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:hasValue rdf:resource="#The_Three-Eyed_Raven"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasBeenTo"/>
-      <owl:someValuesFrom rdf:resource="#The_Wall"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
 </owl:Class>
 
 <owl:Class rdf:about="#Dorne">
@@ -1085,7 +1019,7 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#The_Night_King">
-  <rdf:type rdf:resource="#White_Walker"/>
+  <rdf:type rdf:resource="#White_Walkers"/>
   <killed rdf:resource="#Three-Eyed_Raven"/>
   <killed rdf:resource="#Viserion"/>
   <killed rdf:resource="#Theon_Greyjoy"/>
@@ -1099,6 +1033,21 @@
   <hasBeenTo rdf:resource="#The_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#White_Walker">
+  <rdf:type rdf:resource="#Person"/>
+  <hasBeenTo rdf:resource="#Craster's_Keep"/>
+  <hasBeenTo rdf:resource="#Destroyed_Cabin"/>
+  <hasBeenTo rdf:resource="#Eastwatch"/>
+  <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
+  <hasBeenTo rdf:resource="#Hardhome"/>
+  <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <hasBeenTo rdf:resource="#South_to_the_Wall"/>
+  <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
+  <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
+  <hasBeenTo rdf:resource="#The_Wall"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Viserion">
@@ -3251,7 +3200,7 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wight_Wildling_Girl">
-  <rdf:type rdf:resource="#White_Walker"/>
+  <rdf:type rdf:resource="#White_Walkers"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
 </owl:NamedIndividual>
 
@@ -3321,12 +3270,6 @@
 
 <owl:NamedIndividual rdf:about="#The_Lands_of_Always_Winter">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Cave_Outside_Wildling_Camp">
@@ -3343,12 +3286,6 @@
 
 <owl:NamedIndividual rdf:about="#The_Three-Eyed_Raven">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Outside_the_Three-Eyed_Raven">
@@ -3357,12 +3294,6 @@
 
 <owl:NamedIndividual rdf:about="#Fist_of_the_First_Men">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wildlings_March_South">
@@ -3375,52 +3306,22 @@
 
 <owl:NamedIndividual rdf:about="#Hardhome">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Craster's_Keep">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#The_Haunted_Forest">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#South_to_the_Wall">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Destroyed_Cabin">
   <rdf:type rdf:resource="#North_of_the_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Near_Nightfort">
@@ -3505,12 +3406,6 @@
 
 <owl:NamedIndividual rdf:about="#Outside_Winterfell">
   <rdf:type rdf:resource="#The_North"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Winterfell">
@@ -3683,12 +3578,6 @@
 
 <owl:NamedIndividual rdf:about="#Eastwatch">
   <rdf:type rdf:resource="#The_Wall"/>
-  <rdf:type>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#beenVisted"/>
-      <owl:someValuesFrom rdf:resource="#White_Walker"/>
-    </owl:Restriction>
-  </rdf:type>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Top_of_the_Wall">

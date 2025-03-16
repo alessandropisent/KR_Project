@@ -387,9 +387,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#White_Walker -->
+    <!-- http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#White_Walkers -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#White_Walker">
+    <owl:Class rdf:about="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#White_Walkers">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aless/ontologies/2025/2/GameOfThronesOnotology#Mythical_Creatures"/>
     </owl:Class>
     
