@@ -9,27 +9,41 @@ df = return_df_characters()
 onto = get_ontology("GameOfThrones.owl").load()
 
 def search_or_create_character(name, df):
+    mask_1 = (df["nickname"] == name)
     # Create a mask to get the row for witch we have the right character
-    mask = df["characterName"] == name
+    mask = (df["characterName"] == name )| mask_1
     
     # if we have found the character in the dataframe
     if mask.any():
         row = df[mask].iloc[0]
+        if name != row["characterName"] :
+            name = row["characterName"]
     
     #print(row)
     character_name_underscore = name.replace(" ", "_")
+    
     # Check if character already exists in the ontology
     #Character_type = onto.search_one(iri="*Character")
     #char = onto.search_one(iri="*" + character_name_underscore, type=Character_type)
     char = onto.search_one(iri="*" + character_name_underscore)
+
     
     # if already exit return it
     if char:
         return char      
     
+    if not char and mask.any() and not pd.isna(row["nickname"]):
+        nickname_underscore = row["nickname"].replace(" ", "_")
+        char = onto.search_one(iri="*" + nickname_underscore)
+        if char:
+            #print("hit")
+            return char
+    
     # Create new character instance according to gender
     # if there is such character in the dataframe as primary
-    elif mask.any():
+    if mask.any():
+        
+        
         
         if pd.isna(row["type"]):
         
@@ -57,6 +71,19 @@ def search_or_create_character(name, df):
             char = onto.Dragon(character_name_underscore)
         elif row["type"] == "White_Walkers":
             char = onto.White_Walkers(character_name_underscore)
+        
+                
+        ## Then if it has a nickname we add it
+        if not pd.isna(row["nickname"]):
+            #print(f"hit:{row["nickname"]}")
+            #char.label = [name,str(row["nickname"])]
+            #print(char.label)
+            pass
+        
+        if char:
+            pass
+            char.label = [name]
+            
             
         
             
@@ -65,21 +92,21 @@ def search_or_create_character(name, df):
         #Character = onto.search_one(iri="*Character")
         #char = Character(character_name_underscore)
         char = onto.Person(character_name_underscore)
+        if not char:
+            raise Exception(f"The char is {char}, and the name {name}")
+        char.label = [name]
     
     return char
 
 with onto:
     print("Writing Characters")
+    list_of_useless_killedBy = {i[0] for i in df["killedBy"] if isinstance(i, list)} - set(df["characterName"])
     ##### CHARACTERS
     for i ,row in df.iterrows():
         #print(row)
         character_name_underscore = row["characterName"].replace(" ", "_")
 
         char = search_or_create_character(row["characterName"],df)
-        
-        ## Then if it has a nickname we add it
-        if not pd.isna(row["nickname"]):
-            char.label = [row["characterName"]].append(row["nickname"])
 
         if isinstance(row["houseName"],(list,tuple)) and not isinstance(row["houseName"],str):
             for h in row["houseName"]:
@@ -179,20 +206,22 @@ with onto:
             
             for obj_i in row["killedBy"]:
                 
-                char_obj = search_or_create_character(obj_i,df)
+                if obj_i not in list_of_useless_killedBy:
                 
-                # Add the iskilledBy relationship if not already present
-                if char_obj not in char.killedBy:
-                    char.killedBy.append(char_obj)
+                    char_obj = search_or_create_character(obj_i,df)
+                    
+                    # Add the iskilledBy relationship if not already present
+                    if char_obj not in char.killedBy:
+                        char.killedBy.append(char_obj)
         
         # then it is a string [since is not none]         
         elif not pd.isna(row["killedBy"]) and isinstance(row["killedBy"],str):
                 
-           
-            char_obj = search_or_create_character(row["killedBy"],df)
-            # Add the killedBy relationship if not already present
-            if char_obj not in char.killedBy:
-                char.killedBy.append(char_obj)
+            if row["killedBy"] not in list_of_useless_killedBy:
+                char_obj = search_or_create_character(row["killedBy"],df)
+                # Add the killedBy relationship if not already present
+                if char_obj not in char.killedBy:
+                    char.killedBy.append(char_obj)
         
         ## ---- Killed
         # Process Killed (assumed to be a list) and not str        

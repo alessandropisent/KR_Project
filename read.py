@@ -19,3 +19,8 @@ for i in onto.individuals():
 # Search for the Character class
 Character = onto.search_one(iri="*Character")
 test = Character("test")
+
+char = onto.Person("test_person")
+
+print("\n\nTestPerson: ", char)
+

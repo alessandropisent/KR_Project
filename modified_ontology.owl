@@ -344,12 +344,14 @@
   <isChildOf rdf:resource="#Elia_Martell"/>
   <isChildOf rdf:resource="#Rhaegar_Targaryen"/>
   <killedBy rdf:resource="#Gregor_Clegane"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aegon Targaryen</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaenys_Targaryen">
   <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isSiblingOf rdf:resource="#Jon_Snow"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhaenys Targaryen</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jon_Snow">
@@ -395,6 +397,7 @@
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Snow</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasKilled>
 </owl:NamedIndividual>
 
@@ -405,6 +408,7 @@
   <isParentOf rdf:resource="#Rhaenys_Targaryen"/>
   <killedBy rdf:resource="#Gregor_Clegane"/>
   <isSpouseOf rdf:resource="#Rhaegar_Targaryen"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elia Martell</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSiblings>
 </owl:NamedIndividual>
@@ -417,6 +421,7 @@
   <isChildOf rdf:resource="#Rhaella_Targaryen"/>
   <isParentOf rdf:resource="#Rhaenys_Targaryen"/>
   <killedBy rdf:resource="#Robert_Baratheon"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhaegar Targaryen</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
 </owl:NamedIndividual>
@@ -436,6 +441,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gregor Clegane</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasKilled>
 </owl:NamedIndividual>
 
@@ -445,6 +451,7 @@
   <isSiblingOf rdf:resource="#Balon_Greyjoy"/>
   <isSiblingOf rdf:resource="#Euron_Greyjoy"/>
   <hasBeenTo rdf:resource="#Pyke"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aeron Greyjoy</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Balon_Greyjoy">
@@ -455,6 +462,7 @@
   <isParentOf rdf:resource="#Theon_Greyjoy"/>
   <killedBy rdf:resource="#Euron_Greyjoy"/>
   <hasBeenTo rdf:resource="#Pyke"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balon Greyjoy</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSiblings>
 </owl:NamedIndividual>
@@ -471,6 +479,7 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#Pyke"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euron Greyjoy</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
 </owl:NamedIndividual>
 
@@ -487,6 +496,7 @@
   <servedBy rdf:resource="#Arthur_Dayne"/>
   <servedBy rdf:resource="#Jaime_Lannister"/>
   <isSpouseOf rdf:resource="#Rhaella_Targaryen"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerys II Targaryen</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -496,6 +506,7 @@
   <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
   <isParentOf rdf:resource="#Viserys_Targaryen"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhaella Targaryen</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
 </owl:NamedIndividual>
@@ -550,6 +561,7 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Vaes_Dothrak"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daenerys Targaryen</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasKilled>
@@ -559,6 +571,7 @@
   <rdf:type rdf:resource="#Male"/>
   <rdf:type rdf:resource="#Royal"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viserys Targaryen</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jaime_Lannister">
@@ -570,7 +583,6 @@
   <isParentOf rdf:resource="#Joffrey_Baratheon"/>
   <isParentOf rdf:resource="#Myrcella_Baratheon"/>
   <isParentOf rdf:resource="#Tommen_Baratheon"/>
-  <killedBy rdf:resource="#Roof_collapse"/>
   <killed rdf:resource="#Jory_Cassel"/>
   <killed rdf:resource="#Torrhen_Karstark"/>
   <killed rdf:resource="#Olenna_Tyrell"/>
@@ -597,6 +609,7 @@
   <hasBeenTo rdf:resource="#To_King's_Landing"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaime Lannister</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasKilled>
@@ -608,12 +621,14 @@
   <isSiblingOf rdf:resource="#Lyanna_Stark"/>
   <isSiblingOf rdf:resource="#Eddard_Stark"/>
   <isChildOf rdf:resource="#Rickard_Stark"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandon Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rickard_Stark">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Stark"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickard Stark</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasSiblings>
 </owl:NamedIndividual>
@@ -624,11 +639,13 @@
   <killedBy rdf:resource="#Howland_Reed"/>
   <killedBy rdf:resource="#Eddard_Stark"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthur Dayne</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Akho">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Daario_Naharis"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akho</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Daario_Naharis">
@@ -641,6 +658,7 @@
   <serves rdf:resource="#Daenerys_Targaryen"/>
   <hasBeenTo rdf:resource="#Outside_Meereen"/>
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daario Naharis</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasKilled>
 </owl:NamedIndividual>
 
@@ -649,6 +667,7 @@
   <killedBy rdf:resource="#Jon_Snow"/>
   <killed rdf:resource="#Jon_Snow"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alliser Thorne</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -658,18 +677,21 @@
   <killedBy rdf:resource="#Jaime_Lannister"/>
   <hasBeenTo rdf:resource="#Camp_of_the_North"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alton Lannister</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Alys_Karstark">
   <rdf:type rdf:resource="#Female"/>
   <isChildOf rdf:resource="#Harald_Karstark"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alys Karstark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Harald_Karstark">
   <rdf:type rdf:resource="#Male"/>
   <isChildOf rdf:resource="#Rickard_Karstark"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harald Karstark</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -680,6 +702,7 @@
   <killed rdf:resource="#Yoren"/>
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amory Lorch</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -690,6 +713,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#Outside_Harrenhal"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaqen H'ghar</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -700,6 +724,7 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yoren</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Areo_Hotah">
@@ -707,6 +732,7 @@
   <killedBy rdf:resource="#Tyene_Sand"/>
   <serves rdf:resource="#Doran_Martell"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Areo Hotah</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tyene_Sand">
@@ -715,6 +741,7 @@
   <killed rdf:resource="#Maester_Caleotte"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tyene Sand</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -726,6 +753,7 @@
   <isParentOf rdf:resource="#Trystane_Martell"/>
   <killedBy rdf:resource="#Ellaria_Sand"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doran Martell</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -735,6 +763,7 @@
   <isParentOf rdf:resource="#Jojen_Reed"/>
   <isParentOf rdf:resource="#Meera_Reed"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Howland Reed</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSiblings>
   <hasAllies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAllies>
@@ -763,6 +792,7 @@
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Kingsroad_South_to_King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddard Stark</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasSiblings>
   <hasAllies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasAllies>
@@ -812,6 +842,7 @@
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#To_The_Twins"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arya Stark</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasKilled>
 </owl:NamedIndividual>
 
@@ -834,6 +865,7 @@
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
   <hasBeenTo rdf:resource="#To_Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robb Stark</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -858,6 +890,7 @@
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#To_The_Vale"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sansa Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Bran_Stark">
@@ -883,6 +916,7 @@
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bran Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rickon_Stark">
@@ -894,6 +928,7 @@
   <hasBeenTo rdf:resource="#North_to_the_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickon Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Catelyn_Stark">
@@ -924,6 +959,7 @@
   <hasBeenTo rdf:resource="#The_Woods"/>
   <hasBeenTo rdf:resource="#To_Riverrun"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catelyn Stark</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
@@ -932,10 +968,12 @@
 <owl:NamedIndividual rdf:about="#Red_Keep_Stableboy">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Keep Stableboy</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Frey_Soldier_#1">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frey Soldier #1</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Polliver">
@@ -944,6 +982,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polliver</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -952,21 +991,25 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rorge</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ghita">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ghita</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Meryn_Trant">
   <rdf:type rdf:resource="#Male"/>
   <killed rdf:resource="#Syrio_Forel"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meryn Trant</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#The_Waif">
   <rdf:type rdf:resource="#Female"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Waif</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -977,6 +1020,7 @@
   <killed rdf:resource="#Catelyn_Stark"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Walder Rivers</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -987,6 +1031,7 @@
   <killed rdf:resource="#Talisa_Maegyr"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lothar Frey</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -994,6 +1039,7 @@
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Frey"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walder Frey</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasSiblings>
 </owl:NamedIndividual>
@@ -1012,6 +1058,7 @@
   <hasBeenTo rdf:resource="#The_Eyrie"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#To_The_Vale"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petyr Baelish</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -1028,6 +1075,7 @@
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Night King</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
 </owl:NamedIndividual>
 
@@ -1043,6 +1091,7 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White Walker</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Viserion">
@@ -1056,6 +1105,7 @@
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viserion</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -1067,6 +1117,7 @@
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#To_The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nymeria</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Baby_Sam">
@@ -1083,6 +1134,7 @@
   <hasBeenTo rdf:resource="#Outside_Castle_Black"/>
   <hasBeenTo rdf:resource="#South_to_the_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baby Sam</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Samwell_Tarly">
@@ -1108,6 +1160,7 @@
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samwell Tarly</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -1127,6 +1180,7 @@
   <hasBeenTo rdf:resource="#Outside_Castle_Black"/>
   <hasBeenTo rdf:resource="#South_to_the_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gilly</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -1142,6 +1196,7 @@
   <hasBeenTo rdf:resource="#Pyke"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yara Greyjoy</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Theon_Greyjoy">
@@ -1163,26 +1218,24 @@
   <hasBeenTo rdf:resource="#The_Neck"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theon Greyjoy</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Baratheon_Guard">
   <rdf:type rdf:resource="#Person"/>
   <belongsToHouse rdf:resource="#Baratheon"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baratheon Guard</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Barristan_Selmy">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Sons_of_the_Harpy"/>
   <serves rdf:resource="#Daenerys_Targaryen"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Meereen"/>
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#The_Kingswood"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Sons_of_the_Harpy">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barristan Selmy</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Benjen_Stark">
@@ -1192,13 +1245,13 @@
   <isSiblingOf rdf:resource="#Lyanna_Stark"/>
   <isSiblingOf rdf:resource="#Eddard_Stark"/>
   <isChildOf rdf:resource="#Rickard_Stark"/>
-  <killedBy rdf:resource="#Wights"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#North_to_the_Wall"/>
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benjen Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lyanna_Stark">
@@ -1209,18 +1262,14 @@
   <isSpouseOf rdf:resource="#Rhaegar_Targaryen"/>
   <abductedBy rdf:resource="#Rhaegar_Targaryen"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyanna Stark</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Wights">
-  <rdf:type rdf:resource="#Person"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Beric_Dondarrion">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Sandor_Clegane"/>
-  <killedBy rdf:resource="#Wights"/>
   <hasBeenTo rdf:resource="#Eastwatch"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Hollow_Hill"/>
@@ -1228,6 +1277,7 @@
   <hasBeenTo rdf:resource="#Last_Hearth"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beric Dondarrion</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Sandor_Clegane">
@@ -1259,6 +1309,7 @@
   <hasBeenTo rdf:resource="#To_The_Twins"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sandor Clegane</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasKilled>
 </owl:NamedIndividual>
 
@@ -1268,6 +1319,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biter</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Bowen_Marsh">
@@ -1275,13 +1327,13 @@
   <killedBy rdf:resource="#Jon_Snow"/>
   <killed rdf:resource="#Jon_Snow"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bowen Marsh</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Summer">
   <rdf:type rdf:resource="#Direwolf"/>
   <belongsToHouse rdf:resource="#Stark"/>
-  <killedBy rdf:resource="#Wights"/>
   <hasBeenTo rdf:resource="#Craster's_Keep"/>
   <hasBeenTo rdf:resource="#Near_Nightfort"/>
   <hasBeenTo rdf:resource="#North_to_the_Wall"/>
@@ -1290,6 +1342,7 @@
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Summer</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -1324,12 +1377,14 @@
   <hasBeenTo rdf:resource="#To_King's_Landing"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brienne of Tarth</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Soldier_Tom">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#East_to_King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soldier Tom</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Stannis_Baratheon">
@@ -1346,6 +1401,7 @@
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stannis Baratheon</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -1354,6 +1410,7 @@
 <owl:NamedIndividual rdf:about="#Bolton_Officer">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bolton Officer</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Podrick_Payne">
@@ -1374,6 +1431,7 @@
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Podrick Payne</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -1385,6 +1443,7 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
   <hasBeenTo rdf:resource="#The_Kingswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renly Baratheon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Bronn">
@@ -1409,6 +1468,7 @@
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
   <hasBeenTo rdf:resource="#To_the_Westerlands"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bronn</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -1416,27 +1476,32 @@
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Eastern_Road"/>
   <hasBeenTo rdf:resource="#The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vardis Egen</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Matthos_Seaworth">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthos Seaworth</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lead_Dornish_Guard">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lead Dornish Guard</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lollys_Stokeworth">
   <rdf:type rdf:resource="#Female"/>
   <hasBeenTo rdf:resource="#Castle_Stokeworth"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lollys Stokeworth</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Brother_Ray">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Lem_Lemoncloak"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brother Ray</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lem_Lemoncloak">
@@ -1444,6 +1509,7 @@
   <killedBy rdf:resource="#Sandor_Clegane"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lem Lemoncloak</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -1454,12 +1520,14 @@
   <hasBeenTo rdf:resource="#Camp_of_the_North"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brynden Tully</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Hoster_Tully">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Tully"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoster Tully</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lysa_Arryn">
@@ -1471,6 +1539,7 @@
   <killedBy rdf:resource="#Petyr_Baelish"/>
   <isSpouseOf rdf:resource="#Petyr_Baelish"/>
   <hasBeenTo rdf:resource="#The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lysa Arryn</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -1483,18 +1552,21 @@
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edmure Tully</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Joyeuse_Erenford">
   <rdf:type rdf:resource="#Female"/>
   <isSpouseOf rdf:resource="#Walder_Frey"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joyeuse Erenford</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Catspaw_Assassin">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Summer"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catspaw Assassin</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Cersei_Lannister">
@@ -1508,7 +1580,6 @@
   <isParentOf rdf:resource="#Joffrey_Baratheon"/>
   <isParentOf rdf:resource="#Myrcella_Baratheon"/>
   <isParentOf rdf:resource="#Tommen_Baratheon"/>
-  <killedBy rdf:resource="#Roof_collapse"/>
   <killed rdf:resource="#Lancel_Lannister"/>
   <killed rdf:resource="#High_Sparrow"/>
   <killed rdf:resource="#Loras_Tyrell"/>
@@ -1521,6 +1592,7 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cersei Lannister</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasKilled>
@@ -1552,6 +1624,7 @@
   <hasBeenTo rdf:resource="#Volantis_to_Valyria"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tyrion Lannister</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -1563,6 +1636,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Lannister_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tywin Lannister</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasAllies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAllies>
@@ -1586,6 +1660,7 @@
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joffrey Baratheon</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -1599,6 +1674,7 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myrcella Baratheon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tommen_Baratheon">
@@ -1608,11 +1684,8 @@
   <killedBy rdf:resource="#Tommen_Baratheon"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tommen Baratheon</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Roof_collapse">
-  <rdf:type rdf:resource="#Person"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lancel_Lannister">
@@ -1622,11 +1695,13 @@
   <isSiblingOf rdf:resource="#Willem_Lannister"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Kingswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lancel Lannister</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#High_Sparrow">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Sparrow</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Loras_Tyrell">
@@ -1636,6 +1711,7 @@
   <isChildOf rdf:resource="#Mace_Tyrell"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loras Tyrell</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mace_Tyrell">
@@ -1643,6 +1719,7 @@
   <belongsToHouse rdf:resource="#Tyrell"/>
   <isParentOf rdf:resource="#Margaery_Tyrell"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mace Tyrell</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSiblings>
 </owl:NamedIndividual>
@@ -1654,6 +1731,7 @@
   <isSpouseOf rdf:resource="#Tommen_Baratheon"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Margaery Tyrell</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kevan_Lannister">
@@ -1666,6 +1744,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Lannister_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kevan Lannister</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
 </owl:NamedIndividual>
@@ -1676,13 +1755,13 @@
   <belongsToHouse rdf:resource="#Baratheon"/>
   <isSiblingOf rdf:resource="#Stannis_Baratheon"/>
   <isParentOf rdf:resource="#Tommen_Baratheon"/>
-  <killedBy rdf:resource="#Boar"/>
   <allies rdf:resource="#Tywin_Lannister"/>
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Kingsroad_South_to_King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Kingswood"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Baratheon</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
   <hasAllies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAllies>
@@ -1694,41 +1773,49 @@
   <killedBy rdf:resource="#Karl_Tanner"/>
   <wielded rdf:resource="#Longclaw"/>
   <hasBeenTo rdf:resource="#Craster's_Keep"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Craster</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Karl_Tanner">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Craster's_Keep"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karl Tanner</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mero">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mero</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Prendahl_na_Ghezn">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prendahl na Ghezn</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Oznak_zo_Pahl">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oznak zo Pahl</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mossador">
   <rdf:type rdf:resource="#Male"/>
   <killed rdf:resource="#Son_of_the_Harpy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mossador</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Iggo">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iggo</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rhaego">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Vaes_Dothrak"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhaego</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Khal_Drogo">
@@ -1740,6 +1827,7 @@
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
   <hasBeenTo rdf:resource="#The_Desert"/>
   <hasBeenTo rdf:resource="#Vaes_Dothrak"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khal Drogo</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -1749,6 +1837,7 @@
   <rdf:type rdf:resource="#Female"/>
   <killed rdf:resource="#Rhaego"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mirri Maz Duur</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -1757,39 +1846,48 @@
   <killed rdf:resource="#Irri"/>
   <hasBeenTo rdf:resource="#Dothraki_Camp"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doreah</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Xaro_Xhoan_Daxos">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xaro Xhoan Daxos</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Khal_Rhalko">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khal Rhalko</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Khal_Brozho">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khal Brozho</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Khal_Qorro">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khal Qorro</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Khal_Forzho">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khal Forzho</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Khal_Moro">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khal Moro</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#1">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dothraki Bloodrider #1</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Dothraki_Bloodrider_#2">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dothraki Bloodrider #2</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Randyll_Tarly">
@@ -1800,6 +1898,7 @@
   <hasBeenTo rdf:resource="#Highgarden"/>
   <hasBeenTo rdf:resource="#To_Horn_Hill"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Randyll Tarly</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
 </owl:NamedIndividual>
@@ -1814,16 +1913,19 @@
   <hasBeenTo rdf:resource="#Highgarden"/>
   <hasBeenTo rdf:resource="#To_Horn_Hill"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dickon Tarly</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Eleanor">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eleanor</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Eleanor's_Daughter">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eleanor's Daughter</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lord_Varys">
@@ -1836,6 +1938,7 @@
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lord Varys</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Grey_Worm">
@@ -1853,13 +1956,13 @@
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey Worm</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jorah_Mormont">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Mormont"/>
-  <killedBy rdf:resource="#Wights"/>
   <killed rdf:resource="#Qotho"/>
   <killed rdf:resource="#Norvoshi_Pit_Fighter"/>
   <killed rdf:resource="#Meereenese_Champion"/>
@@ -1878,6 +1981,7 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Volantis_to_Valyria"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jorah Mormont</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -1892,6 +1996,7 @@
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missandei</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Drogon">
@@ -1914,6 +2019,7 @@
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drogon</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
 </owl:NamedIndividual>
 
@@ -1931,6 +2037,7 @@
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhaegal</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -1951,6 +2058,7 @@
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Davos Seaworth</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -1959,6 +2067,7 @@
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Tarly"/>
   <hasBeenTo rdf:resource="#To_Horn_Hill"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talla Tarly</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Melessa_Tarly">
@@ -1967,20 +2076,16 @@
   <isParentOf rdf:resource="#Talla_Tarly"/>
   <isSpouseOf rdf:resource="#Randyll_Tarly"/>
   <hasBeenTo rdf:resource="#To_Horn_Hill"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melessa Tarly</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Dongo_the_Giant">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Night's_Watchman"/>
   <hasBeenTo rdf:resource="#Frostfang_Mountains"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Night's_Watchman">
-  <rdf:type rdf:resource="#Person"/>
-  <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dongo the Giant</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Dontos_Hollard">
@@ -1988,6 +2093,7 @@
   <killedBy rdf:resource="#Petyr_Baelish"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dontos Hollard</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Oberyn_Martell">
@@ -1995,6 +2101,7 @@
   <belongsToHouse rdf:resource="#Martell"/>
   <isParentOf rdf:resource="#Tyene_Sand"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oberyn Martell</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSiblings>
 </owl:NamedIndividual>
@@ -2004,6 +2111,7 @@
   <belongsToHouse rdf:resource="#Martell"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trystane Martell</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ellaria_Sand">
@@ -2015,6 +2123,7 @@
   <hasBeenTo rdf:resource="#Dragonstone"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ellaria Sand</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -2024,12 +2133,14 @@
   <rdf:type rdf:resource="#Female"/>
   <hasBeenTo rdf:resource="#Dothraki_Camp"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irri</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Drennan">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Osha"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drennan</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Osha">
@@ -2039,6 +2150,7 @@
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osha</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -2048,15 +2160,18 @@
   <killedBy rdf:resource="#Rhaegal"/>
   <killed rdf:resource="#Spice_King"/>
   <killed rdf:resource="#Silk_King"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyat Pree</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kraznys_mo_Nakloz">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kraznys mo Nakloz</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Zalla">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zalla</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ilyn_Payne">
@@ -2064,6 +2179,7 @@
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilyn Payne</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2072,6 +2188,7 @@
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Will</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lady">
@@ -2083,11 +2200,13 @@
   <guardianOf rdf:resource="#Sansa_Stark"/>
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lady</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gerold_Hightower">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerold Hightower</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jon_Arryn">
@@ -2096,12 +2215,12 @@
   <guardianOf rdf:resource="#Robert_Baratheon"/>
   <allies rdf:resource="#Robert_Baratheon"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Arryn</rdfs:label>
   <hasAllies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAllies>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Eddison_Tollett">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Wight"/>
   <wielded rdf:resource="#Longclaw"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#Craster's_Keep"/>
@@ -2110,10 +2229,7 @@
   <hasBeenTo rdf:resource="#Last_Hearth"/>
   <hasBeenTo rdf:resource="#Nightswatch_March_South"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Wight">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddison Tollett</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roslin_Frey">
@@ -2121,6 +2237,7 @@
   <belongsToHouse rdf:resource="#Frey"/>
   <isChildOf rdf:resource="#Walder_Frey"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roslin Frey</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Obara_Sand">
@@ -2130,6 +2247,7 @@
   <killed rdf:resource="#Trystane_Martell"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obara Sand</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
@@ -2139,19 +2257,21 @@
   <isChildOf rdf:resource="#Oberyn_Martell"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nymeria Sand</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gared">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#White_Walker"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gared</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gatins">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Sandor_Clegane"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gatins</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gendry">
@@ -2174,17 +2294,20 @@
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
   <hasBeenTo rdf:resource="#Winter_Town"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gendry</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kevin_Eldon">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kevin Eldon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Laurence_Spellman">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laurence Spellman</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ghost">
@@ -2205,6 +2328,7 @@
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ghost</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2215,7 +2339,6 @@
   <isSiblingOf rdf:resource="#Nymeria"/>
   <isSiblingOf rdf:resource="#Summer"/>
   <isSiblingOf rdf:resource="#Shaggydog"/>
-  <killedBy rdf:resource="#Frey_Crossbowmen"/>
   <killed rdf:resource="#Rennick"/>
   <guardianOf rdf:resource="#Robb_Stark"/>
   <hasBeenTo rdf:resource="#Camp_of_the_North"/>
@@ -2223,6 +2346,7 @@
   <hasBeenTo rdf:resource="#Oxcross"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#To_Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey Wind</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2234,6 +2358,7 @@
   <hasBeenTo rdf:resource="#North_to_the_Wall"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shaggydog</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rast">
@@ -2243,17 +2368,14 @@
   <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
   <hasBeenTo rdf:resource="#Nightswatch_March_South"/>
   <hasBeenTo rdf:resource="#North_to_the_Wall"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rast</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Grand_Maester_Pycelle">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Little_Birds"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Little_Birds">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grand Maester Pycelle</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Greatjon_Umber">
@@ -2264,6 +2386,7 @@
   <hasBeenTo rdf:resource="#The_Neck"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greatjon Umber</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -2272,21 +2395,25 @@
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Tormund_Giantsbane"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smalljon Umber</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Hugh_of_the_Vale">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hugh of the Vale</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#King's_Landing_Boaster">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">King's Landing Boaster</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Faith_Militant">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faith Militant</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Qyburn">
@@ -2296,15 +2423,12 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Kingsroad_South_to_King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qyburn</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Greizhen_mo_Ullhor">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Unsullied"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Unsullied">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greizhen mo Ullhor</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Grenn">
@@ -2316,6 +2440,7 @@
   <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
   <hasBeenTo rdf:resource="#Nightswatch_March_South"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grenn</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2326,31 +2451,32 @@
   <killed rdf:resource="#Donnel_Hill"/>
   <killed rdf:resource="#Cooper"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mag the Mighty</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasKilled>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Frey_Crossbowmen">
-  <rdf:type rdf:resource="#Person"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rennick">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Oxcross"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rennick</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Belicho_Paenymion">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belicho Paenymion</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Razdal_mo_Eraz">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Outside_Yunkai"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Razdal mo Eraz</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Harry_Strickland">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Blackwater_Bay"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Strickland</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rickard_Karstark">
@@ -2361,6 +2487,7 @@
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#To_Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickard Karstark</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
@@ -2368,24 +2495,19 @@
 
 <owl:NamedIndividual rdf:about="#High_Septon">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Kings_Landing_Rioters"/>
   <hasBeenTo rdf:resource="#Camp_of_the_North"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Kings_Landing_Rioters">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Septon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Hizdahr_zo_Loraq">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Sons_of_the_Harpy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hizdahr zo Loraq</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Hodor">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Wights"/>
   <killed rdf:resource="#Locke"/>
   <hasBeenTo rdf:resource="#Craster's_Keep"/>
   <hasBeenTo rdf:resource="#Near_Nightfort"/>
@@ -2395,6 +2517,7 @@
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hodor</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2405,6 +2528,7 @@
   <hasBeenTo rdf:resource="#East_to_King's_Landing"/>
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locke</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jojen_Reed">
@@ -2419,6 +2543,7 @@
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jojen Reed</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Meera_Reed">
@@ -2432,13 +2557,14 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meera Reed</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jafer_Flowers">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#White_Walker"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jafer Flowers</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jory_Cassel">
@@ -2447,11 +2573,13 @@
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jory Cassel</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Torrhen_Karstark">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Camp_of_the_North"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torrhen Karstark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Olenna_Tyrell">
@@ -2463,6 +2591,7 @@
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olenna Tyrell</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
@@ -2474,23 +2603,27 @@
   <killed rdf:resource="#Barra"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janos Slynt</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Barra">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barra</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#The_Tickler">
   <rdf:type rdf:resource="#Male"/>
   <killed rdf:resource="#Tortured_Prisoner"/>
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Tickler</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Despondent_Man">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Despondent Man</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Jeor_Mormont">
@@ -2503,6 +2636,7 @@
   <hasBeenTo rdf:resource="#Craster's_Keep"/>
   <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
   <hasBeenTo rdf:resource="#Nightswatch_March_South"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeor Mormont</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -2511,12 +2645,14 @@
   <rdf:type rdf:resource="#Female"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ros</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Othell_Yarwyck">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Othell Yarwyck</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2525,19 +2661,21 @@
   <killed rdf:resource="#Ygritte"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olly</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Othor">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#White_Walker"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Othor</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Qhorin_Halfhand">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Fist_of_the_First_Men"/>
   <hasBeenTo rdf:resource="#Frostfang_Mountains"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qhorin Halfhand</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Orell">
@@ -2547,6 +2685,7 @@
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Cave_Outside_Wildling_Camp"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orell</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Styr">
@@ -2556,6 +2695,7 @@
   <hasBeenTo rdf:resource="#Mole's_Town"/>
   <hasBeenTo rdf:resource="#Outside_Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Styr</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2567,6 +2707,7 @@
   <hasBeenTo rdf:resource="#Frostfang_Mountains"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mance Rayder</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ygritte">
@@ -2585,6 +2726,7 @@
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ygritte</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
 </owl:NamedIndividual>
 
@@ -2592,22 +2734,25 @@
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
   <hasBeenTo rdf:resource="#The_Desert"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qotho</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Norvoshi_Pit_Fighter">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Norvoshi Pit Fighter</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Meereenese_Champion">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meereenese Champion</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Karsi">
   <rdf:type rdf:resource="#Female"/>
   <isParentOf rdf:resource="#Johnna"/>
   <isParentOf rdf:resource="#Willa"/>
-  <killedBy rdf:resource="#Pack_of_Wights"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karsi</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSiblings>
 </owl:NamedIndividual>
@@ -2615,26 +2760,20 @@
 <owl:NamedIndividual rdf:about="#Johnna">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnna</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Willa">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Pack_of_Wights">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Willa</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kegs">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Wildling"/>
   <hasBeenTo rdf:resource="#Mole's_Town"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Wildling">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kegs</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Martyn_Lannister">
@@ -2643,17 +2782,20 @@
   <isSiblingOf rdf:resource="#Willem_Lannister"/>
   <killedBy rdf:resource="#Rickard_Karstark"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martyn Lannister</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Willem_Lannister">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Lannister"/>
   <hasBeenTo rdf:resource="#Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Willem Lannister</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mago">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mago</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kitty_Frey">
@@ -2661,34 +2803,32 @@
   <belongsToHouse rdf:resource="#Frey"/>
   <isSpouseOf rdf:resource="#Walder_Frey"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitty Frey</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kurleket">
   <rdf:type rdf:resource="#Person"/>
-  <killedBy rdf:resource="#Mountain_Clansman"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Mountain_Clansman">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kurleket</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lady_Crane">
   <rdf:type rdf:resource="#Female"/>
   <killedBy rdf:resource="#The_Waif"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lady Crane</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Leaf">
   <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Wights"/>
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leaf</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Loboda">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#White_Walker"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loboda</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lommy_Greenhands">
@@ -2696,6 +2836,7 @@
   <killedBy rdf:resource="#Polliver"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#The_Kingsroad"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lommy Greenhands</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Talisa_Maegyr">
@@ -2706,6 +2847,7 @@
   <hasBeenTo rdf:resource="#Riverrun"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
   <hasBeenTo rdf:resource="#To_Riverrun"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talisa Maegyr</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lyanna_Mormont">
@@ -2716,6 +2858,7 @@
   <hasBeenTo rdf:resource="#Bear_Island"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyanna Mormont</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2725,28 +2868,27 @@
   <hasBeenTo rdf:resource="#Hardhome"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wun Wun</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Catelyn_Tully">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catelyn Tully</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Maester_Aemon">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Targaryen"/>
-  <killedBy rdf:resource="#Old_Age"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Old_Age">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maester Aemon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Maester_Cressen">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Maester_Cressen"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maester Cressen</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
@@ -2754,21 +2896,23 @@
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Osha"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maester Luwin</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Donnel_Hill">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donnel Hill</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Cooper">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cooper</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Melisandre">
   <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Old_Age"/>
   <killed rdf:resource="#Renly_Baratheon"/>
   <killed rdf:resource="#Axell_Florent"/>
   <killed rdf:resource="#Shireen_Baratheon"/>
@@ -2780,6 +2924,7 @@
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
   <hasBeenTo rdf:resource="#Storm's_End"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melisandre</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasKilled>
 </owl:NamedIndividual>
 
@@ -2788,11 +2933,13 @@
   <rdf:type rdf:resource="#MemberOfKingsGuard"/>
   <killedBy rdf:resource="#Podrick_Payne"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandon Moore</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Axell_Florent">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axell Florent</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Shireen_Baratheon">
@@ -2802,27 +2949,32 @@
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shireen Baratheon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Merchant_Captain">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Obara_Sand"/>
   <hasBeenTo rdf:resource="#Tarth"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merchant Captain</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Syrio_Forel">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syrio Forel</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Son_of_the_Harpy">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Son of the Harpy</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mycah">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Sandor_Clegane"/>
   <hasBeenTo rdf:resource="#Crossroads_Inn"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mycah</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Myranda">
@@ -2830,6 +2982,7 @@
   <killedBy rdf:resource="#Theon_Greyjoy"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myranda</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ned_Umber">
@@ -2838,13 +2991,13 @@
   <killedBy rdf:resource="#The_Night_King"/>
   <hasBeenTo rdf:resource="#Last_Hearth"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ned Umber</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ramsay_Snow">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Bolton"/>
   <isChildOf rdf:resource="#Roose_Bolton"/>
-  <killedBy rdf:resource="#Ramsay_Snow's_Hounds"/>
   <killed rdf:resource="#Master_Torturer"/>
   <killed rdf:resource="#Medger_Cerwyn"/>
   <killed rdf:resource="#Lady_Cerwyn"/>
@@ -2857,20 +3010,24 @@
   <hasBeenTo rdf:resource="#Moat_Cailin"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ramsay Snow</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Bolton_Soldier">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bolton Soldier</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Spice_King">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spice King</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Silk_King">
   <rdf:type rdf:resource="#Male"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk King</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Pypar">
@@ -2879,18 +3036,15 @@
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#Outside_Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pypar</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rakharo">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Khal_Jhaqo's_Khalasar"/>
   <hasBeenTo rdf:resource="#Dothraki_Camp"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
   <hasBeenTo rdf:resource="#The_Desert"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Khal_Jhaqo's_Khalasar">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakharo</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roose_Bolton">
@@ -2904,35 +3058,37 @@
   <hasBeenTo rdf:resource="#Oxcross"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roose Bolton</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Ramsay_Snow's_Hounds">
-  <rdf:type rdf:resource="#Person"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#Master_Torturer">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master Torturer</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Medger_Cerwyn">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medger Cerwyn</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lady_Cerwyn">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lady Cerwyn</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Unidentified_Cerwyn">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unidentified Cerwyn</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Old_Woman">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Old Woman</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rattleshirt">
@@ -2941,6 +3097,7 @@
   <wielded rdf:resource="#Longclaw"/>
   <hasBeenTo rdf:resource="#Frostfang_Mountains"/>
   <hasBeenTo rdf:resource="#Hardhome"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rattleshirt</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tormund_Giantsbane">
@@ -2960,20 +3117,19 @@
   <hasBeenTo rdf:resource="#Top_of_the_Wall"/>
   <hasBeenTo rdf:resource="#Cave_Outside_Wildling_Camp"/>
   <hasBeenTo rdf:resource="#Wildlings_March_South"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tormund Giantsbane</rdfs:label>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasKilled>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Great_Master_#1">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Great Master #1</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Wallen">
   <rdf:type rdf:resource="#Male"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Boar">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wallen</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Robin_Arryn">
@@ -2983,6 +3139,7 @@
   <hasBeenTo rdf:resource="#Outside_King's_Landing"/>
   <hasBeenTo rdf:resource="#Runestone"/>
   <hasBeenTo rdf:resource="#The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robin Arryn</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Rodrik_Cassel">
@@ -2998,21 +3155,23 @@
   <hasBeenTo rdf:resource="#The_Eyrie"/>
   <hasBeenTo rdf:resource="#The_Neck"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodrik Cassel</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Walda_Bolton">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Bolton"/>
   <belongsToHouse rdf:resource="#Frey"/>
-  <killedBy rdf:resource="#Ramsay_Snow's_Hounds"/>
   <hasBeenTo rdf:resource="#The_Dreadfort"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walda Bolton</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Ryger_Rivers">
   <rdf:type rdf:resource="#Male"/>
   <isChildOf rdf:resource="#Walder_Frey"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ryger Rivers</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Thenn_Warg">
@@ -3020,46 +3179,56 @@
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#Outside_Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thenn Warg</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kings_Landing_Rioter_#1">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kings Landing Rioter #1</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kings_Landing_Rioter_#2">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kings Landing Rioter #2</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Kings_Landing_Rioter_#3">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kings Landing Rioter #3</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Frey_Soldier_#2">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frey Soldier #2</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Lowell">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lowell</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Dying_Man">
   <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dying Man</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Steve">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steve</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Riddell">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riddell</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Morgan">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Lhazareen_Village"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morgan</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Selyse_Baratheon">
@@ -3071,6 +3240,7 @@
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
   <hasBeenTo rdf:resource="#Stannis_Baratheon's_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selyse Baratheon</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
   <hasKilled rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKilled>
@@ -3078,13 +3248,9 @@
 
 <owl:NamedIndividual rdf:about="#Septa_Mordane">
   <rdf:type rdf:resource="#Female"/>
-  <killedBy rdf:resource="#Lannister_Guardsman"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Lannister_Guardsman">
-  <rdf:type rdf:resource="#Person"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Septa Mordane</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Shae">
@@ -3092,33 +3258,39 @@
   <killedBy rdf:resource="#Tyrion_Lannister"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
   <hasBeenTo rdf:resource="#Lannister_Camp"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shae</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Gordy">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gordy</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Simpson">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simpson</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Stevron_Frey">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Frey"/>
   <hasBeenTo rdf:resource="#The_Twins"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stevron Frey</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Stiv">
   <rdf:type rdf:resource="#Male"/>
   <killedBy rdf:resource="#Theon_Greyjoy"/>
   <hasBeenTo rdf:resource="#The_Wolfswood"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stiv</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Olly's_Mother">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olly's Mother</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Three-Eyed_Raven">
@@ -3128,40 +3300,39 @@
   <hasBeenTo rdf:resource="#The_Lands_of_Always_Winter"/>
   <hasBeenTo rdf:resource="#The_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Three-Eyed Raven</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tortured_Prisoner">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#To_Harrenhal"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortured Prisoner</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Harrag">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Dragonstone"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harrag</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Maester_Caleotte">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Water_Gardens"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maester Caleotte</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Varly">
   <rdf:type rdf:resource="#Male"/>
-  <killedBy rdf:resource="#Goldcloak"/>
   <hasBeenTo rdf:resource="#King's_Landing"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Goldcloak">
-  <rdf:type rdf:resource="#Person"/>
-  <hasBeenTo rdf:resource="#The_Kingsroad"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varly</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Waymar_Royce">
   <rdf:type rdf:resource="#Male"/>
   <isChildOf rdf:resource="#Yohn_Royce"/>
-  <killedBy rdf:resource="#White_Walker"/>
   <hasBeenTo rdf:resource="#Castle_Black"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waymar Royce</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Yohn_Royce">
@@ -3170,6 +3341,7 @@
   <hasBeenTo rdf:resource="#Runestone"/>
   <hasBeenTo rdf:resource="#The_Eyrie"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yohn Royce</rdfs:label>
   <hasChildren rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChildren>
   <hasSiblings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSiblings>
 </owl:NamedIndividual>
@@ -3177,50 +3349,58 @@
 <owl:NamedIndividual rdf:about="#Wight_Wildling_Girl">
   <rdf:type rdf:resource="#White_Walkers"/>
   <hasBeenTo rdf:resource="#The_Haunted_Forest"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wight Wildling Girl</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Willis_Wode">
   <rdf:type rdf:resource="#Person"/>
-  <killedBy rdf:resource="#Mountain_Clansman"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Willis Wode</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Old_Man">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
   <hasBeenTo rdf:resource="#To_The_Eyrie"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Old Man</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Guymon">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#The_Gift"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guymon</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Mole's_Town_Whore">
   <rdf:type rdf:resource="#Person"/>
   <hasBeenTo rdf:resource="#Mole's_Town"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mole's Town Whore</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Young_Benjen_Stark">
   <rdf:type rdf:resource="#Male"/>
   <belongsToHouse rdf:resource="#Stark"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young Benjen Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Young_Cersei_Lannister">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Lannister"/>
   <hasBeenTo rdf:resource="#Outside_Casterly_Rock"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young Cersei Lannister</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Young_Lyanna_Stark">
   <rdf:type rdf:resource="#Female"/>
   <belongsToHouse rdf:resource="#Stark"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young Lyanna Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Young_Ned">
   <rdf:type rdf:resource="#Person"/>
   <belongsToHouse rdf:resource="#Stark"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young Ned</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Young_Ned_Stark">
@@ -3229,6 +3409,7 @@
   <hasBeenTo rdf:resource="#Outside_the_Three-Eyed_Raven"/>
   <hasBeenTo rdf:resource="#Tower_of_Joy"/>
   <hasBeenTo rdf:resource="#Outside_Winterfell"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young Ned Stark</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tower_of_Joy">

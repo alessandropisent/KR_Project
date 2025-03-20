@@ -236,8 +236,29 @@ def return_df_characters():
     return df
 
 #df = return_df_characters()
+#
+#s = set()
+#
+#for i in df["killedBy"]:
+#    if isinstance(i,list):
+#        
+#        s.add(i[0])
+##print(s)
+#s_char = set(df["characterName"])
 
-#print(df.columns)
+#print(s-s_char)
+
+df = return_df_characters()
+print(df.columns)
+
+
+#
+#def test(x):
+#    if(isinstance(x,str)): 
+#        return len(x)>=1
+#    return False
+#
+#print(df[df["nickname"].apply(test)][["characterName","nickname"]])
 
 
 #with open("names.txt","w") as f:
